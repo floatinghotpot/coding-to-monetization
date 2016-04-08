@@ -276,9 +276,15 @@ $ cordova emulate ios
 
 ![Hello World Cordova](demo/helloworldcordova.png)
 
-做个 APP 很简单，有木有！！！
+做个 最简单的APP，其实也很简单，是不是？！
 
 ### 加个广告条
+
+作为程序员，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能，也非常受欢迎。接下来，我们要给这个 APP 加上变现（monetization）的功能，及实现赚钱的功能。
+
+最简单的方法，就是加上 AdMob 广告条。通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。投放广告的人／公司（简称广告主，Advertizer）会支付广告费给谷歌，而谷歌则会将其中的一小部分，支付给发布广告的人（简称发布商, Publisher）。谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
+
+－－ 待续 －－
 
 ### 发布APP
 
