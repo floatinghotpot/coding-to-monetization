@@ -197,6 +197,7 @@ cordova emulate ios
 ```
 
 于是可以看到 iOS 模拟器被启动，然后 APP 运行：
+
 ![Cordova iOS](demo/cordovaios.png)
 
 或者你也可以把 iPhone 用 USB 线连接到 Mac，然后用这个命令安装、启动刚刚编译的 APP：
