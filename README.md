@@ -217,10 +217,13 @@ $ cordova run ios --device
 <head>
   <meta charset="utf-8" />
 
+  <!-- 下面的部分，是为了兼容移动设备的屏幕 -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+  <!-- cordova 在 APP 编译打包时自动生成，用来初始化 cordova 框架代码 -->
   <script type="text/javascript" src="cordova.js"></script>
 
   <title>Hello</title>
@@ -237,11 +240,11 @@ $ cordova run ios --device
 // main.js
 console.log('hello, world!');
 
-// when app is initialized, we will receive event 'deviceready'
+// 当 APP 初始化完成，会触发 'deviceready' 事件，我们可以调用 cordova 框架以及插件提供的 API 和功能
 document.addEventListener('deviceready', function(){
   console.log('deviceready');
   
-  // TODO: start web app logic
+  // TODO: 开始我们 web app 的业务逻辑
 });
 ```
 
