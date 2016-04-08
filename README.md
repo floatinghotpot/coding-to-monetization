@@ -207,7 +207,7 @@ $ cordova run ios --device
 
 打开 Cordova 项目，可以看到这样的目录结构：
 
-![Cordova Proj](demo/cordoaproj.png)
+![Cordova Proj](demo/cordovaproj.png)
 
 
 ### 加个广告条
