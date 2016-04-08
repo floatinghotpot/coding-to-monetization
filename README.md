@@ -133,6 +133,7 @@ h1 {
 ```
 
 用 Chrome 浏览器打开它，于是我们看到如下的展示：
+
 ![HelloWorld](demo/helloworld.png)
 
 上面显示了 HTML 的内容，并且用 CSS 指定的格式和效果进行了渲染。下面打开 Chrome 的 console 窗口，则显示了 javascript 调用 console.log() 输出的调试信息。
