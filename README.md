@@ -56,7 +56,14 @@ Flappy Bird 传奇，一个花2-3天开发出来的小游戏，在短短几周�
 
 ### 基础篇
 
-待续
+做 APP 开发的语言与工具，与平台相关。
+* 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 Xcode。
+* 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 Android Studio。
+
+除此之外，还有对于开发者更加友善的跨平台语言与工具：
+* 用于开发游戏的 Unity3D，用的是 C# 作为主要的开发语言。
+* 用于开发游戏的 Cocos2d-X，用的是 C++ 作为主要的开发语言。
+* 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
 
 ### Hello, World!
 
