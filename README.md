@@ -93,18 +93,38 @@
 用 javascript 开发前端，其实需要的是 3 项相关的语言：HTML / javascript / CSS。
 * HTML 负责内容
 * javascript 负责逻辑
-* CSS 负责美观表现
+* CSS 负责渲染表现
 
 以下是一个简单的例子：
 ```html
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
+<head>
+<meta charset="utf-8" />
+<title>Hello</title>
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+<h1>Hello, World!</h1>
+</body>
 </html>
+```
+```javascript
+// main.js
+console.log('hello, world!');
+```
+```css
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+h1 {
+  font-size: 20px;
+  color: blue;
+}
 ```
 
 ### 单机版APP
