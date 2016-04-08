@@ -66,8 +66,8 @@
 
 除此之外，还有一些跨平台语言与工具，对于开发者更加友善，可以开发一次，多平台打包发布：
 * 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
-* 用于开发游戏的 [Unity3D](http://unity3d.com/)，用的是 C# 作为主要的开发语言。
 * 用于开发游戏的 [Cocos2d-X](http://www.cocos2d-x.org/)，用的是 C++ 作为主要的开发语言。
+* 用于开发游戏的 [Unity3D](http://unity3d.com/) 以及集成的 MonoDevelop，用的是 C# 作为主要的开发语言。
 * 微软收购的 [Xamarin](https://www.xamarin.com/) 以及赞助的开源项目 [Mono](http://www.mono-project.com/)，用来开发 APP，以 C# 作为主要的开发语言。
 
 在下文的教程中，我们用 javascript 作为后续介绍的主要开发语言。它是 github 上最为活跃的语言。
