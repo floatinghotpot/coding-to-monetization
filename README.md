@@ -159,6 +159,15 @@ h1 {
 
 我们需要用到 cordova 技术框架。它原来是 Adobe 公司收购的一个小团队开发的产品，重新命名为 [PhoneGap](http://phonegap.com/)，后来开源并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)。
 
+Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的。
+
+我们首先要装 [nodejs](https://nodejs.org/en/)，安装之后，会提供 2 个基本的命令：
+* node --- 负责 javascript 程序的编译／解释／执行。它是基于谷歌开源的 Chrome V8 引擎的，基于事件驱动、不阻塞 IO模式运行，轻量而高效。
+* npm --- NodeJs Package Manager, 安装包管理器。所有的 nodejs 包都是用 npm 来下载和安装，你也可以用它来发布你自己的包到 npm 库。（例如，我就把自己的一些作品发布在 npm 上：https://www.npmjs.com/~floatinghotpot）
+
+接下来，用 npm 安装 [cordova](https://cordova.apache.org/)：npm install -g cordova
+
+
 
 ### 加个广告条
 
