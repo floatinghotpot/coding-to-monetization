@@ -209,6 +209,41 @@ $ cordova run ios --device
 
 ![Cordova Proj](demo/cordovaproj.png)
 
+接下来，删去 www 目录下的内容，用我们前面写的 index.html, main.js, main.css 替换，并略作修改：
+```html
+<!DOCTYPE html>
+<!-- index.html -->
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <script type="text/javascript" src="cordova.js"></script>
+
+  <title>Hello</title>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+<h1>Hello, World!</h1>
+</body>
+</html>
+```
+
+```javascript
+// main.js
+console.log('hello, world!');
+
+// when app is initialized, we will receive event 'deviceready'
+document.addEventListener('deviceready', function(){
+  console.log('deviceready');
+  
+  // TODO: start web app logic
+});
+```
 
 ### 加个广告条
 
