@@ -276,13 +276,53 @@ $ cordova emulate ios
 
 ![Hello World Cordova](demo/helloworldcordova.png)
 
-做个 最简单的APP，其实也很简单，是不是？！
+做个最简单的APP，其实也很简单，是不是？！
 
 ### 加个广告条
 
 作为程序员，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能，也非常受欢迎。接下来，我们要给这个 APP 加上变现（monetization）的功能，及实现赚钱的功能。
 
 最简单的方法，就是加上 AdMob 广告条。通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。投放广告的人／公司（简称广告主，Advertizer）会支付广告费给谷歌，而谷歌则会将其中的一小部分，支付给发布广告的人（简称发布商, Publisher）。谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
+
+Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。这里，我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是我基于谷歌 AdMob SDK 开发的一个插件。通过它，可以用 javascript 代码来调用 SDK 提供的 API。
+
+```bash
+$ cordova plugin add cordova-plugin-admobpro
+```
+
+在 main.js 里面，在 APP 初始化完毕时，我们加几行代码。
+
+```javascript
+// main.js
+console.log('hello, world!');
+
+// 当 APP 初始化完成，会触发 'deviceready' 事件，我们可以调用 cordova 框架以及插件提供的 API 和功能
+document.addEventListener('deviceready', function(){
+  console.log('deviceready');
+  
+  // 在 APP 初始化完毕时，在屏幕下方创建一个广告条
+  if(AdMob) AdMob.createBanner({
+    adId: 'ca-app-pub-6869992474017983/4806197152', // 需要到 AdMob 官方网站注册用户，并创建广告单元 Ad Unit Id
+    position: AdMob.AD_POSITION.BOTTOM_CENTER, // 展示在屏幕下方中央
+    overlap: false, // 不要覆盖 Web APP 的内容
+    isTesting: true, // 展示测试广告，在正式发布时，去掉这行
+    autoShow: true // 广告资源就绪时，自动开始展示
+  });
+});
+```
+
+重新运行 cordova 项目（会自动编译、安装、运行）：
+```bash
+$ cordova emulate ios
+```
+
+于是，可以看到 Web App 在 iOS 模拟器中运行了：
+
+![AdMob Banner](demo/admobbanner.png)
+
+看，下方的广告条展示出来了。
+
+这里只是仅供调试用的测试广告。我们需要到 [AdMob官方网站](https://apps.admob.com/)注册用户，并创建广告单元 Ad Unit Id，并用来替换掉 代码中 adId 后面的这串数字。
 
 －－ 待续 －－
 
