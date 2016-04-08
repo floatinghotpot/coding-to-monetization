@@ -182,7 +182,7 @@ $ cordova -v
 5.4.1
 ```
 
-我们用 cordova 创建一个项目：
+用 cordova 创建一个项目：
 ```bash
 # 格式为：cordova create <目录名> <APP ID> <APP名字>
 $ cordova create temp com.rjfun.demo Demo
@@ -204,6 +204,10 @@ $ cordova emulate ios
 ```bash
 $ cordova run ios --device
 ```
+
+打开 Cordova 项目，可以看到这样的目录结构：
+
+![Cordova Proj](demo/cordoaproj.png)
 
 
 ### 加个广告条
