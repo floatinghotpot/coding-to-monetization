@@ -67,12 +67,10 @@
 除此之外，还有一些跨平台语言与工具，对于开发者更加友善，可以开发一次，多平台打包发布：
 * 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
 * 用于开发游戏的 [Cocos2d-X](http://www.cocos2d-x.org/)，用的是 C++ 作为主要的开发语言。
-* 用于开发游戏的 [Unity3D](http://unity3d.com/) 以及集成的 MonoDevelop，用的是 C# 作为主要的开发语言。
+* 用于开发游戏的 [Unity3D](http://unity3d.com/) IDE 以及集成的 MonoDevelop，用的是 C# 作为主要的开发语言。
 * 微软收购的 [Xamarin](https://www.xamarin.com/) 以及赞助的开源项目 [Mono](http://www.mono-project.com/)，用来开发 APP，以 C# 作为主要的开发语言。
 
-在下文的教程中，我们用 javascript 作为后续介绍的主要开发语言。它是 github 上最为活跃的语言。
-
-它可以用来开发：
+在下文的教程中，我们选择最简单的 javascript 作为后续介绍的主要开发语言。实际上，它也是 github 上最为活跃的语言。它可以用来开发：
 * 运行于浏览器内的 Web网页；
 * 运行与内嵌浏览器的 单页WebApp；
 * 基于 [nodejs](https://nodejs.org/) 的命令行工具；
@@ -86,11 +84,28 @@
 以下是我个人用来做开发的环境和工具：
 * Chrome浏览器，自带开发者工具 和 javascript 控制台，用来运行和调试。
 * [Adobe Brackets](http://brackets.io/) 文本编辑器（如果你习惯 [Sublime Text](http://www.sublimetext.com/) 或者 [Atom](https://atom.io/) 或者 [Visual Studio Code](http://code.visualstudio.com/)，也没问题）
-* iMac台式机，巨大的27寸屏幕，视野不受限制；命令行非常强大方便，通过 [MacPorts](https://www.macports.org/) 或者 [Homebrew](http://brew.sh/)，Linux 上有的命令行工具或者 library 都基本支持。
+* iMac台式机，巨大的27寸屏幕，视野不受限制；Mac OS X命令行非常强大方便，通过 [MacPorts](https://www.macports.org/) 或者 [Homebrew](http://brew.sh/)，Linux 上有的命令行工具或者 library 都基本支持。
 * Xcode（只有 Mac 版本），要调试 iOS APP，有台 iMac电脑或者 MacBook笔记本电脑，这也是必备的。
 * Android Studio，用来调试 Android APP。
 
 ### Hello, World!
+
+用 javascript 开发前端，其实需要的是 3 项相关的语言：HTML / javascript / CSS。
+* HTML 负责内容
+* javascript 负责逻辑
+* CSS 负责美观表现
+
+以下是一个简单的例子：
+```html
+<html>
+  <head>
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
 
 ### 单机版APP
 
