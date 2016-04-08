@@ -141,12 +141,17 @@ h1 {
 
 用 HTML5 / javascript 做开发，入门就是这么简单。
 
-如果需要开发出高质量的 APP，需要熟练掌握 HTML/CSS 和 javascript，尤其是 HTML5 / CSS3，掌握 HTML DOM 以及 javascript 的一些常见库，例如 [jQuery](https://jquery.com/)，等等。
-
-这里有一些免费的入门教程：
+如果需要开发出高质量的 APP，需要熟练掌握 HTML/CSS 和 javascript，尤其是 HTML5 / CSS3，掌握 HTML DOM 以及 javascript 的一些常见库，例如 [jQuery](https://jquery.com/)，等等。这里有一些免费的入门教程：
 * [HTML 系列教程](http://www.w3school.com.cn/h.asp)
 * [JavaScript 入门教程](http://www.w3school.com.cn/js/index.asp)
 * [JavaScript 高级教程](http://www.w3school.com.cn/js/index_pro.asp)
+
+通过这些教程的学习，你能够做到：
+* 一个简单的 index.html 页面；
+* 一个统一的 main.css 文件，能够对界面元素的表现加以控制和调整；
+* 一组 javascript 文件，能够通过对 HTML DOM 的访问，实现内容的动态展示和切换。
+
+对于作为程序员的你，这根本不是什么难的事情。
 
 ### 单机版APP
 
