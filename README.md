@@ -5,6 +5,7 @@
 * [前言](#前言)
 * [定位](#定位)
 * [基础篇](#基础篇)
+  * [语言与工具选择](#语言与工具选择)
   * [Hello, World!](#hello-world)
   * [单机版APP](#单机版APP)
   * [加个广告条](#加个广告条)
@@ -56,14 +57,26 @@ Flappy Bird 传奇，一个花2-3天开发出来的小游戏，在短短几周�
 
 ### 基础篇
 
-做 APP 开发的语言与工具，与平台相关。
+### 语言与工具选择
+
+开发 APP 的语言与工具，通常与平台密切相关。
 * 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 Xcode。
 * 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 Android Studio。
+* 如果是 Windows Phone，那就是 C#，开发工具是 微软推出的 Visual Studio。
 
-除此之外，还有对于开发者更加友善的跨平台语言与工具：
+除此之外，还有一些跨平台语言与工具，对于开发者更加友善，可以开发一次，多平台打包发布：
 * 用于开发游戏的 Unity3D，用的是 C# 作为主要的开发语言。
 * 用于开发游戏的 Cocos2d-X，用的是 C++ 作为主要的开发语言。
 * 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
+
+在下文的教程中，我们用 javascript 作为后续介绍的主要开发语言。它可以用来开发：
+* 运行于浏览器内的 Web网页；
+* 运行与内嵌浏览器的 单页WebApp；
+* 基于 nodejs 的命令行工具；
+* 基于 nodejs 的网络云服务；
+* 基于 cordova 技术的，混合(hybrid) APP。
+* 基于 react-native 开发 native UI体验的 APP。
+* 甚至，也能够开发出桌面应用，例如 Adobe Brackets 代码编辑器。
 
 ### Hello, World!
 
