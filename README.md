@@ -185,15 +185,15 @@ $ cordova -v
 我们用 cordova 创建一个项目：
 ```bash
 # 格式为：cordova create <目录名> <APP ID> <APP名字>
-cordova create temp com.rjfun.demo Demo
+$ cordova create temp com.rjfun.demo Demo
 ```
 
 然后编译，并在 iOS 模拟器中运行这个项目：
 ```bash
-cd temp
-cordova platform add ios
-cordova build ios
-cordova emulate ios
+$ cd temp
+$ cordova platform add ios
+$ cordova build ios
+$ cordova emulate ios
 ```
 
 于是可以看到 iOS 模拟器被启动，然后 APP 运行：
@@ -202,7 +202,7 @@ cordova emulate ios
 
 或者你也可以把 iPhone 用 USB 线连接到 Mac，然后用这个命令安装、启动刚刚编译的 APP：
 ```bash
-cordova run ios --device
+$ cordova run ios --device
 ```
 
 
