@@ -60,14 +60,15 @@
 ### 语言与工具选择
 
 开发 APP 的语言与工具，通常与平台密切相关。
-* 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 Xcode （开发工具仅运行于 Mac）。
-* 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 Android Studio（开发工具有跨平台版本）。
-* 如果是 Windows Phone，那就是 C#，开发工具是 微软推出的 Visual Studio（开发工具仅运行于 Windows）。
+* 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 [Xcode](https://developer.apple.com/xcode/) （开发工具仅运行于 Mac）。
+* 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 [Android Studio](http://developer.android.com/tools/studio/index.html)（开发工具有跨平台版本）。
+* 如果是 Windows Phone，那就是 C#，开发工具是 微软推出的 [Visual Studio](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)（开发工具仅运行于 Windows）。
 
 除此之外，还有一些跨平台语言与工具，对于开发者更加友善，可以开发一次，多平台打包发布：
+* 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
 * 用于开发游戏的 [Unity3D](http://unity3d.com/)，用的是 C# 作为主要的开发语言。
 * 用于开发游戏的 [Cocos2d-X](http://www.cocos2d-x.org/)，用的是 C++ 作为主要的开发语言。
-* 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
+* 微软收购的 [Xamarin](https://www.xamarin.com/) 以及赞助的开源项目 [Mono](http://www.mono-project.com/)，用来开发 APP，以 C# 作为主要的开发语言。
 
 在下文的教程中，我们用 javascript 作为后续介绍的主要开发语言。它是 github 上最为活跃的语言。
 
@@ -83,9 +84,11 @@
 因为它可以同时用来开发前端和后台，代码逻辑也可以用来前后端复用，从而降低技能门槛和开发成本。开发环境也要求非常低，只要有个友好的代码编辑器，有个浏览器可以用来运行和调试，就可以了。
 
 以下是我个人用来做开发的环境和工具：
-* iMac台式机，巨大的27寸屏幕，视野不受限制；命令行非常强大方便，通过 [MacPorts](https://www.macports.org/) 或者 [Homebrew](http://brew.sh/)，Linux 上有的命令行工具或者 library 都基本支持。
 * Chrome浏览器，自带开发者工具 和 javascript 控制台，用来运行和调试。
-* [Adobe Brackets](http://brackets.io/) 文本编辑器（如果你习惯 [Sublime Text](http://www.sublimetext.com/) 或者 [Atom](https://atom.io/)，也没问题）
+* [Adobe Brackets](http://brackets.io/) 文本编辑器（如果你习惯 [Sublime Text](http://www.sublimetext.com/) 或者 [Atom](https://atom.io/) 或者 [Visual Studio Code](http://code.visualstudio.com/)，也没问题）
+* iMac台式机，巨大的27寸屏幕，视野不受限制；命令行非常强大方便，通过 [MacPorts](https://www.macports.org/) 或者 [Homebrew](http://brew.sh/)，Linux 上有的命令行工具或者 library 都基本支持。
+* Xcode（只有 Mac 版本），要调试 iOS APP，有台 iMac电脑或者 MacBook笔记本电脑，这也是必备的。
+* Android Studio，用来调试 Android APP。
 
 ### Hello, World!
 
