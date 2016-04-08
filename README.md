@@ -98,6 +98,7 @@
 以下是一个简单的例子：
 ```html
 <!DOCTYPE html>
+<!-- index.html -->
 <html>
 <head>
 <meta charset="utf-8" />
@@ -115,6 +116,7 @@
 console.log('hello, world!');
 ```
 ```css
+/* main.css */
 body {
   width: 100%;
   height: 100%;
