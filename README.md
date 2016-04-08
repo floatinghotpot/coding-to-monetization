@@ -168,6 +168,12 @@ Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的�
 npm install -g cordova
 ```
 
+我们用 cordova 创建一个项目：
+```bash
+# 格式为：cordova create <目录名> <APP ID> <APP名字>
+cordova create demo com.rjfun.demo Demo
+```
+
 
 ### 加个广告条
 
