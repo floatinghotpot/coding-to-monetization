@@ -41,7 +41,7 @@
 在移动互联网时代，以个人或者小团队，实现赚钱、甚至创造奇迹的故事，屡见不鲜。
 
 例子1: 
-Flappy Bird 传奇，一个花2-3天开发出来的小游戏，在短短几周时间席卷全球，并获得了每天 5 万美金的广告收益。这无疑有偶然、运气的成分，但至少这是有概率发生的事情。
+[Flappy Bird](https://zh.wikipedia.org/wiki/Flappy_Bird) 传奇，一个花2-3天开发出来的小游戏，在短短几周时间席卷全球，并获得了每天 5 万美金的广告收益。这无疑有偶然、运气的成分，但至少这是有概率发生的事情。
 
 例子2:
 我认识一个波兰的老外，用做网页的技术，做了个并不复杂的计算器，大概也就是按照百分比计算下小费之类的。在欧洲好几个国家的应用商店上财务类APP，排名前几，通过广告条变现，赚了不少钱。
@@ -60,23 +60,32 @@ Flappy Bird 传奇，一个花2-3天开发出来的小游戏，在短短几周�
 ### 语言与工具选择
 
 开发 APP 的语言与工具，通常与平台密切相关。
-* 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 Xcode。
-* 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 Android Studio。
-* 如果是 Windows Phone，那就是 C#，开发工具是 微软推出的 Visual Studio。
+* 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 Xcode （开发工具仅运行于 Mac）。
+* 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 Android Studio（开发工具有跨平台版本）。
+* 如果是 Windows Phone，那就是 C#，开发工具是 微软推出的 Visual Studio（开发工具仅运行于 Windows）。
 
 除此之外，还有一些跨平台语言与工具，对于开发者更加友善，可以开发一次，多平台打包发布：
-* 用于开发游戏的 Unity3D，用的是 C# 作为主要的开发语言。
-* 用于开发游戏的 Cocos2d-X，用的是 C++ 作为主要的开发语言。
+* 用于开发游戏的 [Unity3D](http://unity3d.com/)，用的是 C# 作为主要的开发语言。
+* 用于开发游戏的 [Cocos2d-X](http://www.cocos2d-x.org/)，用的是 C++ 作为主要的开发语言。
 * 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
 
-在下文的教程中，我们用 javascript 作为后续介绍的主要开发语言。它可以用来开发：
+在下文的教程中，我们用 javascript 作为后续介绍的主要开发语言。它是 github 上最为活跃的语言。
+
+它可以用来开发：
 * 运行于浏览器内的 Web网页；
 * 运行与内嵌浏览器的 单页WebApp；
-* 基于 nodejs 的命令行工具；
+* 基于 [nodejs](https://nodejs.org/) 的命令行工具；
 * 基于 nodejs 的网络云服务；
-* 基于 cordova 技术的，混合(hybrid) APP。
-* 基于 react-native 开发 native UI体验的 APP。
+* 基于 [cordova](http://cordova.apache.org/) 技术的，混合(hybrid) APP。
+* 基于 [react-native](http://www.reactnative.com/) 开发 native UI体验的 APP。
 * 甚至，也能够开发出桌面应用，例如 Adobe Brackets 代码编辑器。
+
+因为它可以同时用来开发前端和后台，代码逻辑也可以用来前后端复用，从而降低技能门槛和开发成本。开发环境也要求非常低，只要有个友好的代码编辑器，有个浏览器可以用来运行和调试，就可以了。
+
+以下是我个人用来做开发的环境和工具：
+* iMac台式机，巨大的27寸屏幕，视野不受限制；命令行非常强大方便，通过 [MacPorts](https://www.macports.org/) 或者 [Homebrew](http://brew.sh/)，Linux 上有的命令行工具或者 library 都基本支持。
+* Chrome浏览器，自带开发者工具 和 javascript 控制台，用来运行和调试。
+* [Adobe Brackets](http://brackets.io/) 文本编辑器（如果你习惯 [Sublime Text](http://www.sublimetext.com/) 或者 [Atom](https://atom.io/)，也没问题）
 
 ### Hello, World!
 
