@@ -159,19 +159,49 @@ h1 {
 
 我们需要用到 cordova 技术框架。它原来是 Adobe 公司收购的一个小团队开发的产品，重新命名为 [PhoneGap](http://phonegap.com/)，后来开源并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)。
 
-Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的。我们首先要装 [nodejs](https://nodejs.org/en/)，安装之后，会提供 2 个基本的命令：
+Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的。
+
+我们首先要装 [nodejs](https://nodejs.org/en/)，安装之后，会提供 2 个基本的命令：
+```bash
+$ which node
+/usr/local/bin/node
+$ node -v
+v4.2.1
+$ npm -v
+2.14.7
+```
 * node --- 负责 javascript 程序的编译／解释／执行。它是基于谷歌开源的 Chrome V8 引擎的，基于事件驱动、不阻塞 IO模式运行，轻量而高效。
 * npm --- NodeJs Package Manager, 安装包管理器。所有的 nodejs 包都是用 npm 来下载和安装，你也可以用它来发布你自己的包到 npm 库。（例如，我就把自己的一些作品发布在 npm 上：https://www.npmjs.com/~floatinghotpot）
 
 接下来，用 npm 安装 [cordova](https://cordova.apache.org/)：
 ```bash
-npm install -g cordova
+$ npm install -g cordova
+$ which cordova
+/usr/local/bin/cordova
+$ cordova -v
+5.4.1
 ```
 
 我们用 cordova 创建一个项目：
 ```bash
 # 格式为：cordova create <目录名> <APP ID> <APP名字>
-cordova create demo com.rjfun.demo Demo
+cordova create temp com.rjfun.demo Demo
+```
+
+然后编译，并在 iOS 模拟器中运行这个项目：
+```bash
+cd temp
+cordova platform add ios
+cordova build ios
+cordova emulate ios
+```
+
+于是可以看到 iOS 模拟器被启动，然后 APP 运行：
+![Cordova iOS](demo/cordovaios.png)
+
+或者你也可以把 iPhone 用 USB 线连接到 Mac，然后用这个命令安装、启动刚刚编译的 APP：
+```bash
+cordova run ios --device
 ```
 
 
