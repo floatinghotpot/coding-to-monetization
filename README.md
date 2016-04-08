@@ -248,6 +248,36 @@ document.addEventListener('deviceready', function(){
 });
 ```
 
+```css
+/* main.css */
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: silver;
+}
+h1 {
+  padding: 40px;
+  margin: 30px;
+  background-color: yellow;
+  color: blue;
+  border: 1px solid gray;
+  display: inline-block;
+}
+```
+
+重新运行 cordova 项目（会自动编译、安装、运行）：
+```bash
+$ cordova emulate ios
+```
+
+于是，可以看到 Web App 在 iOS 模拟器中运行了：
+
+![Hello World Cordova](demo/hellworldcordova.png)
+
+做个 APP 很简单，有木有！！！
+
 ### 加个广告条
 
 ### 发布APP
