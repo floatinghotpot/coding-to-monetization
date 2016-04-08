@@ -136,7 +136,8 @@ h1 {
 
 ![HelloWorld](demo/helloworld.png)
 
-上面显示了 HTML 的内容，并且用 CSS 指定的格式和效果进行了渲染。下面打开 Chrome 的 console 窗口，则显示了 javascript 调用 console.log() 输出的调试信息。
+* 上面的浏览器主窗口，显示了 HTML 的内容，并且用 CSS 指定的格式和效果进行了渲染。
+* 下面打开 Chrome 的 console 窗口，则显示了 javascript 调用 console.log() 输出的调试信息。
 
 用 HTML5 / javascript 做开发，入门就是这么简单。
 
