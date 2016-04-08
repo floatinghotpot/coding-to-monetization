@@ -274,7 +274,7 @@ $ cordova emulate ios
 
 于是，可以看到 Web App 在 iOS 模拟器中运行了：
 
-![Hello World Cordova](demo/hellworldcordova.png)
+![Hello World Cordova](demo/helloworldcordova.png)
 
 做个 APP 很简单，有木有！！！
 
