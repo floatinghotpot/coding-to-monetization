@@ -285,7 +285,9 @@ $ cordova emulate ios
 
 ### 加个广告条
 
-作为程序员，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能。接下来，我们要给这个 APP 加上变现（monetization）的功能，即实现赚到真金白银（其实是美金）的功能。
+作为程序员，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能。
+
+接下来，我们要给这个 APP 加上变现（monetization）的功能，即实现赚到真金白银。可以选择以美元支付，也可以选择接受其他货币的付款。
 
 变现最简单的方法，就是加上广告条，例如谷歌的AdMob。
 * 通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。
@@ -371,9 +373,11 @@ $ cordova emulate ios
 
 ![Verify PIN](demo/verifypin.png)
 
+点击“立即改正此问题”，进入 PIN 码输入界面。
+
 ![Verify PIN](demo/verifypin2.png)
 
-验证 PIN 码这个过程比较缓慢，通常需要 2-4 周的时间。
+验证 PIN 码这个过程比较缓慢，通常需要 2-4 周的时间。所以如果显示了最近声称 PIN 码的日期，就耐心等待吧。
 
 #### 设置收款信息：
 
