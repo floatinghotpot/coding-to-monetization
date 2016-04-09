@@ -281,11 +281,15 @@ $ cordova emulate ios
 
 ### 加个广告条
 
-作为程序员，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能，也非常受欢迎。接下来，我们要给这个 APP 加上变现（monetization）的功能，及实现赚钱的功能。
+作为程序员，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能。接下来，我们要给这个 APP 加上变现（monetization）的功能，即实现赚到真金白银（其实是美金）的功能。
 
-最简单的方法，就是加上 AdMob 广告条。通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。投放广告的人／公司（简称广告主，Advertizer）会支付广告费给谷歌，而谷歌则会将其中的一小部分，支付给发布广告的人（简称发布商, Publisher）。谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
+变现最简单的方法，就是加上广告条，例如谷歌的AdMob。
+* 通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。
+* 投放广告的人／公司（简称广告主，Advertizer）会支付广告费给谷歌。
+* 而谷歌则会将其中的一小部分，支付给发布广告的人（简称发布商, Publisher）。
+* 谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
 
-Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。这里，我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是我基于谷歌 AdMob SDK 开发的一个插件。通过它，可以用 javascript 代码来调用 SDK 提供的 API。
+Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件。通过它，可以用 javascript 代码来调用 SDK 提供的 API。
 
 ```bash
 $ cordova plugin add cordova-plugin-admobpro
