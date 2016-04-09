@@ -356,8 +356,19 @@ $ cordova emulate ios
 
 ![AdMob Site](demo/admobsite.png)
 
-![AdMob SignUp](demo/admobsignup.png)
+注册完成之后，登陆 AdMob 网站（https://apps.admob.com/），点击菜单“获利”，点击左上角的红色按钮“＋通过新应用获利” 添加新APP：
 
+![AdMob New App](demo/admobnewapp.png)
+
+然后创建横幅广告：
+
+![AdMob New Banner](demo/admobnewbanner.png)
+
+即可获得广告单元 ID，将其 copy 到源代码中：
+
+![AdMob Ad Unit ID](demo/admobadunitid.png)
+
+--- 待续 ---
 
 ### 发布APP
 
