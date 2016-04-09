@@ -352,11 +352,11 @@ $ cordova emulate ios
 
 由于价值观方面的原因，谷歌的网站基本上都是被隔离在中国大陆局域网之外，通常是无法访问的。需要通过 VPN 等科学上网的方式才能够访问。如果你不知道如何科学上网，可以写邮件给我，单独讨论这个问题，这里暂不展开。
 
-访问谷歌AdMob官网（https://www.google.com/admob/），注册新账号，需要留个手机号码，用于接收验证码。
+访问谷歌AdMob官网（ https://www.google.com/admob/ ），注册新账号。
 
 ![AdMob Site](demo/admobsite.png)
 
-注册完成之后，登陆 AdMob 网站（https://apps.admob.com/），点击菜单“获利”，点击左上角的红色按钮“＋通过新应用获利” 添加新APP：
+注册完成之后，登陆 AdMob 网站（ https://apps.admob.com/ ），点击菜单“获利”，点击左上角的红色按钮“＋通过新应用获利” 添加新APP：
 
 ![AdMob New App](demo/admobnewapp.png)
 
