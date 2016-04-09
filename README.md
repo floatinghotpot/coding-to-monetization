@@ -162,7 +162,7 @@ h1 {
 
 下一步，我们要把这样一个简单的网页程序 (web app)，变成一个手机上的 APP。准确的说，它应该是叫 Hybrid APP，即混合程序。因为它的外面是 native app 封装了一个 webview，里面运行的是 我们写的 web app。
 
-我们需要用到 cordova 技术框架。它原来是 Adobe 公司收购的一个小团队开发的产品，重新命名为 [PhoneGap](http://phonegap.com/)，后来开源并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)，现在称为一个非常流行的技术框架，也得到很多商业公司的追捧，除了 Adobe 之外，Intel、微软、IBM 等公司也都推出了支持 Cordova 的产品。
+我们需要用到 cordova 技术框架。它原来是 Adobe 公司收购的一个小团队开发的产品，重新命名为 [PhoneGap](http://phonegap.com/)，后来开源并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)，现在成为一个非常流行的技术框架，也得到很多商业公司的追捧，除了 Adobe 之外，Intel、微软、IBM 等公司也都推出了支持 Cordova 的产品。
 
 Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的。
 
@@ -176,7 +176,7 @@ $ npm -v
 2.14.7
 ```
 * node --- 负责 javascript 程序的编译／解释／执行。它是基于谷歌开源的 Chrome V8 引擎的，基于事件驱动、不阻塞 IO模式运行，轻量而高效。
-* npm --- NodeJs Package Manager, 安装包管理器。所有的 nodejs 包都是用 npm 来下载和安装，你也可以用它来发布你自己的包到 npm 库。（例如，我就把自己的一些作品发布在 npm 上：https://www.npmjs.com/~floatinghotpot）
+* npm --- NodeJs Package Manager, 安装包管理器。所有的 nodejs 包都是用 npm 来下载和安装（你也可以用它来发布你自己的包到 npm 库）。
 
 接下来，用 npm 安装 [cordova](https://cordova.apache.org/)：
 ```bash
@@ -210,14 +210,14 @@ $ cordova emulate ios
 $ cordova run ios --device
 ```
 
-打开 Cordova 项目，可以看到这样的目录结构：
+现在运行的是 Cordova 自带的 Demo 工程。打开 Cordova 项目，可以看到这样的目录结构：
 
 ![Cordova Proj](demo/cordovaproj.png)
 
 接下来，删去 www 目录下的内容，用我们前面写的 index.html, main.js, main.css 替换，并略作修改：
 ```html
-<!DOCTYPE html>
 <!-- index.html -->
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -285,9 +285,9 @@ $ cordova emulate ios
 
 ### 加个广告条
 
-作为程序员，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能。
+作为程序员，我们毫不怀疑，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能。
 
-接下来，我们要给这个 APP 加上变现（monetization）的功能，即实现赚到真金白银。可以选择以美元支付，也可以选择接受其他货币的付款。
+接下来，我们要给这个 APP 加上变现（monetization）的功能，即实现赚到真金白银。
 
 变现最简单的方法，就是加上广告条，例如谷歌的AdMob。
 * 通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。
@@ -391,6 +391,12 @@ $ cordova emulate ios
 
 ### 发布APP
 
+我们完成的 APP，要被用户安装使用，还缺少一个环节：发布 到应用商店。
+* 如果是 Android APP，通常是 Google Play Store。中国大陆用户通常访问不到，则可以选择发布到大陆的一些应用商店，例如 360、豌豆荚 等等。
+* 如果是 iOS APP，则是发不到苹果 AppStore。
+
+这里我们以苹果 AppStore 为例，来说明如何注册开发者账号，并发布 APP。
+
 --- 待续 ---
 
 ### 广告收益的计算
@@ -408,7 +414,7 @@ $ cordova emulate ios
 
 而在上海，5年经验的、技术能力还不错的程序员，薪资大约也就 15,000 左右。如果你做的 APP，每天能够有 1万个用户使用，基本上产生的广告收益和现金流，就可以达到一个程序员的工资水平。
 
-我见过一个巴西人，他用 HTML5 技术实现的小游戏，每天的活跃用户大约是 10万。显然，他的广告收益已经达到每个月 15万，从而实现财务自由。
+我见过一个巴西人，他用 HTML5 技术实现的小游戏，每天的活跃用户大约是 10万。显然，他的广告收益已经达到每个月 15万，实现了财务自由。
 
 ### 进阶篇
 
