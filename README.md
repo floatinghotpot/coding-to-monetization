@@ -27,9 +27,9 @@
   * [社交营销](#社交营销)
   * [广告投放](#广告投放)
 * [附录](#附录)
-  * [如何发布 APP 到 Apple AppStore](#如何发布 APP 到 Apple AppStore)
-  * [如何发布 APP 到 Google Play Store](#如何发布 APP 到 Google Play Store)
-  * [如何发布 APP 到 360 应用商店](#如何发布 APP 到 360 应用商店)
+  * [如何发布 APP 到 Apple AppStore](#如何发布-app-到-apple-appstore)
+  * [如何发布 APP 到 Google Play Store](#如何发布-app-到-google-play-store)
+  * [如何发布 APP 到 360 应用商店](#如何发布-app-到-360-应用商店)
 
 ### 前言
 
