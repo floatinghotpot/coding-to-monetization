@@ -303,15 +303,15 @@ $ cordova emulate ios
 
 变现最简单的方法，就是加上广告条，例如谷歌的AdMob。
 * 通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。
-* 投放广告的人／公司（简称广告主，Advertizer）会支付广告费给谷歌。
-* 而谷歌则会将其中的一小部分，支付给发布广告的人（简称发布商, Publisher）。
+* 投放广告的个人／公司（简称广告主，Advertizer）会支付广告费给谷歌。
+* 而谷歌则会将其中的一小部分，支付给发布广告的个人／公司（简称发布商, Publisher）。
 * 谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
 
 Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。
 
 我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件，也是目前变现插件中最流行、最容易使用的。
 
-通过它，只需一行 javascript 代码就可以完成 SDK API 的调用。
+通过它，只需一行 javascript 代码就可以完成对 SDK API 的调用。
 
 ```bash
 $ cordova plugin add cordova-plugin-admobpro
