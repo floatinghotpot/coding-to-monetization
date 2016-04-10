@@ -30,6 +30,7 @@
   * [如何发布 APP 到 Apple AppStore](#如何发布-app-到-apple-appstore)
   * [如何发布 APP 到 Google Play Store](#如何发布-app-到-google-play-store)
   * [如何发布 APP 到 360 应用商店](#如何发布-app-到-360-应用商店)
+  * [如何用 Google Analytics 做用户数据分析](#如何用-google-analytics-做用户数据分析)
 
 ### 前言
 
