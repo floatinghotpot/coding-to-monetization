@@ -26,6 +26,10 @@
   * [支付与内购](#支付与内购)
   * [社交营销](#社交营销)
   * [广告投放](#广告投放)
+* [附录](#附录)
+  * [如何发布 APP 到 Apple AppStore](#如何发布 APP 到 Apple AppStore)
+  * [如何发布 APP 到 Google Play Store](#如何发布 APP 到 Google Play Store)
+  * [如何发布 APP 到 360 应用商店](#如何发布 APP 到 360 应用商店)
 
 ### 前言
 
@@ -465,3 +469,12 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 ### 社交营销
 
 ### 广告投放
+
+### 附录
+
+#### 如何发布 APP 到 Apple AppStore
+
+#### 如何发布 APP 到 Google Play Store
+
+#### 如何发布 APP 到 360 应用商店
+
