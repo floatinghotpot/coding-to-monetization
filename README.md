@@ -464,7 +464,7 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 
 ### 高级篇
 
-### 数据分析
+### 用户数据分析
 
 ### 广告优化
 
@@ -481,4 +481,7 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 #### 如何发布 APP 到 Google Play Store
 
 #### 如何发布 APP 到 360 应用商店
+
+#### 如何用 Google Analytics 做用户数据分析
+
 
