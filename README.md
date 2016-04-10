@@ -95,6 +95,8 @@
 * Xcode（只有 Mac 版本），要调试 iOS APP，有台 iMac电脑或者 MacBook笔记本电脑，这也是必备的。
 * Android Studio，用来调试 Android APP。
 
+如果你习惯了 Windows 也没有一台 Mac，会稍微麻烦一点。不过也是有方法的，有一些专门提供编译、打包的云服务，例如 Adobe PhoneGap Build，或者 Intel XDK，我们后面会介绍如何使用。
+
 ### Hello, World!
 
 用 javascript 开发前端，其实需要的是 3 项相关的语言：HTML / javascript / CSS。
@@ -164,7 +166,7 @@ h1 {
 
 下一步，我们要把这样一个简单的网页程序 (web app)，变成一个手机上的 APP。准确的说，它应该是叫 Hybrid APP，即混合程序。因为它的外面是 native app 封装了一个 webview，里面运行的是 我们写的 web app。
 
-我们需要用到 cordova 技术框架。它原来是 Adobe 公司收购的一个小团队开发的产品，重新命名为 [PhoneGap](http://phonegap.com/)，后来开源并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)，现在成为一个非常流行的技术框架，也得到很多商业公司的追捧，除了 Adobe 之外，Intel、微软、IBM 等公司也都推出了支持 Cordova 的产品。
+我们需要用到 cordova 技术框架。它原本是 Adobe 公司收购的一个小团队开发的产品，被重新命名为 [PhoneGap](http://phonegap.com/)。后来 Adobe 将其开源，并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)，现在已经成为一个非常流行的技术框架，也得到很多商业公司的追捧，除了 Adobe 之外，Intel、微软、IBM 等公司也都推出了支持 Cordova 的产品。
 
 Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的。
 
@@ -297,7 +299,11 @@ $ cordova emulate ios
 * 而谷歌则会将其中的一小部分，支付给发布广告的人（简称发布商, Publisher）。
 * 谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
 
-Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件。通过它，可以用 javascript 代码来调用 SDK 提供的 API。
+Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。
+
+我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件，也是目前变现插件中最流行、最容易使用的。
+
+通过它，只需一行 javascript 代码就可以完成 SDK API 的调用。
 
 ```bash
 $ cordova plugin add cordova-plugin-admobpro
@@ -335,11 +341,9 @@ $ cordova emulate ios
 
 看，下方的广告条展示出来了。
 
-这里只是仅供调试用的测试广告。我们需要到 [AdMob官方网站](https://apps.admob.com/)注册用户，并创建广告单元 Ad Unit Id，并用来替换掉 代码中 adId 后面的这串数字。并在发布的正式版本中，去掉 `isTesting:true` 这行代码。
+这里只是仅供调试用的测试广告。我们需要到 [AdMob官方网站](https://apps.admob.com/)注册用户，并创建广告单元（Ad Unit Id），并用来替换掉 代码中 adId 后面的这串数字。并在发布的正式版本中，去掉 `isTesting:true` 这行代码。
 
 ### 注册广告账号
-
-上面的广告条，我们用了一个测试账号和一个测试专用的广告单元。要收到谷歌给你的广告分成，必须要注册一个AdMob账户，并创建相应的广告单元。
 
 下面我们就介绍，如何注册账号，如何创建广告单元，如何设置银行收款信息。
 
@@ -369,7 +373,7 @@ $ cordova emulate ios
 * 验证地址。谷歌会生成一个 PIN 码，打印在卡片上，邮寄到你的通信地址。
 * 设置收款信息。可以是 西联汇款 或者 银行账号。
 
-不过，刚注册的账号还不允许设置这个信息。只有你的广告收入达到基本的门槛（目前是 10美金），谷歌才会允许进入设置支付信息的环节。
+不过，刚注册的账号还不允许设置这个信息。只有你的累计广告收入达到基本的门槛（目前是 10美金），谷歌才会允许进入设置支付信息的环节。谷歌通过这个方法，可以过滤掉大量的无效账号。
 
 #### 验证 PIN 码：
 
