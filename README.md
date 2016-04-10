@@ -398,7 +398,7 @@ $ cordova emulate ios
 
 我们完成的 APP，要被用户安装使用并产生收益，还缺少一个重要的环节：发布 到应用商店。
 * 如果是 Android APP，通常是 Google Play Store。中国大陆用户通常访问不到，则可以选择发布到大陆的一些应用商店，例如 360、豌豆荚 等等。
-* 如果是 iOS APP，则是发不到苹果 AppStore。
+* 如果是 iOS APP，则是发布到苹果 AppStore。
 
 这里我们以苹果 AppStore 为例，来说明如何注册开发者账号，并发布 APP。
 
