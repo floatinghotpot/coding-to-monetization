@@ -142,11 +142,10 @@ h1 {
 ```
 
 用 Chrome 浏览器打开它，于是我们看到如下的展示：
-
-![HelloWorld](demo/helloworld.png)
-
 * 上面的浏览器主窗口，显示了 HTML 的内容，并且用 CSS 指定的格式和效果进行了渲染。
 * 下面打开 Chrome 的 console 窗口，则显示了 javascript 调用 console.log() 输出的调试信息。
+
+![HelloWorld](demo/helloworld.png)
 
 用 HTML5 / javascript 做开发，入门就是这么简单。
 
@@ -339,7 +338,7 @@ $ cordova emulate ios
 
 ![AdMob Banner](demo/admobbanner.png)
 
-看，下方的广告条展示出来了。
+看，屏幕下方的广告条展示出来了。
 
 这里只是仅供调试用的测试广告。我们需要到 [AdMob官方网站](https://apps.admob.com/)注册用户，并创建广告单元（Ad Unit Id），并用来替换掉 代码中 adId 后面的这串数字。并在发布的正式版本中，去掉 `isTesting:true` 这行代码。
 
@@ -393,17 +392,36 @@ $ cordova emulate ios
 
 ![AdMob Payment](demo/admobpay3.png)
 
-等这 2 个步骤设置完成，你就可以等着接受付款了。AdMob就会在每个月的月末，计算当月的广告收益，然后在下个月的 20日左右支付给你。
+等这 2 个步骤设置完成，当产生广告收益的时候，谷歌就会在每个月的月末，计算当月的广告收益，然后在下个月的 20日左右支付给你。
 
 ### 发布APP
 
-我们完成的 APP，要被用户安装使用，还缺少一个环节：发布 到应用商店。
+我们完成的 APP，要被用户安装使用并产生收益，还缺少一个重要的环节：发布 到应用商店。
 * 如果是 Android APP，通常是 Google Play Store。中国大陆用户通常访问不到，则可以选择发布到大陆的一些应用商店，例如 360、豌豆荚 等等。
 * 如果是 iOS APP，则是发不到苹果 AppStore。
 
 这里我们以苹果 AppStore 为例，来说明如何注册开发者账号，并发布 APP。
 
---- 待续 ---
+访问苹果开发者网站（ https://developer.apple.com/ ），并注册登录。要在 苹果AppStore发布应用，需要支付每年 99 美金的年费，对于个人开发者、公司开发者，这个费用都是一样的。
+
+![Apple Developer](demo/appledev.png)
+
+注册成功的开发者，需要下面几个步骤，才能将 APP 发布到 AppStore：
+* 生成开发者数字证书，用于安装包的签名。
+* 为你的 APP 创建 APP ID，如果不涉及内购，也可以用 “*” 或者 “com.rjfun.*” 作为一个通用的 APP ID，在多个 APP 中使用。
+* 为你的 APP 生成 Provisioning Profiles，并下载到 本地用 Xcode 打开、管理。
+
+然后用 Xcode 打开 Cordova 项目里的 XXX.xcodeproj 工程文件，编译并存档（Archive）。成功存档的 APP 包，才能提交到 AppStore 进行审核。
+
+APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )，准备、发布和管理你的 APP。
+
+![iTunes Connect](demo/itunesconnect.png)
+
+创建新的 APP，加上名字、介绍、图标、定价等信息，并将其设置为准备提交的状态，然后就可以通过 Xcode 中的 Organizer 将成功存档（Archive）的安装包提交到 AppStore 进行审核了。
+
+![Xcode Organizer](demo/xcodeorganizer.png)
+
+苹果审核 APP 的流程大约 1 周左右的时间。如果审核通过，就可以在 AppStore 里面看到你发布的 APP 了。
 
 ### 广告收益的计算
 
