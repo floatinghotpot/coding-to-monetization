@@ -115,8 +115,8 @@
 
 以下是一个简单的例子：
 ```html
-<!DOCTYPE html>
 <!-- index.html -->
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
