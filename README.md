@@ -577,7 +577,9 @@ AdMob之所以最值得强烈推荐，主要有这样一些突出的优点：
 * 定期会组织一些宣讲、培训活动，也定期有线上视频讲座；
 * 客户服务非常到位，非常的耐心和友善，我和他们也基本上一直保持联系。
 
-由于谷歌的优质服务，在开发者中有良好的口碑。cordova-plugin-admobpro 这款插件，把复杂的 API 封装得非常简单易用。这款插件在 Cordova 全球社区是使用率最高的。以下是插件的下载趋势曲线图：
+由于谷歌在各个领域的卓越创新、一贯的优质服务，在开发者中有良好的口碑。
+
+而基于 AdMob SDK 开发的 cordova-plugin-admobpro 这款插件，不仅把 Objective-C / Java / C# 的原生 API 封装为统一的 javascript API，而且更加简单易用，只需 1－2 行代码即可完成广告展示。这款插件在 Cordova 全球社区也广受欢迎，是使用率最高的变现插件。以下是插件的下载趋势曲线图：
 
 ![AdMob Download Trend](demo/admobprodltrend.png)
 
