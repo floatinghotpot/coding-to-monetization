@@ -488,7 +488,7 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 
 这款 APP 的用户已经超过好几亿，自然收益也是极其可观。
 
-评价的数量超过6千万人次，它的用户是这样写的：
+评价的数量超过600万人次，它的用户是这样写的：
 * Jennifer Baylis: 易于使用。#1 最棒的手电筒APP！非常容易使用，打开很快！
 * Kitty Davis: 我正是需要这样一个手电筒 APP。
 * Dennis Castello: 它正是做到了需要它做的事，而且做的真的很好。
