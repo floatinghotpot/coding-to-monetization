@@ -305,7 +305,7 @@ $ cordova emulate ios
 变现最简单的方法，就是加上广告条，例如谷歌的AdMob。
 * 通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。
 * 投放广告的个人／公司（简称广告主，Advertizer）会支付广告费给谷歌。
-* 而谷歌则会将其中的一小部分，支付给发布广告的个人／公司（简称发布商, Publisher）。
+* 而谷歌则会将其中的一部分，支付给发布广告的个人／公司（简称发布商, Publisher）。
 * 谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
 
 Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。
@@ -515,7 +515,33 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 
 因为移动广告领域的利润可观，移动广告平台的发展也是非常快的。过去的这些年，也发生了不少并购案。例如 Google先后收购了 DoubleClick 和 AdMob，Flurry 被 Yahoo! 收购，MobFox 被 Matomy 收购，Millennial Media 被 AOL 收购。
 
-在过去的 2 年间，我通过不同的渠道去了解各种移动广告平台，并对尝试了其中的一部分，也找到了一些适合自己需求的广告平台。
+通常广告平台会提供：
+* 接入广告系统的 SDK；
+* 注册、登录和管理广告的系统；
+* 接入指南、例程、FAQ；
+
+各种移动广告平台的相关介绍，可以通过搜索活着其他不同的渠道去了解（例如 StackOverflow.com），并可以有选择性的进行尝试。
+
+以下是我试用过的一些广告平台：
+* Google AdMob
+* Facebook AudienceNetwork
+* Yahoo! Flurry
+* MobFox
+* Apple iAd
+* MoPub
+* Millennial Media
+* InMobi
+* OpenX
+* Smart AdServer
+
+用下来比较满意的有 AdMob, Facebook AudienceNetwork, Yahoo! Flurry, MobFox。
+
+从各方面来评估，最满意的是 AdMob，值得推荐。主要有这样一些理由：
+* 广告填充率高，基本上在 98% 以上，因此可以充分利用用户流量。
+* 付款及时，每个月的月底结算，次月 20日支付。
+* SDK稳定，接入文档以及参考代码易于使用。
+* 报表系统功能强大、易于使用，有专门的 APP 可以跟踪收益。
+* 技术支持和客户服务非常到位，定期有一些宣讲培训活动。
 
 ![Top Ad Networks](demo/topadnetworks.jpg)
 
