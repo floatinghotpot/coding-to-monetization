@@ -513,12 +513,13 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 
 使用插屏广告的时候，要特别注意弹出的时间，千万不要打断用户的连续操作和游戏体验，否则不仅不会引起用户的点击，还会引起用户的反感。最佳做法是将其放在 2个阶段之间的过渡时机，例如游戏的一关刚刚结束，弹出插屏广告，然后再继续下一关。
 
-通过插件 cordova-plugin-admobpro，要展示插屏广告也是非常简单的，只需要 2 行代码，其中一行代码负责准备广告资源，另一行代码负责展示。
-
-示范代码如下：
+通过插件 cordova-plugin-admobpro，要展示插屏广告也是非常简单的，只需要 2 行 javascript 代码就可以完成了。其中一行代码负责准备广告资源，另一行代码负责展示。示范代码如下：
 ```javascript
 // 在游戏启动时或者进行中，开始准备插屏广告，通过后台线程下载广告资源
-if(AdMob) AdMob.prepareInterstitial( {adId:"__ad_unit_id_here__", autoShow:false} );
+if(AdMob) AdMob.prepareInterstitial({
+  adId: "__ad_unit_id_here__", 
+  autoShow: false
+});
 
 // 在游戏关卡结束时，调用 API 进行插屏广告的展示
 if(AdMob) AdMob.showInterstitial();
