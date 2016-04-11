@@ -503,13 +503,13 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 
 哪种广告适合你的 APP，需要很好的权衡用户体验和收益之间的关系。如果广告展示不当，或者展示过于频繁，影响了用户体验甚至招致用户反感，就本末倒置了。
 
-横幅广告
+横幅广告 | 插屏广告
+---|---
+![iPhone Banner](demo/iphonebanner.jpg) | ![iPhone Interstitial](demo/iphoneinterstitial.jpg)
 
-![iPhone Banner](demo/iphonebanner.jpg)
+这两种广告各有千秋。相对来说，横幅广告只占用屏幕下方的一小片空间，可以一直展示。不过也是因为不太起眼，不容易引起用户的注意和点击。插屏广告则是全屏的，在特定的时间弹出，更能够吸引用户的眼球和点击。也正是因为这个原因，插屏广告的点击收益比横幅广告要高 5 倍以上，比较推荐使用。
 
-插屏广告
-
-![iPhone Interstitial](demo/iphoneinterstitial.jpg)
+使用插屏广告的时候，要特别注意弹出的时间，千万不要打断用户的连续操作和游戏体验，否则不仅不会引起用户的点击，还会引起用户的反感。最佳做法是将其放在 2个阶段之间的过渡时机，例如游戏的一关刚刚结束，弹出插屏广告，然后再继续下一关。
 
 ### 哪家广告商最靠谱
 
