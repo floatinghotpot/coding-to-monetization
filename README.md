@@ -451,14 +451,13 @@ APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )�
 每次点击的价格，根据广告投放的价格不同而不同。全球不同国家由于经济水平不同，也存在很大的差异。例如，
 * 在美国，一次广告点击可能产生 0.2 美元的收益;
 * 在巴西，也许只有 2 美分，相差 10 倍。
-* 而日本和韩国，广告点击的收益是比较高的。
+* 而日本，广告点击的收益是相当高的。
 
 下面是一组数据的对比：
 
 美国 | 巴西
 ---|---
 ![USA](demo/datausa.jpg) | ![Brazil](demo/databrazil.jpg)
----|---
 日本 | 德国
 ![Japan](demo/datajapan.jpg) | ![Germany](demo/datagermany.jpg)
 
