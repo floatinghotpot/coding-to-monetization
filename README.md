@@ -321,15 +321,15 @@ $ cordova emulate ios
 
 Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。
 
-我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件，也是目前变现插件中最流行、最容易使用的。
+我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件，也是目前变现插件中最流行、最容易使用的。通过它，只需一行 javascript 代码就可以完成对 SDK API 的调用。
 
-通过它，只需一行 javascript 代码就可以完成对 SDK API 的调用。
+现在让我们往 cordova 项目工程中加入插件。
 
 ```bash
 $ cordova plugin add cordova-plugin-admobpro
 ```
 
-在 main.js 里面，在 APP 初始化完毕时，我们加几行代码。
+然后修改 main.js，在 APP 初始化完毕时，我们加几行代码。
 
 ```javascript
 // main.js
