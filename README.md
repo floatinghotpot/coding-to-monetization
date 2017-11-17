@@ -70,7 +70,7 @@ Real story 1:
 [Flappy Bird](https://zh.wikipedia.org/wiki/Flappy_Bird) legend, a small mobile game developed by a Vietnam programmer in 2-3 days, swept the globe in just a few weeks, and bring income of $50,000 US dollors each day. This is undoutedly by chance, lucky guy, but at least, there is a probability of occurrence.
 
 Real story 2:
-I know a Polish programmer， who uses the technology of a web page to make an uncomplicated calculator APP, doing something like calculating tip or percentage. The APP stays in the financial apps top list of App store in several Eroupe countries, made a lot of money.
+I know a Polish programmer, who uses the web page technology to make an uncomplicated calculator APP, doing something like calculating tip or percentage. The APP stays in the financial apps top list of App store in several Eroupe countries, made a lot of money.
 
 Real story 3:
 I have been working in a company that develops insurance software. The business has developed fairly well, and management tried to IPO. However, they have not been able to take off and IPO yet, because the business model is too close to the outsourcing model, rather than the product model or platform model. Two of my former colleagues left this company and set up a start-up, developing a short video APP on a mobile phone, and successfully becoming a short video community platform. A few days ago, after three years of hard work, they were acquired for $1 billion US dollars. Yes, their name is Musical.ly, you can find it in the top list of app stores.
@@ -88,9 +88,9 @@ Maybe, you are a newbie, just getting started, and only know how to write a webp
 ### Language and Tools
 
 The language and tools for developing apps are often tied to the platform.
-* If it is iOS, it is usually Objective C, and the development tools are [Xcode] (https://developer.apple.com/xcode/) from Apple (development tools only run on Mac) toolset.
-* If it's Android, it's usually Java, and development tools are Google's [Android Studio] (http://developer.android.com/tools/studio/index.html) (a cross-platform development tool) toolset.
-* If it is Windows Phone, that is C #, the development tool is Microsoft's [Visual Studio] (https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx) toolset (only run On Windows)。
+* If it is iOS, it is usually Objective C, and the development tools are [Xcode](https://developer.apple.com/xcode/) from Apple (development tools only run on Mac) toolset.
+* If it's Android, it's usually Java, and development tools are Google's [Android Studio](http://developer.android.com/tools/studio/index.html) (a cross-platform development tool) toolset.
+* If it is Windows Phone, that is C #, the development tool is Microsoft's [Visual Studio](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx) toolset (only run On Windows)。
 
 In addition, there are some cross-platform languages and tools, more friendly to developers. Develope once, package and release on multiple platforms:
 * HTML5, can be used to develop apps and games, javascript is the core language.
@@ -101,19 +101,19 @@ In addition, there are some cross-platform languages and tools, more friendly to
 In the tutorial below, we chose the easiest javascript as the main development language for subsequent content. In fact, it is also the most active language on github. It can be used to develop:
 * Web pages, running in browser;
 * Single-page WebApp, running in browser;
-* Command line tools, based on [nodejs] (https://nodejs.org/);
+* Command line tools, based on [nodejs](https://nodejs.org/);
 * Network cloud services, based on nodejs;
-* Hybrid APP, based on [cordova] (http://cordova.apache.org/) technology;
-* APP with native UI experience, based on [react-native] (http://www.reactnative.com/).
+* Hybrid APP, based on [cordova](http://cordova.apache.org/) technology;
+* APP with native UI experience, based on [react-native](http://www.reactnative.com/).
 * Even desktop applications, such as the Adobe Brackets code editor, also developed with javascript.
 
 JavaScript can be used to develop front-end and back-end, code logic can be reused, thereby reducing the skill threshold and development costs. The requirements of the development environment is also very low, as long as there is a friendly code editor, a browser for testing and debugging, that's almost enough.
 
 The following are the the necessary environment and tools for development with javascript:
 * Chrome browser, comes with developer tools and javascript console for running and debugging.
-* [Adobe Brackets] (http://brackets.io/) text editor (if you're used to [Sublime Text] (http://www.sublimetext.com/) or [Atom] (https://atom.io /) Or [Visual Studio Code] (http://code.visualstudio.com/), no problem)
+* [Adobe Brackets](http://brackets.io/) text editor (if you're used to [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io /) Or [Visual Studio Code](http://code.visualstudio.com/), no problem)
 * iMac, with a huge 27-inch screen, really wide view for many windows, MacBook or Air is also okay;
-* Mac OS X command line is very powerful, and convenient to support most LInux tools through [MacPorts] (https://www.macports.org/) or [Homebrew] (http: // brew.sh/).
+* Mac OS X command line is very powerful, and convenient to support most LInux tools through [MacPorts](https://www.macports.org/) or [Homebrew](http: // brew.sh/).
 * Xcode (Mac version only), must-have to build and debug iOS apps.
 * Android Studio, used to build and debug Android APP.
 
@@ -173,10 +173,10 @@ Open it with Chrome and we see the following display:
 
 Using HTML5 / javascript to do development, getting started is as simple as that.
 
-If you need to develop high-quality apps, you need to master HTML / CSS and javascript, especially HTML5 / CSS3, master HTML DOM and some javascript libraries, such as [jQuery] (https://jquery.com/), etc. Here are some free tutorials for getting started:
-* [HTML series tutorial] (http://www.w3school.com.cn/h.asp)
-* [JavaScript Tutorial] (http://www.w3school.com.cn/js/index.asp)
-* [JavaScript Advanced Tutorial] (http://www.w3school.com.cn/js/index_pro.asp)
+If you need to develop high-quality apps, you need to master HTML / CSS and javascript, especially HTML5 / CSS3, master HTML DOM and some javascript libraries, such as [jQuery](https://jquery.com/), etc. Here are some free tutorials for getting started:
+* [HTML series tutorial](http://www.w3school.com.cn/h.asp)
+* [JavaScript Tutorial](http://www.w3school.com.cn/js/index.asp)
+* [JavaScript Advanced Tutorial](http://www.w3school.com.cn/js/index_pro.asp)
 
 Through these tutorials, you can learn:
 * A simple index.html page;
@@ -191,13 +191,13 @@ Next, we want to turn such a simple web app into a mobile app. To be exact, it s
 
 We need to use a technical framework called Cordova.
 
-Originally a product developed by a small team acquired by Adobe, it was renamed PhoneGap (http://phonegap.com/). Adobe later turned it open source and donated it to the Apache Foundation, then called [Apache Cordova] (https://cordova.apache.org/).
+Originally a product developed by a small team acquired by Adobe, it was renamed [PhoneGap](http://phonegap.com/). Adobe later turned it open source and donated it to the Apache Foundation, then called [Apache Cordova](https://cordova.apache.org/).
 
 Now Cordova has become a very popular technical framework, but also sought after by many commercial companies, in addition to Adobe, Intel, Microsoft, IBM and other companies have also introduced support Cordova products.
 
 The Cordova technology framework provides a command-line tool developed using nodejs, as well as a variety of plug-ins.
 
-We first have to install [nodejs] (https://nodejs.org/en/), after installation, it will provide two basic commands:
+We first have to install [nodejs](https://nodejs.org/en/), after installation, it will provide two basic commands:
 ```bash
 $ which node
 /usr/local/bin/node
