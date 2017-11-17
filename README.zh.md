@@ -1,134 +1,132 @@
-## From Coding to Monetization：Programmer's Financial Freedom Approach
-[中文版本/Chinese Version](./README.zh.md)
+### 从编码到变现：程序员财务自由之路
+[英文版本/English Version](./README.md)
 
-## Content
+### 目录
 
-* [Foreword](#Foreword)
-* [Positioning](#Positioning)
-* [Getting Started](#Getting-Started)
-  * [Language and Tools](#Language-and-Tools)
+* [前言](#前言)
+* [定位](#定位)
+* [基础篇](#基础篇)
+  * [语言与工具选择](#语言与工具选择)
   * [Hello, World!](#hello-world)
-  * [Simple APP](#simple-APP)
-  * [Add Ad Banner](#add-ad-banner)
-  * [Register Ad Account](#register-ad-account)
-  * [Settings for Payment](#settings-for-payment)
-  * [Publish APP](#publish-app)
-  * [Calcuate Ad Revenue](#calculate-ad-revenue)
-* [Advanced](#advanced)
-  * [Demand is Fundamental](#demand-is-foundamental)
-  * [User Experience](#user-experience)
-  * [What Ad is Best](#what-ad-is-best)
-  * [Which Ad Network Shall I Choose](#which-ad-netowrk-shall-i-choose)
-  * [Promote Your APP](#promote-your-app)
-  * [Online APP](#online-app)
-  * [Cloud Service](#cloud-service)
-* [Expert](#exert)
-  * [Data Analysis](#data-analysis)
-  * [Ad Optimization](#ad-optimization)
-  * [In-App Purchase](#in-app-purchase)
-  * [Social Marketing](#social-marketing)
-  * [Advertising](#advertising)
-* [Appendix](#appendix)
-  * [Internet Marketing Terminology](#internet-marketing-terminology)
-  * [How to Publish APP to Apple AppStore](#how-to-publish-app-to-app-store)
-  * [How to Publish APP to Google Play Store](#how-to-publish-app-to-google-play-store)
-  * [How to Google Analytics for Data Analysis](#how-to-use-google-analytics-for-data-analysis)
+  * [单机版APP](#单机版APP)
+  * [加个广告条](#加个广告条)
+  * [注册广告账号](#注册广告账号)
+  * [验证地址和设置收款信息](#验证地址和设置收款信息)
+  * [发布APP](#发布APP)
+  * [广告收益的计算](#广告收益的计算)
+* [进阶篇](#进阶篇)
+  * [需求是根本](#需求是根本)
+  * [用户体验](#用户体验)
+  * [哪种广告最适合](#哪种广告最适合)
+  * [哪家广告商最靠谱](#哪家广告商最靠谱)
+  * [营销你的产品](#营销你的产品)
+  * [联网版APP](#联网版APP)
+  * [云服务](#云服务)
+* [高级篇](#高级篇)
+  * [数据分析](#数据分析)
+  * [广告优化](#广告优化)
+  * [支付与内购](#支付与内购)
+  * [社交营销](#社交营销)
+  * [广告投放](#广告投放)
+* [附录](#附录)
+  * [互联网营销常用术语](#互联网营销常用术语)
+  * [如何发布 APP 到 Apple AppStore](#如何发布-app-到-apple-appstore)
+  * [如何发布 APP 到 Google Play Store](#如何发布-app-到-google-play-store)
+  * [如何发布 APP 到 360 应用商店](#如何发布-app-到-360-应用商店)
+  * [如何用 Google Analytics 做用户数据分析](#如何用-google-analytics-做用户数据分析)
 
-### Forword
+### 前言
 
-This book, is written for programmer.
+这本书，是写给程序员看的。
 
-It's not about a programming language, not about a design pattern, and not about how to estimate man-hour, or how to manage project.
+这并不是关于一门编程语言，也不是关于一种设计模式，更不是关于如何评估工程量、如何做项目管理。
 
-This book is about: monetization. Simply speaking, how to earn money.
+这本书是关于：变现（monetization），通俗的说，就是赚钱。
 
-As a programmer, you must have spent much time to learn, mastered several programming lanugages, used dozens of developing tools. In order to design stable and flexible architecture, you may have learned various design patterns. In order to boost working efficiency, you may have used many mature frameworks and automation testing tools. In short, you become an excellent programmer.
+作为程序员，你一定花了大量的时间去学习，掌握了若干种编程语言、用过数十种开发工具。为了设计稳定灵活的架构，你也认真学习和掌握了各种设计模式；为了提高工作效率，你也用了各种成熟的框架以及自动化测试的工具；总之，通过学习，你成为了一个牛B的程序员。
 
-And, you may even accumulate experience in management, take the initiative to learn the theoretical knowledge of project management, mastered a variety of R&D organizating model, become the R&D team leader or manager.
+甚至，你也积累了管理的经验，主动学习了项目管理的理论知识、各种研发组织模式，也许会进阶到管理岗位，成为研发团队的负责人或者经理人。
 
-In most cases, as a programmer or R&D team, you work on requirements analysis, architecture design, module demarcation, interface design, coding implementation, testing, and release versions, as required by the project manager or product manager. These tasks, no doubt, are the most familiar routine work for programmers.
+在大部分的情况下，作为程序员或者研发团队，你按照项目经理 或者 产品经理给的需求，进行需求分析、架构设计、模块划分、接口设计、编码实现、测试、提交版本。这些环节，毫无疑问，是做研发的程序员最为熟悉的流程。
 
-Unfortunately, for most programmers, your everyday concerns are just development. Accept requirements, deliver versions, that's all the product manager or the client has you to do. Even many excellent programmers or technical guru, they seldom care how software brings revenue directly. Most developers, just focus on R&D technical work, or even just focus on coding work, which is very limited.
+不幸的是，你日常所关注的，仅仅只是研发环节。接受需求，交付版本，这就是产品经理或者甲方让你干的事情。很多在研发领域侵淫多年的研发大牛，也往往并不熟悉软件怎样能够直接带来经济回报。绝大多数的开发者，仅仅关注研发这个环节，甚至仅仅关注在编码这个环节，这是非常局限的。
 
-In fact, R&D, plus sales, payment, promotion, customer support, and maintenance, is the complete closed-loop of software's value chain.
+事实上，研发环节，再加上销售、收款、推广、用户支持、维护，这才是软件产生经济回报的完整闭环。
 
-This book is about how to start from coding, to get paid, and how to get users. Step by step, on every details.
+然而，软件怎样直接带来经济回报，这方面的技术文章或者书籍并不多见。这也是我为什么会选择这个角度，作为本书下笔的核心内容。
 
-Once you have mastered how to monetize from your software, youo will be more concerned with user feedback, caring about market needs, and the quality of your products. As they will bring you better financial returns. Then it's not far away to achieve financial freedom.
+这本书是关于，如何从编码、到如何接受付款，以及如何获取用户。手把手，教你每一个步骤。
 
-If you feel that the content of this book is helpful, please give you support, by staring it.
+一旦你掌握软件如何变现的能力，你会更加关心用户反馈、关心市场需求、关心产品质量，因为这些都会为你带来更好的经济收益。实现财务自由，也就并不遥远了。
 
-### Positioning
+如果你觉得本书的内容有所帮助，请点赞支持。
 
-Since it is to talk about earning money, we will not discuss the hard way of outsourcing, in which the business model is to sell limited life time as meney.
+### 定位
 
-Considering factor of limited man power, time and resource, we will not discuss carrier-class, or enterprise-class large-scale systems. As they require large investment and long research cycle for complex requirement, which is beyond congrol of individuals and small teams.
+既然是谈赚钱，类似于外包这种把有限的生命折算成man hour来卖钱的苦逼方式，我们暂不讨论。
 
-We focus on individuals or small teams. In the era of mobile internet, we have heard many miracle stories about individuals or small teams earn lots of money or even grow fast to unicorn enterprise.
+考虑到人力、时间、成本等因素，我们也暂时不讨论运营级、或者企业级的大型系统。研发周期长、投入大、需求复杂，也超过个人和小团队的掌控。
 
-Real story 1:
-[Flappy Bird](https://zh.wikipedia.org/wiki/Flappy_Bird) legend, a small mobile game developed by a Vietnam programmer in 2-3 days, swept the globe in just a few weeks, and bring income of $50,000 US dollors each day. This is undoutedly by chance, lucky guy, but at least, there is a probability of occurrence.
+在移动互联网时代，以个人或者小团队，实现赚钱、甚至创造奇迹的故事，屡见不鲜。
 
-Real story 2:
-I know a Polish programmer， who uses the technology of a web page to make an uncomplicated calculator APP, doing something like calculating tip or percentage. The APP stays in the financial apps top list of App store in several Eroupe countries, made a lot of money.
+例子1: 
+[Flappy Bird](https://zh.wikipedia.org/wiki/Flappy_Bird) 传奇，一个花2-3天开发出来的小游戏，在短短几周时间席卷全球，并获得了每天 5 万美金的广告收益。这无疑有偶然、运气的成分，但至少这是有概率发生的事情。
 
-Real story 3:
-I have been working in a company that develops insurance software. The business has developed fairly well, and management tried to IPO. However, they have not been able to take off and IPO yet, because the business model is too close to the outsourcing model, rather than the product model or platform model. Two of my former colleagues left this company and set up a start-up, developing a short video APP on a mobile phone, and successfully becoming a short video community platform. A few days ago, after three years of hard work, they were acquired for $1 billion US dollars. Yes, their name is Musical.ly, you can find it in the top list of app stores.
+例子2:
+我认识一个波兰的老外，用做网页的技术，做了个并不复杂的计算器，大概也就是按照百分比计算下小费之类的。在欧洲好几个国家的应用商店上财务类APP，排名前几，通过广告条变现，赚了不少钱。
 
-You can find other similar stories, about making good money from mobile apps or games. You may heard, or just google the internet.
+例子3:
+（请自行谷歌、脑补）
 
-In this book, what we want to explore, is to make full use of limited time and resource, focus on a very narrow area of requirement, to develop a very unique mobile app or small game, publish to global app store, acquire users, and make money.
+我们要探讨的是，集中非常有限的时间、精力，聚焦到非常狭窄的需求领域，开发移动应用 APP、小游戏，发布到全球应用商店、获取用户、并实现盈利。
 
-Perhaps, you are a technical guru, who masetered dozens of programming languages, design patterns, front-end to back-end full stack development capabilies. However, not every technology can be used to make quick money. The hardest or most intersting technology, may not be the easiest technology to make money. Sometimes, we need most flexible and scalabe architecture. Sometimes, we have to choose the most rapid development methods.
+也许你是技术的大牛，掌握了数十种编程语言、设计模式、前端到后端的全栈开发能力。然而，并不是每项技术，都能够实现快速赚钱的。最艰深、最有趣的技术，未必是最容易赚到钱的技术。有时候，我们要做最容易扩展的架构。有时候，我们要选择最快速开发的技术手段。
 
-Maybe, you are a newbie, just getting started, and only know how to write a webpage. It does not matter. The programming skills required to make money, can also be very simple. Just one thing, if any knowledge is required, we have to learn it quickly. We are in a era of fast changing world, programmers must be good at learning new things.
+也许你是刚入门的菜鸟，只会做做网页什么的。那也没有关系，赚钱真正需要的编程技术，其实也可以非常简单。只是有一点，需要什么知识，我们就恶补什么知识。由于技术日新月异，程序员必须是最善于学习的群体。
 
-## Getting Started
+### 基础篇
 
-### Language and Tools
+### 语言与工具选择
 
-The language and tools for developing apps are often tied to the platform.
-* If it is iOS, it is usually Objective C, and the development tools are [Xcode] (https://developer.apple.com/xcode/) from Apple (development tools only run on Mac) toolset.
-* If it's Android, it's usually Java, and development tools are Google's [Android Studio] (http://developer.android.com/tools/studio/index.html) (a cross-platform development tool) toolset.
-* If it is Windows Phone, that is C #, the development tool is Microsoft's [Visual Studio] (https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx) toolset (only run On Windows)。
+开发 APP 的语言与工具，通常与平台密切相关。
+* 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 [Xcode](https://developer.apple.com/xcode/) （开发工具仅运行于 Mac）。
+* 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 [Android Studio](http://developer.android.com/tools/studio/index.html)（开发工具有跨平台版本）。
+* 如果是 Windows Phone，那就是 C#，开发工具是 微软推出的 [Visual Studio](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)（开发工具仅运行于 Windows）。
 
-In addition, there are some cross-platform languages and tools, more friendly to developers. Develope once, package and release on multiple platforms:
-* HTML5, can be used to develop apps and games, javascript is the core language.
-* [Cocos2d-X](http://www.cocos2d-x.org/) for game development, C++ is the core language.
-* [Unity3D](http://unity3d.com/) IDE and integrated MonoDevelop, C# is the core language.
-* [Xamarin](https://www.xamarin.com/) acquired by Microsoft, and its sponsored open source project [Mono](http://www.mono-project.com/), used to develop APP, C# is the core language.
+除此之外，还有一些跨平台语言与工具，对于开发者更加友善，可以开发一次，多平台打包发布：
+* 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
+* 用于开发游戏的 [Cocos2d-X](http://www.cocos2d-x.org/)，用的是 C++ 作为主要的开发语言。
+* 用于开发游戏的 [Unity3D](http://unity3d.com/) IDE 以及集成的 MonoDevelop，用的是 C# 作为主要的开发语言。
+* 微软收购的 [Xamarin](https://www.xamarin.com/) 以及赞助的开源项目 [Mono](http://www.mono-project.com/)，用来开发 APP，以 C# 作为主要的开发语言。
 
-In the tutorial below, we chose the easiest javascript as the main development language for subsequent content. In fact, it is also the most active language on github. It can be used to develop:
-* Web pages, running in browser;
-* Single-page WebApp, running in browser;
-* Command line tools, based on [nodejs] (https://nodejs.org/);
-* Network cloud services, based on nodejs;
-* Hybrid APP, based on [cordova] (http://cordova.apache.org/) technology;
-* APP with native UI experience, based on [react-native] (http://www.reactnative.com/).
-* Even desktop applications, such as the Adobe Brackets code editor, also developed with javascript.
+在下文的教程中，我们选择最简单的 javascript 作为后续介绍的主要开发语言。实际上，它也是 github 上最为活跃的语言。它可以用来开发：
+* 运行于浏览器内的 Web网页；
+* 运行与内嵌浏览器的 单页WebApp；
+* 基于 [nodejs](https://nodejs.org/) 的命令行工具；
+* 基于 nodejs 的网络云服务；
+* 基于 [cordova](http://cordova.apache.org/) 技术的，混合(hybrid) APP。
+* 基于 [react-native](http://www.reactnative.com/) 开发 native UI体验的 APP。
+* 甚至，也能够开发出桌面应用，例如 Adobe Brackets 代码编辑器。
 
-JavaScript can be used to develop front-end and back-end, code logic can be reused, thereby reducing the skill threshold and development costs. The requirements of the development environment is also very low, as long as there is a friendly code editor, a browser for testing and debugging, that's almost enough.
+因为它可以同时用来开发前端和后台，代码逻辑也可以用来前后端复用，从而降低技能门槛和开发成本。开发环境也要求非常低，只要有个友好的代码编辑器，有个浏览器可以用来运行和调试，就可以了。
 
-The following are the the necessary environment and tools for development with javascript:
-* Chrome browser, comes with developer tools and javascript console for running and debugging.
-* [Adobe Brackets] (http://brackets.io/) text editor (if you're used to [Sublime Text] (http://www.sublimetext.com/) or [Atom] (https://atom.io /) Or [Visual Studio Code] (http://code.visualstudio.com/), no problem)
-* iMac, with a huge 27-inch screen, really wide view for many windows, MacBook or Air is also okay;
-* Mac OS X command line is very powerful, and convenient to support most LInux tools through [MacPorts] (https://www.macports.org/) or [Homebrew] (http: // brew.sh/).
-* Xcode (Mac version only), must-have to build and debug iOS apps.
-* Android Studio, used to build and debug Android APP.
+以下是用 javascript 来做开发的所需要的环境和工具：
+* Chrome浏览器，自带开发者工具 和 javascript 控制台，用来运行和调试。
+* [Adobe Brackets](http://brackets.io/) 文本编辑器（如果你习惯 [Sublime Text](http://www.sublimetext.com/) 或者 [Atom](https://atom.io/) 或者 [Visual Studio Code](http://code.visualstudio.com/)，也没问题）
+* iMac台式机，巨大的27寸屏幕，视野不受限制；Mac OS X命令行非常强大方便，通过 [MacPorts](https://www.macports.org/) 或者 [Homebrew](http://brew.sh/)，Linux 上有的命令行工具或者 library 都基本支持。
+* Xcode（只有 Mac 版本），要调试 iOS APP，有台 iMac电脑或者 MacBook笔记本电脑，这也是必备的。
+* Android Studio，用来调试 Android APP。
 
-If you get used to Windows and do not have a Mac, it's also okay, you can develop for Android at hand. As to iOS, you may need some online service for apps building and packaging, like Adobe PhoneGap Build, or Intel XDK, etc. You can google how to use them. 
-
-But, a Mac is still recommended, for both Android and iOS development.
+如果你习惯了 Windows 也没有一台 Mac，会稍微麻烦一点。不过也是有方法的，有一些专门提供编译、打包的云服务，例如 Adobe PhoneGap Build，或者 Intel XDK，我们后面会介绍如何使用。
 
 ### Hello, World!
 
-To development frond-end app with javascript, in fact, there are three closely related languages: HTML / javascript / CSS.
-* HTML is responsible for the content.
-* javascript is responsible for logic.
-* CSS is responsible for rendering.
+用 javascript 开发前端，其实需要的是 3 项相关的语言：HTML / javascript / CSS。
+* HTML 负责内容
+* javascript 负责逻辑
+* CSS 负责渲染表现
 
-Here is a simple example:
+以下是一个简单的例子：
 ```html
 <!-- index.html -->
 <!DOCTYPE html>
@@ -165,67 +163,62 @@ h1 {
 }
 ```
 
-Open it with Chrome and we see the following display:
-* The main browser window above shows the contents of the HTML and is rendered in the format and effect specified by the CSS.
-* Open the Chrome console window, it shows the javascript call console.log () output debugging information.
+用 Chrome 浏览器打开它，于是我们看到如下的展示：
+* 上面的浏览器主窗口，显示了 HTML 的内容，并且用 CSS 指定的格式和效果进行了渲染。
+* 下面打开 Chrome 的 console 窗口，则显示了 javascript 调用 console.log() 输出的调试信息。
 
 ![HelloWorld](demo/helloworld.png)
 
-Using HTML5 / javascript to do development, getting started is as simple as that.
+用 HTML5 / javascript 做开发，入门就是这么简单。
 
-If you need to develop high-quality apps, you need to master HTML / CSS and javascript, especially HTML5 / CSS3, master HTML DOM and some javascript libraries, such as [jQuery] (https://jquery.com/), etc. Here are some free tutorials for getting started:
-* [HTML series tutorial] (http://www.w3school.com.cn/h.asp)
-* [JavaScript Tutorial] (http://www.w3school.com.cn/js/index.asp)
-* [JavaScript Advanced Tutorial] (http://www.w3school.com.cn/js/index_pro.asp)
+如果需要开发出高质量的 APP，需要熟练掌握 HTML/CSS 和 javascript，尤其是 HTML5 / CSS3，掌握 HTML DOM 以及 javascript 的一些常见库，例如 [jQuery](https://jquery.com/)，等等。这里有一些免费的入门教程：
+* [HTML 系列教程](http://www.w3school.com.cn/h.asp)
+* [JavaScript 入门教程](http://www.w3school.com.cn/js/index.asp)
+* [JavaScript 高级教程](http://www.w3school.com.cn/js/index_pro.asp)
 
-Through these tutorials, you can learn:
-* A simple index.html page;
-* A unified main.css file that controls and adjusts the presentation of interface elements
-* A set of javascript files that enable dynamic presentation and switching of content through access to the HTML DOM.
+通过这些教程的学习，你能够做到：
+* 一个简单的 index.html 页面；
+* 一个统一的 main.css 文件，能够对界面元素的表现加以控制和调整；
+* 一组 javascript 文件，能够通过对 HTML DOM 的访问，实现内容的动态展示和切换。
 
-For you, as a programmer, this is not hard at all.
+对于作为程序员的你，这根本不是什么难的事情。
 
-### Simple APP
+### 单机版APP
 
-Next, we want to turn such a simple web app into a mobile app. To be exact, it should be called Hybrid APP, a hybrid program. Because it's native app, it wraps a webview, which runs the web app we wrote.
+下一步，我们要把这样一个简单的网页程序 (web app)，变成一个手机上的 APP。准确的说，它应该是叫 Hybrid APP，即混合程序。因为它的外面是 native app 封装了一个 webview，里面运行的是 我们写的 web app。
 
-We need to use a technical framework called Cordova.
+我们需要用到 cordova 技术框架。它原本是 Adobe 公司收购的一个小团队开发的产品，被重新命名为 [PhoneGap](http://phonegap.com/)。后来 Adobe 将其开源，并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)，现在已经成为一个非常流行的技术框架，也得到很多商业公司的追捧，除了 Adobe 之外，Intel、微软、IBM 等公司也都推出了支持 Cordova 的产品。
 
-Originally a product developed by a small team acquired by Adobe, it was renamed PhoneGap (http://phonegap.com/). Adobe later turned it open source and donated it to the Apache Foundation, then called [Apache Cordova] (https://cordova.apache.org/).
+Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的。
 
-Now Cordova has become a very popular technical framework, but also sought after by many commercial companies, in addition to Adobe, Intel, Microsoft, IBM and other companies have also introduced support Cordova products.
-
-The Cordova technology framework provides a command-line tool developed using nodejs, as well as a variety of plug-ins.
-
-We first have to install [nodejs] (https://nodejs.org/en/), after installation, it will provide two basic commands:
+我们首先要装 [nodejs](https://nodejs.org/en/)，安装之后，会提供 2 个基本的命令：
 ```bash
 $ which node
 /usr/local/bin/node
 $ node -v
-v4.8.4
+v4.2.1
 $ npm -v
-2.15.11
+2.14.7
 ```
+* node --- 负责 javascript 程序的编译／解释／执行。它是基于谷歌开源的 Chrome V8 引擎的，基于事件驱动、不阻塞 IO模式运行，轻量而高效。
+* npm --- NodeJs Package Manager, 安装包管理器。所有的 nodejs 包都是用 npm 来下载和安装（你也可以用它来发布你自己的包到 npm 库）。
 
-* node --- the javascript engine, compile / interpret / execute. It is based on Google's open source Chrome V8 engine,  event-driven, non-blocking IO mode operation, lightweight and efficient.
-* npm --- NodeJs Package Manager, install package manager. All nodejs packages are downloaded and installed using npm (you can also use it to publish your own packages to the npm repository)
-
-Next, use npm to install [cordova](https://cordova.apache.org/)：
+接下来，用 npm 安装 [cordova](https://cordova.apache.org/)：
 ```bash
 $ npm install -g cordova
 $ which cordova
 /usr/local/bin/cordova
 $ cordova -v
-7.1.0
+5.4.1
 ```
 
-Create a project with Cordova CLI:
+用 cordova 创建一个项目：
 ```bash
-# Syntax：cordova create <folder> <APP ID> <APP name>
+# 格式为：cordova create <目录名> <APP ID> <APP名字>
 $ cordova create temp com.rjfun.demo Demo
 ```
 
-Compile and build, then run the app in iOS emulator:
+然后编译，并在 iOS 模拟器中运行这个项目：
 ```bash
 $ cd temp
 $ cordova platform add ios
@@ -233,20 +226,20 @@ $ cordova build ios
 $ cordova emulate ios
 ```
 
-Now we will see the iOS emulator is started, and APP launched:
+于是可以看到 iOS 模拟器被启动，然后 APP 运行：
 
 ![Cordova iOS](demo/cordovaios.png)
 
-Or, you can also connect your iPhone device to Mac, the use following command to install and launch the APP:
+或者你也可以把 iPhone 用 USB 线连接到 Mac，然后用这个命令安装、启动刚刚编译的 APP：
 ```bash
 $ cordova run ios --device
 ```
 
-Now the running one is Cordova's Demo project. Open Cordova project, you can see this directory structure:
+现在运行的是 Cordova 自带的 Demo 工程。打开 Cordova 项目，可以看到这样的目录结构：
 
 ![Cordova Proj](demo/cordovaproj.png)
 
-Next, delete the contents of the www directory, replace with the index.html, main.js, main.css we wrote earlier and make a few changes:
+接下来，删去 www 目录下的内容，用我们前面写的 index.html, main.js, main.css 替换，并略作修改：
 ```html
 <!-- index.html -->
 <!DOCTYPE html>
@@ -254,13 +247,13 @@ Next, delete the contents of the www directory, replace with the index.html, mai
 <head>
   <meta charset="utf-8" />
 
-  <!-- The section below is to fit mobile devices -->
+  <!-- 下面的部分，是为了兼容移动设备的屏幕 -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-  <!-- auto generated by cordova, to initialize the cordova framework -->
+  <!-- cordova 在 APP 编译打包时自动生成，用来初始化 cordova 框架代码 -->
   <script type="text/javascript" src="cordova.js"></script>
 
   <title>Hello</title>
@@ -277,11 +270,11 @@ Next, delete the contents of the www directory, replace with the index.html, mai
 // main.js
 console.log('hello, world!');
 
-// When the app is initialized, the 'deviceready' event is fired and we can call the cordova framework and the APIs and functionality provided by the plug-in
+// 当 APP 初始化完成，会触发 'deviceready' 事件，我们可以调用 cordova 框架以及插件提供的 API 和功能
 document.addEventListener('deviceready', function(){
   console.log('deviceready');
   
-  // TODO: Start the business logic of our web app
+  // TODO: 开始我们 web app 的业务逻辑
 });
 ```
 
@@ -304,118 +297,116 @@ h1 {
 }
 ```
 
-Rerun the cordova project (it will compile, install, run automatically):
+重新运行 cordova 项目（会自动编译、安装、运行）：
 ```bash
 $ cordova emulate ios
 ```
 
-So, you can see that Web App is running in the iOS simulator:
+于是，可以看到 Web App 在 iOS 模拟器中运行了：
 
 ![Hello World Cordova](demo/helloworldcordova.png)
 
-To write an easiest APP, in fact, is really  simple, isn't it?
+做个最简单的APP，其实也很简单，是不是？！
 
-### Add Ad Banner
+### 加个广告条
 
-As a programmer, we have no doubt that you have mastered the HTML / CSS and javascript programming capabilities to provide some interesting and useful features.
+作为程序员，我们毫不怀疑，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能。
 
-Next, we want to add monetization to the app, which is to make real money.
+接下来，我们要给这个 APP 加上变现（monetization）的功能，即实现赚到真金白银。
 
-The easiest way to realize is to add an ad banner, such as Google's AdMob.
-* By showing ads, users click on interesting ads, browse the product, or install other apps.
-* Advertisers / advertisers (advertisers, Advertizer) pay advertising costs to Google.
-* Google will pay a portion of it to the person / company (publisher, publisher) who posted the ad.
-* Google's role in it is called the Ad Platform, or Ad Network.
+变现最简单的方法，就是加上广告条，例如谷歌的AdMob。
+* 通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。
+* 投放广告的个人／公司（简称广告主，Advertizer）会支付广告费给谷歌。
+* 而谷歌则会将其中的一部分，支付给发布广告的个人／公司（简称发布商, Publisher）。
+* 谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
 
-The technical architecture of the Cordova framework is a web app with some common plug-ins that provide access to specific functions of the handset and integration with third-party systems.
+Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。
 
-We implemented integration with Google AdMob via the plug-in cordova-plugin-admobpro. This is a plug-in based on the Google AdMob SDK, and is the most popular and easiest to use plug-in for the moment. Through it, just a line of javascript code to complete the SDK API call.
+我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件，也是目前变现插件中最流行、最容易使用的。通过它，只需一行 javascript 代码就可以完成对 SDK API 的调用。
 
-Now let's add plugins to the cordova project.
+现在让我们往 cordova 项目工程中加入插件。
 
 ```bash
 $ cordova plugin add cordova-plugin-admobpro
 ```
 
-Modify main.js, let's add a few lines into the initialization:
+然后修改 main.js，在 APP 初始化完毕时，我们加几行代码。
 
 ```javascript
 // main.js
 console.log('hello, world!');
 
-// When the app is initialized, the 'deviceready' event is fired and we can call the cordova framework and the APIs and functionality provided by the plug-in
+// 当 APP 初始化完成，会触发 'deviceready' 事件，我们可以调用 cordova 框架以及插件提供的 API 和功能
 document.addEventListener('deviceready', function(){
   console.log('deviceready');
   
-  // When the app is initialized, create an ad banner below the screen
+  // 在 APP 初始化完毕时，在屏幕下方创建一个广告条
   if(AdMob) AdMob.createBanner({
-    adId: 'ca-app-pub-6869992474017983/4806197152', // need to register as a user on the AdMob website and create an Ad Unit Id
-    position: AdMob.AD_POSITION.BOTTOM_CENTER, // show at bottom / center
-    overlap: false, // no overlap the web app content
-    isTesting: true, // show testing ad, please remove this line when formal release
-    autoShow: true // auto show it when ad resource downloaded and ready
+    adId: 'ca-app-pub-6869992474017983/4806197152', // 需要到 AdMob 官方网站注册用户，并创建广告单元 Ad Unit Id
+    position: AdMob.AD_POSITION.BOTTOM_CENTER, // 展示在屏幕下方中央
+    overlap: false, // 不要覆盖 Web APP 的内容
+    isTesting: true, // 展示测试广告，在正式发布时，去掉这行
+    autoShow: true // 广告资源就绪时，自动开始展示
   });
 });
 ```
 
-Rerun the cordova project (it will compile, install, run automatically):
+重新运行 cordova 项目（会自动编译、安装、运行）：
 ```bash
 $ cordova emulate ios
 ```
 
-So, you can see that Web App is running in the iOS simulator:
+于是，可以看到 Web App 在 iOS 模拟器中运行了：
 
 ![AdMob Banner](demo/admobbanner.png)
 
-Look, at the bottom of the screen, the banner is displayed.
+看，屏幕下方的广告条展示出来了。
 
-This is just a test advertisement for debugging purposes only.
+这里只是仅供调试用的测试广告。我们需要到 [AdMob官方网站](https://apps.admob.com/)注册用户，并创建广告单元（Ad Unit Id），并用来替换掉 代码中 adId 后面的这串数字。并在发布的正式版本中，去掉 `isTesting:true` 这行代码。
 
-We need to register the user on [AdMob official website] (https://apps.admob.com/) and create an Ad Unit Id that replaces the string of digits following adId in the code. And in the official version of the release, remove the `isTesting: true` line of code.
+### 注册广告账号
 
-### Register Ad Account
+下面我们就介绍，如何注册账号，如何创建广告单元，如何设置银行收款信息。
 
-Here we introduce, how to register account, how to create ad unit, how to set bank receipt information.
+由于价值观方面的原因，谷歌的网站基本上都是被隔离在中国大陆局域网之外，通常是无法访问的。需要通过 VPN 等科学上网的方式才能够访问。如果你不知道如何科学上网，可以写邮件给我，单独讨论这个问题，这里暂不展开。
 
-Visit Google's AdMob website (https://www.google.com/admob/) to sign up for a new account.
+访问谷歌AdMob官网（ https://www.google.com/admob/ ），注册新账号。
 
-! [AdMob Site] (demo / admobsite.png)
+![AdMob Site](demo/admobsite.png)
 
-After registering, visit the AdMob website (https://apps.admob.com/), click on the menu "monetization", click on the red button in the upper left corner "+ monetize new application" to add a new APP:
+注册完成之后，登陆 AdMob 网站（ https://apps.admob.com/ ），点击菜单“获利”，点击左上角的红色按钮“＋通过新应用获利” 添加新APP：
 
-! [AdMob New App] (demo / admobnewapp.png)
+![AdMob New App](demo/admobnewapp.png)
 
-Then create banner ads:
+然后创建横幅广告：
 
-! [AdMob New Banner] (demo / admobnewbanner.png)
+![AdMob New Banner](demo/admobnewbanner.png)
 
-You can get the ad unit ID, copy it to the source code:
+即可获得广告单元 ID，将其 copy 到源代码中：
 
-! [AdMob Ad Unit ID] (demo / admobadunitid.png)
+![AdMob Ad Unit ID](demo/admobadunitid.png)
 
-### Set Payment Info
+### 验证地址和设置收款信息
 
-After registering your account, you can accumulate ad revenue by putting the ad unit into the APP for actual usage.
+注册账号之后，广告单元进入APP投放实际使用，即可积累广告收益。
 
-There are two more steps to complete the Google advertising payment you receive:
-* Verify address. Google will generate a PIN code printed on the card, mailed to your mailing address.
-* Set up payment information. Can be Western Union or bank account.
+要收到谷歌支付的广告分成，还有 2 个步骤要完成：
+* 验证地址。谷歌会生成一个 PIN 码，打印在卡片上，邮寄到你的通信地址。
+* 设置收款信息。可以是 西联汇款 或者 银行账号。
 
-However, newly registered account is not allowed to set bank information. Only your cumulative advertising revenue reached the basic threshold (currently 10 US dollars), Google will allow you to set up payment information. Through this method, Google can filter out a large number of non-active accounts.
+不过，刚注册的账号还不允许设置这个信息。只有你的累计广告收入达到基本的门槛（目前是 10美金），谷歌才会允许进入设置支付信息的环节。谷歌通过这个方法，可以过滤掉大量的无效账号。
 
-#### Verify PIN Code
+#### 验证 PIN 码：
 
 ![Verify PIN](demo/verifypin.png)
 
-Click "Fix It", enter PIN input UI.
+点击“立即改正此问题”，进入 PIN 码输入界面。
 
 ![Verify PIN](demo/verifypin2.png)
 
-This process of verifying your PIN is slow and typically takes 2-4 weeks.
+验证 PIN 码这个过程比较缓慢，通常需要 2-4 周的时间。所以如果显示了最近生成 PIN 码的日期，就耐心等待吧。收到 PIN 码之后，就将其输入上面这个框，提交验证。
 
-So, if the date of the most recent PIN was displayed, wait patiently. After receiving the PIN code, it will be entered in the box above, submitted for verification.
-
-#### Set Payment Info
+#### 设置收款信息：
 
 ![AdMob Payment](demo/admobpay1.png)
 
@@ -423,38 +414,38 @@ So, if the date of the most recent PIN was displayed, wait patiently. After rece
 
 ![AdMob Payment](demo/admobpay3.png)
 
-After the two steps are set up, when the advertising revenue, Google will calculate the advertising revenue of the month at the end of each month, and pay you around the 20th of next month.
+等这 2 个步骤设置完成，当产生广告收益的时候，谷歌就会在每个月的月末，计算当月的广告收益，然后在下个月的 20日左右支付给你。
 
-### Publish APP
+### 发布APP
 
-The APP we developed, to be installed by user and generate revenue, needs an important part: released to the app store.
-* If Android APP, usually Google Play Store.
-* If iOS APP, released to Apple AppStore.
+我们完成的 APP，要被用户安装使用并产生收益，还缺少一个重要的环节：发布 到应用商店。
+* 如果是 Android APP，通常是 Google Play Store。中国大陆用户通常访问不到，则可以选择发布到大陆的一些应用商店，例如 360、豌豆荚 等等。
+* 如果是 iOS APP，则是发布到苹果 AppStore。
 
-Here we use the Apple AppStore as an example, to illustrate how to register a developer account and publish an app.
+这里我们以苹果 AppStore 为例，来说明如何注册开发者账号，并发布 APP。
 
-Visit the Apple Developers Web site (https://developer.apple.com/) and sign up for login. To release an app on the Apple AppStore, you pay an annual fee of $ 99 a year, which is the same for individual developers and corporate developers.
+访问苹果开发者网站（ https://developer.apple.com/ ），并注册登录。要在 苹果AppStore发布应用，需要支付每年 99 美金的年费，对于个人开发者、公司开发者，这个费用都是一样的。
 
 ![Apple Developer](demo/appledev.png)
 
-The following steps are needed to publish APP to the AppStore:
-* Generate developer digital certificate for installation package signature.
-* Create an APP ID for your APP, or use "*" or "com.rjfun. *" As a generic APP ID for more than one app, if no in-app purchase.
-* Generate Provisioning Profiles for your APP, download it locally, open it in Xcode, and manage it.
+注册成功的开发者，需要下面几个步骤，才能将 APP 发布到 AppStore：
+* 生成开发者数字证书，用于安装包的签名。
+* 为你的 APP 创建 APP ID，如果不涉及内购，也可以用 “*” 或者 “com.rjfun.*” 作为一个通用的 APP ID，在多个 APP 中使用。
+* 为你的 APP 生成 Provisioning Profiles，并下载到 本地用 Xcode 打开、管理。
 
-Then use Xcode to open the XXX.xcodeproj project file in the Cordova project, compile and archive (Archive). Successfully archived APP packages can be submitted to AppStore for review.
+然后用 Xcode 打开 Cordova 项目里的 XXX.xcodeproj 工程文件，编译并存档（Archive）。成功存档的 APP 包，才能提交到 AppStore 进行审核。
 
-You need to log into iTunesConnect (https://itunesconnect.apple.com/), to prepare, publish and manage your APP.
+APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )，准备、发布和管理你的 APP。
 
 ![iTunes Connect](demo/itunesconnect.png)
 
-Create a new APP, add the name, introduction, icon, pricing and other information, and set it as ready to submit the status, and then you can Organizer Xcode in the successful archive (Archive) installation package submitted to the AppStore for review .
+创建新的 APP，加上名字、介绍、图标、定价等信息，并将其设置为准备提交的状态，然后就可以通过 Xcode 中的 Organizer 将成功存档（Archive）的安装包提交到 AppStore 进行审核了。
 
 ![Xcode Organizer](demo/xcodeorganizer.png)
 
-Usually it will take Apple 2 or 3 days to review your app. If the review passes, you can see your app in the AppStore.
+苹果审核 APP 的流程大约 1 周左右的时间。如果审核通过，就可以在 AppStore 里面看到你发布的 APP 了。
 
-### Calculate Ad Revenue
+### 广告收益的计算
 
 当用户在设备中下载、安装APP并运行的时候，就会从谷歌的广告服务器请求正式的广告内容，并用于展示了。
 
