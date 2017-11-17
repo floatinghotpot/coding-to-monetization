@@ -1,4 +1,6 @@
 ### 从编码到变现：程序员财务自由之路
+
+From Coding to Monetization：Programmer's Financial Freedom Approach
 [英文版本/English Version](./README.md)
 
 ### 目录
