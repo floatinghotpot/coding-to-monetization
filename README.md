@@ -63,7 +63,7 @@ If you feel that the content of this book is helpful, please give you support, b
 
 ### Positioning
 
-Since it is to talk about earning money, we will not discuss the hard way of outsourcing, in which the business model is to sell limited life time as meney.
+Since it is to talk about earning money, we will not discuss the hard way of outsourcing, in which the business model is to sell limited life time as money.
 
 Considering factor of limited man power, time and resource, we will not discuss carrier-class, or enterprise-class large-scale systems. As they require large investment and long research cycle for complex requirement, which is beyond congrol of individuals and small teams.
 
@@ -76,7 +76,7 @@ Real story 2:
 I know a Polish programmer, who uses the web page technology to make an uncomplicated calculator APP, doing something like calculating tip or percentage. The APP stays in the financial apps top list of App store in several Eroupe countries, made a lot of money.
 
 Real story 3:
-I have been working in a company that develops insurance software. The business has developed fairly well, and management tried to IPO. However, they have not been able to take off and IPO yet, because the business model is too close to the outsourcing model, rather than the product model or platform model. Two of my former colleagues left this company and set up a start-up, developing a short video APP on a mobile phone, and successfully becoming a short video community platform. A few days ago, after three years of hard work, they were acquired for $1 billion US dollars. Yes, their name is Musical.ly, you can find it in the top list of app stores.
+I have been working in a company that develops insurance software some years ago. The company had developed fairly well, and the management tried to IPO. However, they have not been able to take off and IPO yet, because the business model was too close to the outsourcing model, rather than the product model or platform model. Two of my former colleagues left this company and set up a start-up, developing a short video APP on a mobile phone, and successfully becoming a short video community platform. A few days ago, after three years of hard work, they were acquired for $1 billion US dollars. Yes, their name is Musical.ly, you can find it in the top list of app stores.
 
 You can find other similar stories, about making good money from mobile apps or games. You may heard, or just google the internet.
 
