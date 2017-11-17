@@ -379,19 +379,19 @@ Here we introduce, how to register account, how to create ad unit, how to set ba
 
 Visit Google's AdMob website (https://www.google.com/admob/) to sign up for a new account.
 
-! [AdMob Site] (demo / admobsite.png)
+! [AdMob Site] (demo/admobsite.png)
 
 After registering, visit the AdMob website (https://apps.admob.com/), click on the menu "monetization", click on the red button in the upper left corner "+ monetize new application" to add a new APP:
 
-! [AdMob New App] (demo / admobnewapp.png)
+! [AdMob New App] (demo/admobnewapp.png)
 
 Then create banner ads:
 
-! [AdMob New Banner] (demo / admobnewbanner.png)
+! [AdMob New Banner] (demo/admobnewbanner.png)
 
 You can get the ad unit ID, copy it to the source code:
 
-! [AdMob Ad Unit ID] (demo / admobadunitid.png)
+! [AdMob Ad Unit ID] (demo/admobadunitid.png)
 
 ### Set Payment Info
 
