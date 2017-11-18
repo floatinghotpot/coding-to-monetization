@@ -66,7 +66,7 @@ From Coding to Monetization：Programmer's Financial Freedom Approach
 
 从屌丝程序猿 | 到财务自由
 ---|---
-[屌丝程序猿](demo/poor-programmer.jpg) | [大富豪](demo/richman.jpg)
+![屌丝程序猿](demo/poor-programmer.jpg) | ![大富豪](demo/richman.jpg)
 
 ### 定位
 
