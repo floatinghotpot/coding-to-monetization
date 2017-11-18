@@ -4,6 +4,10 @@
 
 [中文版本/Chinese Version](./README.zh.md)
 
+From Coding | To Monetization
+---|---
+![poor](demo/poor-programmer.jpg) | ![rich](demo/richman.jpg)
+
 ## Content
 
 * [Foreword](#Foreword)
