@@ -64,6 +64,10 @@ From Coding to Monetization：Programmer's Financial Freedom Approach
 
 如果你觉得本书的内容有所帮助，请点赞支持。
 
+从屌丝程序猿 | 到财务自由
+---|---
+[屌丝程序猿](demo/poor-programmer.jpg) | [大富豪](demo/richman.jpg)
+
 ### 定位
 
 既然是谈赚钱，类似于外包这种把有限的生命折算成man hour来卖钱的苦逼方式，我们暂不讨论。
