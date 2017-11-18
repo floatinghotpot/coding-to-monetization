@@ -4,6 +4,10 @@ From Coding to Monetization：Programmer's Financial Freedom Approach
 
 [英文版本 / English Version](./README.md)
 
+从屌丝程序猿 | 到财务自由
+---|---
+![屌丝程序猿](demo/poor-programmer.jpg) | ![大富豪](demo/richman.jpg)
+
 ### 目录
 
 * [前言](#前言)
@@ -63,10 +67,6 @@ From Coding to Monetization：Programmer's Financial Freedom Approach
 一旦你掌握软件如何变现的能力，你会更加关心用户反馈、关心市场需求、关心产品质量，因为这些都会为你带来更好的经济收益。实现财务自由，也就并不遥远了。
 
 如果你觉得本书的内容有所帮助，请点赞支持。
-
-从屌丝程序猿 | 到财务自由
----|---
-![屌丝程序猿](demo/poor-programmer.jpg) | ![大富豪](demo/richman.jpg)
 
 ### 定位
 
