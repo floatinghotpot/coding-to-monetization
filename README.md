@@ -78,7 +78,7 @@ I know a Polish programmer, who uses the web page technology to make an uncompli
 Real story 3:
 I have been working in a company that develops insurance software some years ago. The company had developed fairly well, and the management tried to IPO. However, they have not been able to take off and IPO yet, because the business model was too close to the outsourcing model, rather than the product model or platform model. Two of my former colleagues left this company and set up a start-up, developing a short video APP on a mobile phone, and successfully becoming a short video community platform. A few days ago, after three years of hard work, they were acquired for $1 billion US dollars. Yes, their name is Musical.ly, you can find it in the top list of app stores.
 
-You can find other similar stories, about making good money from mobile apps or games. You may heard, or just google the internet.
+You can find other similar success stories, about making good money from mobile apps or games. You may heard, or just google the internet.
 
 In this book, what we want to explore, is to make full use of limited time and resource, focus on a very narrow area of requirement, to develop a very unique mobile app or small game, publish to global app store, acquire users, and make money.
 
@@ -382,29 +382,29 @@ Here we introduce, how to register account, how to create ad unit, how to set ba
 
 Visit Google's AdMob website (https://www.google.com/admob/) to sign up for a new account.
 
-! [AdMob Site] (demo/admobsite.png)
+![AdMob Site](demo/admobsite.png)
 
 After registering, visit the AdMob website (https://apps.admob.com/), click on the menu "monetization", click on the red button in the upper left corner "+ monetize new application" to add a new APP:
 
-! [AdMob New App] (demo/admobnewapp.png)
+![AdMob New App](demo/admobnewapp.png)
 
 Then create banner ads:
 
-! [AdMob New Banner] (demo/admobnewbanner.png)
+![AdMob New Banner](demo/admobnewbanner.png)
 
 You can get the ad unit ID, copy it to the source code:
 
-! [AdMob Ad Unit ID] (demo/admobadunitid.png)
+![AdMob Ad Unit ID](demo/admobadunitid.png)
 
 ### Set Payment Info
 
-After registering your account, you can accumulate ad revenue by putting the ad unit into the APP for actual usage.
+After registering your account, you can accumulate ad revenue by putting the ad unit into the APP for user actual usage.
 
 There are two more steps to complete the Google advertising payment you receive:
-* Verify address. Google will generate a PIN code printed on the card, mailed to your mailing address.
+* Verify address. Google will generate a PIN code printed on the card, send to your mailing address.
 * Set up payment information. Can be Western Union or bank account.
 
-However, newly registered account is not allowed to set bank information. Only your cumulative advertising revenue reached the basic threshold (currently 10 US dollars), Google will allow you to set up payment information. Through this method, Google can filter out a large number of non-active accounts.
+However, newly registered account has no access to set bank information. Only your cumulative advertising revenue reached the basic threshold (currently 10 US dollars), Google will allow you to set up payment information. Through this method, Google can filter out a large number of non-active accounts.
 
 #### Verify PIN Code
 
@@ -459,135 +459,139 @@ Usually it will take Apple 2 or 3 days to review your app. If the review passes,
 
 ### Calculate Ad Revenue
 
-当用户在设备中下载、安装APP并运行的时候，就会从谷歌的广告服务器请求正式的广告内容，并用于展示了。
+When a user downloads, installs and runs an app on his device, he or she requests the official ad content from Google's ad server for display.
 
-你可以登陆谷歌 AdMob 网站，查看每天的广告展示量、点击率、以及产生的收益。这个网站也提供了非常强大的报表功能，可以根据国家、广告单元、时间段，显示非常详细的报告。谷歌在 AppStore 上发布有一个 AdSense 的 APP，你可以安装这个 APP，每天查看你的 AdMob 收益。
+You can visit the Google AdMob website to see daily ad impressions, clickthrough rates, and revenue. This site also offers very powerful reporting capabilities that show very detailed reports based on country, ad unit, time period. Google has an AdSense app on the AppStore, and you can install this app on your phone to see your AdMob earnings daily.
 
-每次用户对感兴趣的广告进行点击，就会产生广告收益。大部分的广告投放，是按照点击次数计算费用的，即所谓的 CPC 广告。
+Each time a user clicks on an ad of interest, it generates advertising revenue. Most of your ad serving is calculated based on the number of clicks, the so-called CPC ads.
 
-在计算广告收益的时候，有几个常见的基本术语：
-* CPC（Cost Per Click，每次点击费用），大约是 US$ 0.06 ~ 1.0;
-* CTR（Click Through Rate，展示点击率），大量统计的结果大约是 1%;
-* CPM (Cost Per Mile, 每千次展示费用），通过 CPC 和 CPR 也能够推算出 CPM，大致范围是 US$ 0.5 ~ 5。
+In calculating advertising revenue, there are several common basic terms:
+* CPC (Cost Per Click, cost-per-click) is about US $ 0.06 ~ 1.0;
+* CTR (Click Through Rate, show CTR), the result of a large number of statistics is about 1%;
+* CPM (Cost Per Mile, CPM), CPM can also be calculated by CPC and CPR, the approximate range is US $ 0.5 ~ 20.
 
-每次点击的价格，根据广告投放的价格不同而不同。全球不同国家由于经济水平不同，也存在很大的差异。例如，
-* 在美国，一次广告点击可能产生 0.2 美元的收益;
-* 在巴西，也许只有 2 美分，相差 10 倍。
-* 而日本，广告点击的收益是相当高的。
+The price per click varies based on the type of ad, the price that is served, and so on. Since different countries in the world have different economic levels, there are also big differences.
 
-下面是一组数据的对比：
+E.g,
+* In the United States, an ad click may yield a gain of $0.2;
+* In Brazil, maybe only 2 cents, a difference of 10 times.
+* In Japan, clicks on advertising revenue is quite high.
 
-美国 | 巴西
+The following is a comparison of a set of data:
+
+USA | Brazil
 ---|---
 ![USA](demo/datausa.jpg) | ![Brazil](demo/databrazil.jpg)
-日本 | 德国
+Japan | Germany
 ![Japan](demo/datajapan.jpg) | ![Germany](demo/datagermany.jpg)
 
-如果我们按照 CPM （每千次展示费用）1美元 来估算，每天 10万次广告展示，大约可以产生 $100美元现金收益。按照 6.45 的汇率计算，一个月30天（包括周末和节假日！），大约可以产生的收益是 ¥19,350。
+If we conservatively estimate $1 CPM (cost per thousand impressions), 100,000 ads per day will generate about $100 in cash. Then it will generate $3,000 in a month (including weekends and holidays!).
 
-而在上海，5年经验的、技术能力还不错的程序员，薪资大约也就 15,000 左右。如果你做的 APP，每天能够有 1万个用户使用，基本上产生的广告收益和现金流，就可以达到一个程序员的工资水平。
+Let's compare it with the average programmer's salary. In Shanghai, an experienced programmer with 5 year experience, the salary is about $2,300 or so. If you make such the APP, with 10,000 DAU (daily active user), the revenue generated from advertising can exceed the salaries of a programmer. Or even more, if optimized very well.
 
-我认识一个巴西人，他用 HTML5 技术实现的小游戏，简单，但是非常有趣。每天的活跃用户大约是 10万，广告收益已经超过每个月 15万，从而实现了财务自由。
+I know a Brazilian, develop his game with HTML5 technology, simple, but very interesting. Daily active users is about 100,000, advertising revenue has more than $25,000 per month, so as to achieve the financial freedom.
 
-### 进阶篇
+### Advanced
 
-### 需求是根本
+### Demand is fundamental
 
-前面我们介绍了如何为 APP 增加了变现（monetization）的能力。但要真正获得可观的收益，还必须得有足够多的用户。也就是说，你必须开发出足够好的 APP，能够真正解决用户的问题，才会有更多的用户使用、更高频度的使用。
+Earlier we described how to add monetization to APP. But to really get a decent return, you still have to get enough users. In other words, you have to develop enough good APP, can really solve the user's problem, will have more users, more frequent use.
 
-如何能够开发出更受用户欢迎的 APP 呢？其实这不是一个编程问题。
+How to develop a more popular APP? In fact, this is not a programming problem.
 
-也许你是一个技术的大牛，但是最艰深、最牛X的技术，开发出来的软件产品未必是受到用户欢迎的产品。有时候，你用了一种其实比较简单的技术，但是真正关注了用户的痛点，解决了用户关心的问题，很可能你的产品就会受到用户的欢迎，创造出口口相传的良好口碑，在社交网络得到自然传播。
+Perhaps you are a technical expert, using the most difficult, coolest technology, but the software products developed, may not be welcomed by users of the product. Sometimes, you use a technology that is actually relatively simple, but really pay attention to the user's pain points, to solve the user's concerns, it is possible your product will be welcomed by users, because of good reputation in the social network to get the natural spread.
 
-我推荐一本书，《需求-缔造伟大商业传奇的根本力量》，作者是亚德里安•斯莱沃斯基。
+I recommend a book, "Demand - the Fundamentals of Creating Great Business Legends," by Adrian Silesivski.
 
-以下是某些创业成功者的推荐：
+Here are some tips from entrepreneurs:
 
-> 这是一本好书，每个创业者和每个公司管理者都值得一看，甚至公司中的每个人都应该了解和体会其中的概念。书中给出了一些创造需求的模式，这对读者是非常有价值的，我们需要好的理念，但我们更需要可以践行理念的方法。这两点本书都做到了，非常值得一读，特荐之。
-——孙陶然 ，拉卡拉支付有限公司创始人、董事长兼总裁，《创业36条军规》作者
+> This is a good book worth every entrepreneur and every manager of the company to read, and even everyone in the organization should understand the concepts. The book gives some models for creating needs, which are very valuable to readers, we need good ideas, but we need more ways to practice ideas. These two books are done, very worth reading, especially recommended.
+- Sun Taoran, founder, chairman and president of La Cara Pay Ltd., author of "Entrepreneurship 36 Military Regulations".
 
-> 每一个抱怨的背后都隐藏着一个未被满足的需求，而每一个需求的背后必然隐藏着一个不可忽视的市场。其实任何产品，在一开始满足了用户的功能性需求以后，就应该着手升级到精神层面，用户拒绝麻烦，用户需要安慰，这看起来跟利润无关，但是对不起，它跟你的市场有关。你不去满足，创业者就会自己去进行开拓性满足。那么等待你的，或将是个生死存亡的巨大危机。因此，请一定重视麻烦所带来的希望，而不是去抵触他们的抱怨。这正是《需求》给我们带来的最有价值的东西。
-——杜子建，华艺传媒创始人，社会化媒体营销研究者，畅销书《微力无边》作者
+> Behind every complaint is hidden an unmet need, and behind every need inevitably hides a market that can not be ignored. In fact, any product that meets the functional needs of the user from the outset should be upgraded to the spirit level, the user refuses to trouble, the user needs comfort, it does not seem to have anything to do with the profit, but I'm sorry, it is related to your market. You do not meet, entrepreneurs will go to their own ground-breaking satisfaction. Then waiting for you, or will be a huge crisis of life and death. Therefore, please pay attention to the hope of trouble, rather than to their complaint. This is exactly the most valuable thing that "demand" brings to us.
+- Du Zijian, founder of Huayi Media, social media marketing researcher, bestseller "Boundless" author.
 
-### 用户体验
+### User Experience
 
-为什么苹果手机卖得贵，依然热卖？无疑它是以优秀的用户体验取胜的。如果你看过《乔布斯传》，你可以知道，苹果手机的诞生，其实是解决了传统手机难于使用的痛点。
+Although the sale of Apple mobile phone is very expensive, but still very popular, why? It is undoubtedly the best user experience to win. If you read "Steve Jobs Biography", you can know that the birth of Apple's mobile phone, in fact, is to solve the pain of traditional phones difficult to use.
 
-自然我们在手机上开发的 APP 或者 游戏，也必须要高度关注用户体验，并且把它放到战略重点的位置上来。手机 APP，不追求功能的强大、齐全，可以只做一个小小的功能，但是要切实关注用户的需求点、并提供优秀的用户体验。
+Naturally, the app or game we develop on our mobile phone must also be highly user-focused and put it in a strategic position. Mobile APP, not the pursuit of powerful features, complete, you can only do a small feature, but to effectively focus on the needs of users, and provide excellent user experience.
 
-一个相当典型的例子是这款《手电筒》APP，就是打开手机的 LED灯泡，用来临时照亮黑暗。
+A rather typical example is this "Flashlight" APP, which is to turn on the phone's LED bulb to temporarily light up the darkness.
 
 ![Torch APP](demo/torchapp.png)
 
-这款 APP 的用户已经超过好几亿，自然收益也是极其可观。
+This APP has more than hundreds of millions of users, of course, its economic return is also extremely impressive.
 
-评价的数量超过600万人次，它的用户是这样写的：
-* Jennifer Baylis: 易于使用。#1 最棒的手电筒APP！非常容易使用，打开很快！
-* Kitty Davis: 我正是需要这样一个手电筒 APP。
-* Dennis Castello: 它正是做到了需要它做的事，而且做的真的很好。
-* Joseph Low: 易于使用。轻松地让它干活！强烈推荐！
+The number of user comments exceeded 6 million and the users wrote:
+* Jennifer Baylis: easy to use. # 1 The best Flashlight APP! Very easy to use, open very fast!
+* Kitty Davis: I just need such a flashlight APP.
+Dennis Castello: It's exactly what it takes and it's done really well.
+* Joseph Low: easy to use. Let it work easily! highly recommended!
 
-### 哪种广告最适合
+### What Ad is Best
 
-在移动广告领域，存在多种形式的广告，并且也在不断的发展。
-* banner Ad，横幅广告
-* interstitial Ad，插屏广告
-* native Ad，原生广告
-* reward video Ad，奖励视频广告
-* IAP (in-app purchase) Ad，内购广告
+In the mobile advertising arena, there are many forms of advertising, and are also constantly evolving.
+* banner Ad
+* interstitial Ad
+* native Ad
+* reward video Ad
+* IAP (in-app purchase) Ad
 
-哪种广告适合你的 APP，需要很好的权衡用户体验和收益之间的关系。如果广告展示不当，或者展示过于频繁，影响了用户体验甚至招致用户反感，就本末倒置了。
+Which ad is best for your app, depending on the situation. This requires a good balance of user experience and revenue. If the ad is displayed improperly, or show too often, affecting the user experience or even cause the user offensive, it is the cart before the horse.
 
-横幅广告 | 插屏广告
+banner Ad | interstitial Ad
 ---|---
 ![iPhone Banner](demo/iphonebanner.jpg) | ![iPhone Interstitial](demo/iphoneinterstitial.jpg)
 
-这两种广告是最为基本和经典的，各有千秋。相对来说，横幅广告只占用屏幕下方的一小片空间，可以一直滚动展示，默认的是每 60 秒更换一次广告内容。优点是不太会影响用户界面和体验，缺点则是因为不太起眼，不容易引起用户的注意和点击。
+These two kinds of advertisements are the most basic and classic, each has its pros an cons. Banner ads occupy only a small space at the bottom of the screen, changing the ad content every 60 seconds. The advantage is not too affect the user interface and experience, the disadvantage is because less obtrusive, not easy to arouse the user's attention and clicks.
 
-插屏广告则是全屏的，在特定的时间弹出，更能够吸引用户的眼球和点击。也正是因为这个原因，插屏广告的点击收益比横幅广告要高 5 倍以上，比较推荐使用。
+Interstitial ad is full-screen, pop-up at a specific time, more able to attract the user's attention and click. Because of this, the interstitial ad has better effects and click revenue is higher than the banner ads more than 5 times, so more recommended.
 
-使用插屏广告的时候，要特别注意弹出的时间，千万不要打断用户的连续操作和游戏体验，否则不仅不会引起用户的点击，还会引起用户的反感。最佳做法是将其放在 2个阶段之间的过渡时机，例如游戏的一关刚刚结束，弹出插屏广告，然后再继续下一关。
+When using interstitial ad, please pay special attention to the pop-up time, do not interrupt the user's continuous operation and gaming experience, otherwise it will cause the user's strong aversion. Best practice is to put it in transition between the two stages, such as the game is just over, pop-up screen ads, and then continue to the next level.
 
-通过插件 cordova-plugin-admobpro，要展示插屏广告也是非常简单的，只需要 2 行 javascript 代码就可以完成了。其中一行代码负责准备广告资源，另一行代码负责展示。示范代码如下：
+Using cordova-plugin-admobpro to display interstitial ads is also straightforward, requiring just two lines of javascript to complete. One line of code prepares inventory and the other line of code shows ads. 
+
+Here is the example:
 ```javascript
-// 在游戏启动时或者进行中，开始准备插屏广告，通过后台线程下载广告资源
+// When the game starts, it starts to prepare for interstitial ads, and the background thread downloads the inventory
 if(AdMob) AdMob.prepareInterstitial({
   adId: "__ad_unit_id_here__", 
   autoShow: false
 });
 
-// 在游戏关卡结束时，调用 API 进行插屏广告的展示
+// At the end of the game level, call API to display the interstitial ad
 if(AdMob) AdMob.showInterstitial();
 ```
 
-以上这 2 种广告，是最容易使用的广告形式，集成到 APP 中的工作也最为容易。
+The above two kinds of advertisements are the easiest to use forms of advertisement, and the work integrated into the APP is also the easiest.
 
-原生广告（native Ad），就是将广告内容以较为和谐的方式，展示在APP自身的内容之间，不会显得过于突兀和突然，这是对用户体验影响最小的一种广告形式。 Facebook AudienceNetwork 和 Flurry 比较早就推出了原生广告，不过谷歌 AdMob 对此持谨慎态度，仅仅在部分开发者中进行 beta 试用。
+Native Ad is a new way to show your ads in a more harmonious way between their own content. It does not seem obtrusive or abrupt. It's the type of advertising that has the least impact on user experience. Facebook AudienceNetwork and Flurry launched native ads long before, and later Google AdMob also introduced it to developers.
 
-奖励视频广告(reward video Ad)，是谷歌新推出的一种广告。就是鼓励用户看完广告视频，然后开发者在游戏中或者 APP 中给予某种虚拟物品的奖励。在以前的广告推广中，谷歌并不支持在用户接受广告方面给予鼓励的行为，甚至将对点击广告给予奖励的做法定为违规的行为。因为这很可能违背用户本身的兴趣、造成虚假无效点击。新的奖励视频广告方面，谷歌采取了相对灵活和务实的态度。不过这方面的广告视频来源，基本上都是通过广告中介的方式来自于其他的广告网络。
+Reward video Ad, a new ad in the mobile advertising industry. It encourages users to watch ad videos and reward them with some kind of virtual item in the game or app. In previous advertising campaigns, Google did not support giving users encouragement, and even made it illegal to give rewards. Because this is likely to violate the user's own interest, resulting in false invalid clicks. For the new rewarded video ad, other advertisers first introduced and succeeded in the market, Google adopted a relatively flexible and pragmatic attitude. However, advertising video sources are not very rich, many are mediation way from other ad networks.
 
-内购广告（IAP House Ad）是一种新颖、创新的广告形式，应用内购买广告可让用户直接在应用内购物。因为需要和支付系统、或者谷歌Play Store结合起来，所以仅在 Android 系统支持。通过内购广告，应用开发商可在以下方面获益：
-* 通过在同一款应用中实施广告投放和应用内购，可以最大程度地增加您的收入和用户的生命周期价值。
-* Google 会自动帮助您确定哪些用户有可能购买应用内购商品，并向其余用户展示普通的付费广告。
-* 不需要开发自己的应用内购支持系统，也不需要在应用中加入应用内购支持代码。
-* 利用不同的自家内购广告，可以轻松定位用户群体中的各种细分受众群。通过将应用内购广告与 AdMob 受众群体构建工具结合使用，可以向高消费群体投放价格高的应用内购商品，而向其他用户展示价格低的商品。
+IAP Ad is an innovative form of advertising. IAP Ad allows users to shop directly in-app. Because it needs to be integrated with the payment system or the Google Play Store, it's only supported on the Android system. With in-app advertising, app developers can benefit from:
+* Maximize your revenue and user lifecycle value by implementing ad serving and in-app purchases in the same app.
+* Google automatically helps you determine which users are likely to purchase in-app purchases and show ordinary paid ads to the remaining users.
+* No need to develop your own in-app support system or add in-app support code to your app.
+* Easily target various segments of the user community with different in-app purchases. By using In-App Ads with the AdMob Audience Builder, you can serve high-priced, in-app products to high-spending groups while showing them to you at lower prices.
 
-如果要尝试原生广告、奖励视频广告、内购广告，请移步 Google [AdMob 官方文档网站](https://developers.google.com/mobile-ads-sdk/)，进行深入研究，学习如何使用。
+If you want to learn more about native ads, rewarded video ad, buy ads, go to Google [AdMob official documentation website](https://developers.google.com/mobile-ads-sdk/) for in-depth research and study how to use.
 
-### 哪家广告商最靠谱
+### Which Ad Most Reliable
 
-因为移动广告领域的利润可观，移动广告平台的发展也是非常快的。过去的这些年，也发生了不少并购案。例如 Google先后收购了 DoubleClick 和 AdMob，Flurry 被 Yahoo! 收购，MobFox 被 Matomy 收购，Millennial Media 被 AOL 收购。
+Because of the profitable mobile advertising sector, the mobile advertising industry is also growing very fast. Over the past few years, there have been many mergers and acquisitions. For example, Google has successively acquired DoubleClick and AdMob, Flurry acquired by Yahoo!, MobFox acquired by Matomy, and Millennial Media acquired by AOL.
 
 ![Top Ad Networks](demo/topadnetworks.jpg)
 
-通常广告平台会提供：
-* 接入广告系统的 SDK；
-* 注册、登录和管理广告的系统；
-* 接入指南、例程、FAQ；
+Usually the ad platform will provide:
+* SDK, providing API for accessing advertising system;
+* Register, login and manage advertising system;
+* Integration Guide, examples, FAQ;
 
-各种移动广告平台的相关介绍，可以通过搜索活着其他不同的渠道去了解（例如 StackOverflow.com），并可以有选择性的进行尝试。
+Information about the various mobile ad platforms can be found through search or through a number of different sources (eg, StackOverflow.com) and try selectively.
 
-以下是我试用过的一些广告平台：
+Here are some of the advertising platforms I've tried:
 * Google AdMob
 * Facebook AudienceNetwork
 * Yahoo! Flurry
@@ -600,76 +604,78 @@ if(AdMob) AdMob.showInterstitial();
 * Smart AdServer
 * ... ...
 
-使用下来比较满意的有 AdMob, Facebook AudienceNetwork, Yahoo! Flurry, MobFox。尤其是 AdMob，非常值得推荐。
+By trying to use, I am more satisfied with AdMob, Facebook AudienceNetwork, Yahoo! Flurry, MobFox. Especially AdMob, is highly recommended.
 
-AdMob之所以最值得强烈推荐，主要有这样一些突出的优点：
-* 广告填充率高（基本上在 98% 以上，有个别国家略低于90%），因此可以充分利用用户流量。毕竟广告是谷歌公司的主要业务和利润来源，其广告客户遍及全球，这也不足为怪了；
-* 付款及时，每个月的月底结算，次月 20日支付；
-* SDK 非常稳定，接入文档以及参考代码易于使用，并且有不同语言的文档和系统界面；
-* 报表系统功能强大、易于使用，可以通过不同的维度进行数据分析；
-* 有专门的 APP 可以用来跟踪收益；
-* 有专门的技术支持人员，有官方支持的技术论坛，专门解答 SDK 接入方面的技术问题；
-* 定期会组织一些宣讲、培训活动，也定期有线上视频讲座；
-* 客户服务非常到位，非常的耐心和友善，我和他们也基本上一直保持联系。
+The reason why AdMob is the most highly recommended, there are some prominent advantages:
+* Ad fill rate is high. Basically more than 98%, some countries slightly less than 90%, so you can take full advantage of user traffic. After all, it is no surprise that advertising is a major source of revenue and revenue for Google, with advertisers around the world.
+* Payment promptly. The monthly earnings are settled at the end of the month and paid on the 20th of the following month;
+* SDK is very stable. Integrated documentation and reference code Easy to use, with documentation and system interfaces in different languages;
+* Reporting system powerful and easy to use. Data can be analyzed in different dimensions;
+* Easy to use. A dedicated APP can be used to track earnings;
+* Support in place. A dedicated technical support staff, technical forums with official support, dedicated to answer the technical aspects of SDK access;
+* Regularly organize some preaching and training activities, as well as regular online video lectures;
+* Customer service is in place. Very patient and friendly, I keep in touch with them.
 
-由于谷歌在各个领域的卓越创新、一贯的优质服务，在开发者中有良好的口碑。
+Because of Google's excellence in innovation and consistent quality service, it has very high reputation among develoeprs.
 
-而基于 AdMob SDK 开发的 cordova-plugin-admobpro 这款插件，不仅把 Objective-C / Java / C# 的原生 API 封装为统一的 javascript API，而且更加简单易用，只需 1－2 行代码即可完成广告展示。这款插件在 Cordova 全球社区也广受欢迎，是使用率最高的变现插件。以下是插件的下载趋势曲线图：
+The cordova-plugin-admobpro plug-in, built on the AdMob SDK, not only encapsulates Objective-C / Java / C # native APIs into a unified javascript API but is also much easier to use. Just 1-2 lines of code to complete the ad display. Popular in Cordova's global community, this plug-in is the most-used monetization plug-in. The following is a plug-in download trend curve:
 
 ![AdMob Download Trend](demo/admobprodltrend.png)
 
-Facebook 的 AudienceNetwork 也挺不错。Facebook 不仅仅是最大、最活跃的社交媒体，也提供各种相关 SDK，包括广告用的 AudienceNetwork。其开发者网站为：https://developers.facebook.com/docs/audience-network 。
-* Facebook 的 广告填充率(Fill Rate)没有 AdMOb 那么高，大约在45～75% 之间。
-* Facebook 付款也很及时，也是在每个月的 21日左右支付上个月的广告收益；
-* Facebook 的 SDK 更新非常频繁，大约 2 周左右就会发布一个新的版本，因此如果有什么 bug 修复也很快。不过更新的频度实在有点高，有时候有点跟不上的感觉。相对来说，谷歌 AdMob 的 SDK 更加稳定一些；
-* 管理界面和报表系统也比较清楚易用，一目了然。报表系统没有 AdMob 的那么强大和灵活，貌似仅有英文界面，看上去是下面这样的。
+Facebook AudienceNetwork is not bad.
+
+Facebook is not only the largest and most active social media, but also offers a variety of related SDKs, including AudienceNetwork for Advertising. Its developer website is https://developers.facebook.com/docs/audience-network.
+* Facebook's Fill Rate is not as high as AdMob, about 45-75%.
+* Facebook payment is also timely, but also in the 21st of each month to pay last month's advertising revenue;
+Facebook's SDK updates are very frequent. A new version will be released in about two weeks, so if there are any bugs, the fix is fast. However, the update frequency is a bit high, sometimes feeling a little behind. Relatively speaking, Google AdMob SDK more stable;
+* Management interface and reporting system is also relatively clear and easy to use. The reporting system is not as strong and flexible as Google Admob, seemingly only English interface, it looks like the following.
 
 ![Facebook AudienceNetwork](demo/fbaudnet.png)
 
-Flurry 是一家被 Yahoo！收购的移动广告公司，其官方网站是 http://www.flurry.com/ 。其主要的产品有 2 个，一个是数据分析(Flurry Anlytics)，一个是广告系统（Flurry Ads）。
-* Flurry SDK 接入也还算比较容易，报表系统中规中矩。就是网站访问稍微有点慢，比较花时间。
-* 付款略慢，在广告收益产生的 60天之后才付款。
-* 值得一提的是，Flurry 是比较早支持原生广告的（Native Ad）的。
+Flurry is a mobile advertising company that has been acquired by Yahoo, the official site is http://www.flurry.com/. There are 2 main products, one is Flurry Anlytics and one is Flurry Ads.
+* Flurry SDK integration is still relatively easy, the reporting system quite satisfactory. Site visit is a bit slow, more time-consuming.
+* Payments are slightly slower and are not paid until 60 days after the advertising revenue.
+* It is worth mentioning that, Flurry is a relatively early support Native ads (Native Ad).
 
-MobFox 是一家欧洲的移动广告公司，总部位于奥地利。曾经它的 CEO 联系过我，希望能够就某项产品达成合作。后来因为收购事宜暂停，再后来，再后来就知道 MobFox 被 Matomy 收购，项目合作的事情就没有下文了。这家公司还是不错，付款也比较及时。虽然号称是欧洲最大的移动广告公司，并且全球位于 Top 10，但和 Google、Facebook 这样的巨头比起来，在全球范围内的影响力实在有点弱。
+MobFox is a European mobile advertising company headquartered in Austria. I used to contact its CEO, he wants me to develop plug-ins for them. Later, because of the acquisition, then later, we knew that MobFox was acquired by Matomy. This company is still good, payment is more timely. Although known as Europe's largest mobile advertising company, and the world is located in the Top 10, but compared with giants such as Google, Facebook, the global influence is really a bit weak.
 
-Apple 的 iAd，只是在 iOS 系统上进行投放。由于 iPhone 的市场定位和定价明显要高于 Android 系统，也就决定了 iOS 用户有较强的购买力，所以 iAd 广告的点击回报比较高，也就不言而喻了。不过如果你开发的 APP 需要同时投放 iOS 和 Android 系统，用 AdMob 管理起来相对容易一点。也可以通过 AdMob 的广告中介（mediation）功能，把部分流量通过 iAd 进行展示，从而使得广告收益的利益最大化。
+Apple's iAd just launches on iOS. As the iPhone's market positioning and pricing significantly higher than the Android system, it also determines the iOS users have a strong purchasing power, so iAd ad click returns relatively high, it goes without saying. However, if you develop an app that needs to run on iOS and Android at the same time, managing it with AdMob is a bit easier. You can also use AdMob's mediation feature to show some of your traffic through iAd, maximizing the benefits of advertising. Later, Apple adjusted the advertising business and stopped iAd service.
 
-像 OpenX 和 Smart AdServer 仅对欧美的签约客户开放，并不针对全球用户和开发者。只是曾经有美国和欧洲的客户在 GitHub 上看到我的开源项目，特意找到我要求我定制产品，通过项目合作的方式，我才得以了解和熟悉。不过因为不对全球开发者，所以也无法推荐使用。
+Like OpenX and Smart AdServer, open only to European and American business customers, not for global users and individual developers. Formerly, customers in the United States and Europe saw my open source project on GitHub, specifically looking for me to customize the adware plug-in. Through project cooperation, I was able to understand and become familiar with it. However, because it is not for global developers, it is not recommended.
 
-至于 MoPub，它的 SDK 的是在 GitHub 上开源的，这是它与众不同的地方。不过也正是因为这一点，其文档和 SDK 接入就要稍微麻烦一些。必须要把这些 SDK 从源代码编译成 jar 和 framework，然后才能在自己的项目中使用。
+As for MoPub, its SDK is open source on GitHub, and it's something different. Its documentation and SDK was not very mature. For some time, you have to compile these SDKs from source code into a jar and framework before using them in your projects, which is really inconvenient. Recently, they have supported their SDK to be loaded into your project with gradle and cocoapods, a lot easier than before.
 
-Millennial Media（简写为 mMeida)，其 SDK Demo 的美观度做得不错，不过客服和技术支持的响应实在不敢恭维。曾经碰到过技术问题，通过 Web Form 提交了问题，一直没有得到过答复，所以我后来也就懒得用它了。
+Millennial Media (abbreviated mMeida), its SDK Demo aesthetics done well, but customer service and technical support response is really flattered. Have encountered technical problems, submit a question through the Web Form, has not been answered, so I am not happy to use it. I heard later they were acquired by AOL.
 
-另外像 Charboost、TapJoy 等等广告平台，也或多或少的接触过。不过精力有限，没有逐一进行具体的试用。Charboost 是 2011 年才创业的广告公司，只专注在移动游戏领域，2014年被 VentureBeat 指数报告定为 Top 10 的移动广告公司。通过 Chartboost 发布的广告，点击收益比较不错，不过反过来说，也就是广告投放、获取用户的成本是比较高的。我所认识的专门做重度游戏、专门投放海外市场的朋友，通过 Facebook 和 Chartboost 投放广告用得比较多。
+In addition, such as Charboost, TapJoy advertising platform, also more or less seen. However, each person's energy is limited, so did not try them one by one. Charboost, an advertising startup that started up in 2011, focuses exclusively on mobile games and was named Top 10 mobile advertising company by the VentureBeat Index in 2014. Advertised by Chartboost, click revenue is relatively good, but conversely, that is, advertising, access to the user's cost is relatively high. Some of my friends I know are specialized in heavy games, devoted to overseas markets and used more ads on Facebook and Chartboost.
 
-上面介绍了不少移动广告平台，完全是个人经验和主观体会，有兴趣的可以自行尝试。
+These mobile advertising platform described above is entirely personal experience and subjective experience. If you are interested, ou can try more by your own.
 
-### 营销你的产品
+### Promote Your App
 
-（待续）
+(To be continued)
 
-### 联网版APP
+### Online APP
 
-### 云服务
+### Cloud Seervice
 
-### 高级篇
+### Expert Topics
 
-### 用户数据分析
+### User Data Analysis
 
-### 广告优化
+### Ad Optimization
 
-### 支付与内购
+### In-App Purchase
 
-### 社交营销
+### Social Marketing
 
-### 广告投放
+### Cast Advertising
 
-### 附录
+### Appendix
 
-#### 互联网营销常用术语
+#### Popular Mobile Marketing Terms
 
-Part1 最基本的名词
+Part1 Basic Terms
 
 ROI：Return On Investment的简称。一般而言on这个词是应该小写的，所以ROI似乎应该是RoI，不过大家都约定俗成了，不必较真。ROI是典型的追求效果类的营销的关键指标。在中国的互联网营销，这个值一般指的是，我花了多少钱推广费，直接产生了多少的销售。比如花了1万元做SEM推广，直接卖了3万元的货。ROI会被认为做到了3（即3:1）。这一点与财务计算上的ROI是不同的，后者是利润和投入的比值，但在互联网营销上，大家没有把利润作为R，而是用GMV。关于GMV是什么，本文的下篇有。:)
 
