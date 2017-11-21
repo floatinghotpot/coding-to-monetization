@@ -1,4 +1,4 @@
-## From Coding to Monetization：Programmer's Financial Freedom Approach
+# From Coding to Monetization：Programmer's Financial Freedom Approach
 
 【从编码到变现：程序员财务自由之路】
 
