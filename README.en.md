@@ -78,7 +78,11 @@ Real story 2:
 I know a Polish programmer, who uses the web page technology to make an uncomplicated calculator APP, doing something like calculating tip or percentage. The APP stays in the financial apps top list of App store in several Eroupe countries, made a lot of money.
 
 Real story 3:
-I had been working in a company that develops insurance software some years ago. The company had developed fairly well, and the management tried to IPO. However, they have not been able to take off and IPO yet, because the business model was too close to the outsourcing model, rather than the product model or platform model. Two of my former colleagues left this company in 2014 and set up a start-up, developing a short video APP on a mobile phone, and successfully becoming a short video community platform. A few days ago, after three years of hard work, they were acquired for $1 billion US dollars. Yes, their name is Musical.ly, you can find it in the top list of app stores, later it's renamed to Tiktok after ackquired by Bytedance.
+Around 2010, I worked for a company that developed insurance software. The company has developed quite well. It was founded in 2000 and has grown to a scale of 1,000 people after 10 years. The management tried to go public. However, it was not smooth, and after many years, it has not yet been able to IPO. I personally think that it is a business model problem. There are too many customized developments around the needs of large insurance company customers. This is too close to the outsourcing model, not the product model or the platform model, and it is difficult to scale expansion.
+
+When I worked in this company, I had two colleagues Yang Luyu and Zhu Jun. They left the company in 2014 and established a start-up company to develop a short video app on mobile phones and become a short video community platform. The team was only 6 people, but they have developed a small product that has brought explosive growth. After 3 years of innovation and hard work, in 2017, they were acquired by Bytedance for $1 billion.
+
+The initial name of the APP was Musical.ly. You may not be familiar with it, but you must know its later very famous name, Tiktok. Yes, it is the app that surpasses Facebook and often ranks first in the app store. Its influence in the world is so great that even Trump threatened for sanctions.
 
 You can find other similar success stories, about making good money from mobile apps or games. You may heard, or just google the internet.
 
