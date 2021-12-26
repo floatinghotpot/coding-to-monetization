@@ -113,16 +113,21 @@ From Coding to Monetization：Programmer's Financial Freedom Approach
 * 用于开发游戏的 [Unity3D](http://unity3d.com/) IDE 以及集成的 MonoDevelop，用的是 C# 作为主要的开发语言。
 * 微软收购的 [Xamarin](https://www.xamarin.com/) 以及赞助的开源项目 [Mono](http://www.mono-project.com/)，用来开发 APP，以 C# 作为主要的开发语言。
 
-在下文的教程中，我们选择最简单的 javascript 作为后续介绍的主要开发语言。实际上，它也是 github 上最为活跃的语言。它可以用来开发：
+在下文的教程中，我们选择最简单的 javascript 作为后续介绍的主要开发语言。
+
+注意：
+千万不要对 javascript 有刻板印象，而认为它仅仅是做网页的简单脚本程序。
+
+实际上，它是编程用途极为广泛的语言，也是 github 上最为活跃的语言。它可以用来开发：
 * 运行于浏览器内的 Web网页；
 * 运行与内嵌浏览器的 单页WebApp；
-* 基于 [nodejs](https://nodejs.org/) 的命令行工具；
-* 基于 nodejs 的网络云服务；
+* 基于 [nodejs](https://nodejs.org/) 的命令行工具，例如 Cordova CLI 命令行工具；
+* 基于 nodejs 的网络云服务，例如 亚马逊 的 Bluestacks 云服务；
 * 基于 [cordova](http://cordova.apache.org/) 技术的，混合(hybrid) APP。
 * 基于 [react-native](http://www.reactnative.com/) 开发 native UI体验的 APP。
-* 甚至，也能够开发出桌面应用，例如 Adobe Brackets 代码编辑器。
+* 甚至，也能够使用[Electron](https://www.electronjs.org/)开发出桌面应用，例如 Atom，Visual Studio Code 代码编辑器。
 
-因为它可以同时用来开发前端和后台，代码逻辑也可以用来前后端复用，从而降低技能门槛和开发成本。开发环境也要求非常低，只要有个友好的代码编辑器，有个浏览器可以用来运行和调试，就可以了。
+因为使用 javascript 可以同时用来开发前端和后台，代码逻辑也可以用来前后端复用，从而降低技能门槛和开发成本。入门所需要的开发环境也要求非常低，只要有个友好的代码编辑器，有个浏览器可以用来运行和调试，就可以了。
 
 以下是用 javascript 来做开发的所需要的环境和工具：
 * Chrome浏览器，自带开发者工具 和 javascript 控制台，用来运行和调试。
@@ -131,7 +136,14 @@ From Coding to Monetization：Programmer's Financial Freedom Approach
 * Xcode（只有 Mac 版本），要调试 iOS APP，有台 iMac电脑或者 MacBook笔记本电脑，这也是必备的。
 * Android Studio，用来调试 Android APP。
 
-如果你习惯了 Windows 也没有一台 Mac，会稍微麻烦一点。不过也是有方法的，有一些专门提供编译、打包的云服务，例如 Adobe PhoneGap Build，或者 Intel XDK，我们后面会介绍如何使用。
+如果你习惯了 Windows 也没有一台 Mac，那就会稍微麻烦一点。虽然也是有方法的，有一些专门提供编译、打包的云服务，但是这些服务往往出于商业利益的关系，会调整策略终止服务。
+例如:
+* Adobe PhoneGap Build
+已失效。从 2020.10.1 之后，Adobe 已经停止服务 该云服务。
+* Intel XDK
+已失效。XDK 已被英特尔重新用于物联网开发，核心移动开发功能已被英特尔弃用且不再受支持。 随附的跨平台 Cordova 云构建服务已下线。 不建议将 XDK 用于新的手机/平板应用程序开发项目。
+* [Ionic AppLow](https://ionic.io/appflow)
+Appflow 是 Ionic 开发团队的持续集成 (CI) 和持续部署 (CD) 平台。它声称 Ionic Appflow 可以将构建部署到目的地，例如 Apple App Store 和 Google Play Store，完全在云中。
 
 ### Hello, World!
 

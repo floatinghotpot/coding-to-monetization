@@ -107,26 +107,37 @@ In addition, there are some cross-platform languages and tools, more friendly to
 * [Unity3D](http://unity3d.com/) IDE and integrated MonoDevelop, C# is the core language.
 * [Xamarin](https://www.xamarin.com/) acquired by Microsoft, and its sponsored open source project [Mono](http://www.mono-project.com/), used to develop APP, C# is the core language.
 
-In the tutorial below, we chose the easiest javascript as the main development language for subsequent content. In fact, it is also the most active language on github. It can be used to develop:
-* Web pages, running in browser;
-* Single-page WebApp, running in browser;
-* Command line tools, based on [nodejs](https://nodejs.org/);
-* Network cloud services, based on nodejs;
-* Hybrid APP, based on [cordova](http://cordova.apache.org/) technology;
-* APP with native UI experience, based on [react-native](http://www.reactnative.com/).
-* Even desktop applications, such as the Adobe Brackets code editor, also developed with javascript.
+In the following tutorials, we choose the simplest javascript as the main development language for the follow-up introduction.
 
-JavaScript can be used to develop front-end and back-end, code logic can be reused, thereby reducing the skill threshold and development costs. The requirements of the development environment is also very low, as long as there is a friendly code editor, a browser for testing and debugging, that's almost enough.
+Notice:
+Don't have a stereotype about javascript and think that it is just a simple script program for making web pages.
 
-The following are the the necessary environment and tools for development with javascript:
+In fact, it is an extremely versatile language for programming and the most active language on github. It can be used to develop:
+* Web pages running in the browser;
+* Single-page WebApp running and embedded browser;
+* Command line tools based on [nodejs](https://nodejs.org/), such as Cordova CLI command line tools;
+* Network cloud services based on nodejs, such as Amazon's Bluestacks cloud service;
+* Based on [cordova](http://cordova.apache.org/) technology, hybrid APP.
+* Based on [react-native](http://www.reactnative.com/) to develop apps with native UI experience.
+* Even, you can use [Electron](https://www.electronjs.org/) to develop desktop applications, such as Atom, Visual Studio Code code editor.
+
+Because javascript can be used to develop front-end and back-end at the same time, code logic can also be used for front-end and back-end reuse, thereby reducing skill thresholds and development costs. The development environment required for getting started is also very low, as long as there is a friendly code editor and a browser for running and debugging.
+
+The following are the environment and tools needed for development with javascript:
 * Chrome browser, comes with developer tools and javascript console for running and debugging.
-* [Adobe Brackets](http://brackets.io/) text editor (if you're used to [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io /) Or [Visual Studio Code](http://code.visualstudio.com/), no problem)
-* iMac, with a huge 27-inch screen, really wide view for many windows, MacBook or Air is also okay;
-* Mac OS X command line is very powerful, and convenient to support most LInux tools through [MacPorts](https://www.macports.org/) or [Homebrew](http: // brew.sh/).
-* Xcode (Mac version only), must-have to build and debug iOS apps.
-* Android Studio, used to build and debug Android APP.
+* [Adobe Brackets](http://brackets.io/) text editor (if you are used to [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io /) Or [Visual Studio Code](http://code.visualstudio.com/), no problem)
+* iMac desktop, huge 27-inch screen, unrestricted view; Mac OS X command line is very powerful and convenient, through [MacPorts](https://www.macports.org/) or [Homebrew](http:// brew.sh/), command line tools or libraries on Linux basically support it.
+* Xcode (Mac version only), to debug the iOS APP, an iMac computer or MacBook laptop is also necessary.
+* Android Studio, used to debug Android APP.
 
-If you get used to Windows and do not have a Mac, it's also okay, you can develop for Android at hand. As to iOS, you may need some online service for apps building and packaging, like Adobe PhoneGap Build, or Intel XDK, etc. You can google how to use them. 
+If you are used to Windows and don't have a Mac, it will be a little troublesome. Although there are also methods, there are some cloud services that provide compilation and packaging, but these services are often due to commercial interests and will adjust their strategies to terminate the services.
+For example:
+* Adobe PhoneGap Build
+Out-dated. Since 2020.10.1, Adobe has stopped serving the cloud build service.
+* Intel XDK
+Out-dated. XDK has been re-used by Intel for IoT development, and core mobile development functions have been deprecated by Intel and are no longer supported. The accompanying cross-platform Cordova cloud construction service has been offline. It is not recommended to use XDK for new mobile/tablet application development projects.
+* [Ionic AppLow](https://ionic.io/appflow)
+Appflow is the continuous integration (CI) and continuous deployment (CD) platform of the Ionic development team. It claims that Ionic Appflow can deploy builds to destinations, such as the Apple App Store and Google Play Store, completely in the cloud.
 
 But, a Mac is still recommended, for both Android and iOS development.
 
