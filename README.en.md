@@ -59,7 +59,7 @@ In fact, R&D, plus sales, payment, promotion, customer support, and maintenance,
 
 This book is about how to start from coding, to get paid, and how to get users. Step by step, on every details.
 
-Once you have mastered how to monetize from your software, youo will be more concerned with user feedback, caring about market needs, and the quality of your products. As they will bring you better financial returns. Then it's not far away to achieve financial freedom.
+Once you have mastered how to monetize from your software, you will be more concerned with user feedback, caring about market needs, and the quality of your products. As they will bring you better financial returns. Then it's not far away to achieve financial freedom.
 
 If you feel that the content of this book is helpful, please give you support, by staring it.
 
