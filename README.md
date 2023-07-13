@@ -1,158 +1,154 @@
-# 从编码到变现：程序员财务自由之路
+# From Coding to Monetization：Programmer's Financial Freedom Approach
 
-From Coding to Monetization：Programmer's Financial Freedom Approach
+【从编码到变现：程序员财务自由之路】
 
-[英文版本 / English Version](./README.en.md)
+[中文版本/Chinese Version](./README.zh.md)
 
-![大富豪](demo/richman.jpg)
+![rich](demo/richman.jpg)
 
-### 目录
+## Content
 
-* [前言](#前言)
-* [定位](#定位)
-* [基础篇](#基础篇)
-  * [语言与工具选择](#语言与工具选择)
+* [Foreword](#Foreword)
+* [Positioning](#Positioning)
+* [Getting Started](#Getting-Started)
+  * [Language and Tools](#Language-and-Tools)
   * [Hello, World!](#hello-world)
-  * [单机版APP](#单机版APP)
-  * [加个广告条](#加个广告条)
-  * [注册广告账号](#注册广告账号)
-  * [验证地址和设置收款信息](#验证地址和设置收款信息)
-  * [发布APP](#发布APP)
-  * [广告收益的计算](#广告收益的计算)
-* [进阶篇](#进阶篇)
-  * [需求是根本](#需求是根本)
-  * [用户体验](#用户体验)
-  * [哪种广告最适合](#哪种广告最适合)
-  * [哪家广告商最靠谱](#哪家广告商最靠谱)
-  * [营销你的产品](#营销你的产品)
-  * [联网版APP](#联网版APP)
-  * [云服务](#云服务)
-* [高级篇](#高级篇)
-  * [数据分析](#数据分析)
-  * [广告优化](#广告优化)
-  * [支付与内购](#支付与内购)
-  * [社交营销](#社交营销)
-  * [广告投放](#广告投放)
-* [附录](#附录)
-  * [互联网营销常用术语](#互联网营销常用术语)
-  * [如何发布 APP 到 Apple AppStore](#如何发布-app-到-apple-appstore)
-  * [如何发布 APP 到 Google Play Store](#如何发布-app-到-google-play-store)
-  * [如何发布 APP 到 360 应用商店](#如何发布-app-到-360-应用商店)
-  * [如何用 Google Analytics 做用户数据分析](#如何用-google-analytics-做用户数据分析)
+  * [Simple APP](#simple-APP)
+  * [Add Ad Banner](#add-ad-banner)
+  * [Register Ad Account](#register-ad-account)
+  * [Settings for Payment](#settings-for-payment)
+  * [Publish APP](#publish-app)
+  * [Calcuate Ad Revenue](#calculate-ad-revenue)
+* [Advanced](#advanced)
+  * [Demand is Fundamental](#demand-is-foundamental)
+  * [User Experience](#user-experience)
+  * [What Ad is Best](#what-ad-is-best)
+  * [Which Ad Network Shall I Choose](#which-ad-netowrk-shall-i-choose)
+  * [Promote Your APP](#promote-your-app)
+  * [Online APP](#online-app)
+  * [Cloud Service](#cloud-service)
+* [Expert](#exert)
+  * [Data Analysis](#data-analysis)
+  * [Ad Optimization](#ad-optimization)
+  * [In-App Purchase](#in-app-purchase)
+  * [Social Marketing](#social-marketing)
+  * [Advertising](#advertising)
+* [Appendix](#appendix)
+  * [Internet Marketing Terminology](#internet-marketing-terminology)
+  * [How to Publish APP to Apple AppStore](#how-to-publish-app-to-app-store)
+  * [How to Publish APP to Google Play Store](#how-to-publish-app-to-google-play-store)
+  * [How to Google Analytics for Data Analysis](#how-to-use-google-analytics-for-data-analysis)
 
-### 前言
+### Forword
 
-这本书，是写给程序员看的。
+This book, is written for programmer.
 
-这并不是关于一门编程语言，也不是关于一种设计模式，更不是关于如何评估工程量、如何做项目管理。
+It's not about a programming language, not about a design pattern, and not about how to estimate man-hour, or how to manage project.
 
-这本书是关于：变现（monetization），通俗的说，就是赚钱。
+This book is about: monetization. Simply speaking, how to earn money.
 
-作为程序员，你一定花了大量的时间去学习，掌握了若干种编程语言、用过数十种开发工具。为了设计稳定灵活的架构，你也认真学习和掌握了各种设计模式；为了提高工作效率，你也用了各种成熟的框架以及自动化测试的工具；总之，通过学习，你成为了一个牛B的程序员。
+As a programmer, you must have spent much time to learn, mastered several programming lanugages, used dozens of developing tools. In order to design stable and flexible architecture, you may have learned various design patterns. In order to boost working efficiency, you may have used many mature frameworks and automation testing tools. In short, you become an excellent programmer.
 
-甚至，你也积累了管理的经验，主动学习了项目管理的理论知识、各种研发组织模式，也许会进阶到管理岗位，成为研发团队的负责人或者经理人。
+And, you may even accumulate experience in management, take the initiative to learn the theoretical knowledge of project management, mastered a variety of R&D organizating model, become the R&D team leader or manager.
 
-在大部分的情况下，作为程序员或者研发团队，你按照项目经理 或者 产品经理给的需求，进行需求分析、架构设计、模块划分、接口设计、编码实现、测试、提交版本。这些环节，毫无疑问，是做研发的程序员最为熟悉的流程。
+In most cases, as a programmer or R&D team, you work on requirements analysis, architecture design, module demarcation, interface design, coding implementation, testing, and release versions, as required by the project manager or product manager. These tasks, no doubt, are the most familiar routine work for programmers.
 
-不幸的是，你日常所关注的，仅仅只是研发环节。接受需求，交付版本，这就是产品经理或者甲方让你干的事情。很多在研发领域侵淫多年的研发大牛，也往往并不熟悉软件怎样能够直接带来经济回报。绝大多数的开发者，仅仅关注研发这个环节，甚至仅仅关注在编码这个环节，这是非常局限的。
+Unfortunately, for most programmers, your everyday concerns are just development. Accept requirements, deliver versions, that's all the product manager or the client has you to do. Even many excellent programmers or technical guru, they seldom care how software brings revenue directly. Most developers, just focus on R&D technical work, or even just focus on coding work, which is very limited.
 
-事实上，研发环节，再加上销售、收款、推广、用户支持、维护，这才是软件产生经济回报的完整闭环。
+In fact, R&D, plus sales, payment, promotion, customer support, and maintenance, is the complete closed-loop of software's value chain.
 
-然而，软件怎样直接带来经济回报，这方面的技术文章或者书籍并不多见。这也是我为什么会选择这个角度，作为本书下笔的核心内容。
+This book is about how to start from coding, to get paid, and how to get users. Step by step, on every details.
 
-这本书是关于，如何从编码、到如何接受付款，以及如何获取用户。手把手，教你每一个步骤。
+Once you have mastered how to monetize from your software, youo will be more concerned with user feedback, caring about market needs, and the quality of your products. As they will bring you better financial returns. Then it's not far away to achieve financial freedom.
 
-一旦你掌握软件如何变现的能力，你会更加关心用户反馈、关心市场需求、关心产品质量，因为这些都会为你带来更好的经济收益。实现财务自由，也就并不遥远了。
+If you feel that the content of this book is helpful, please give you support, by staring it.
 
-如果你觉得本书的内容有所帮助，请点赞支持。
+### Positioning
 
-### 定位
+Since it is to talk about earning money, we will not discuss the hard way of outsourcing, in which the business model is to sell limited life time as money.
 
-既然是谈赚钱，类似于外包这种把有限的生命折算成man hour来卖钱的苦逼方式，我们暂不讨论。
+Considering factor of limited man power, time and resource, we will not discuss carrier-class, or enterprise-class large-scale systems. As they require large investment and long research cycle for complex requirement, which is beyond congrol of individuals and small teams.
 
-考虑到人力、时间、成本等因素，我们也暂时不讨论运营级、或者企业级的大型系统。研发周期长、投入大、需求复杂，也超过个人和小团队的掌控。
+We focus on individuals or small teams. In the era of mobile internet, we have heard many miracle stories about individuals or small teams earn lots of money or even grow fast to unicorn enterprise.
 
-在移动互联网时代，以个人或者小团队，实现赚钱、甚至创造奇迹的故事，屡见不鲜。
+Real story 1:
+[Flappy Bird](https://zh.wikipedia.org/wiki/Flappy_Bird) legend, a small mobile game developed by a Vietnam programmer in 2-3 days, swept the globe in just a few weeks, and bring income of $50,000 US dollors each day. This is undoutedly by chance, lucky guy, but at least, there is a probability of occurrence.
 
-真实案例 1: 
+Real story 2:
+I know a Polish programmer, who uses the web page technology to make an uncomplicated calculator APP, doing something like calculating tip or percentage. The APP stays in the financial apps top list of App store in several Eroupe countries, made a lot of money.
 
-[Flappy Bird](https://zh.wikipedia.org/wiki/Flappy_Bird) 传奇，一个花2-3天开发出来的小游戏，在短短几周时间席卷全球，并获得了每天 5 万美金的广告收益。这无疑有偶然、运气的成分，但至少这是有概率发生的事情。
+Real story 3:
+Around 2010, I worked for a company that developed insurance software. The company has developed quite well. It was founded in 2000 and has grown to a scale of 1,000 people after 10 years. The management tried to go public. However, it was not smooth, and after many years, it has not yet been able to IPO. I personally think that it is a business model problem. There are too many customized developments around the needs of large insurance company customers. This is too close to the outsourcing model, not the product model or the platform model, and it is difficult to scale expansion.
 
-真实案例 2:
+When I worked in this company, I had two colleagues Yang Luyu and Zhu Jun. They left the company in 2014 and established a start-up company to develop a short video app on mobile phones and become a short video community platform. The team was only 6 people, but they have developed a small product that has brought explosive growth. After 3 years of innovation and hard work, in 2017, they were acquired by Bytedance for $1 billion.
 
-我认识一个波兰的老外，用做网页的技术，做了个并不复杂的计算器，大概也就是按照百分比计算下小费之类的。在欧洲好几个国家的应用商店上财务类APP，排名前几，通过广告条变现，赚了不少钱。
+The initial name of the APP was Musical.ly. You may not be familiar with it, but you must know its later very famous name, Tiktok. Yes, it is the app that surpasses Facebook and often ranks first in the app store. Its influence in the world is so great that even Trump threatened for sanctions.
 
-真实案例 3:
+You can find other similar success stories, about making good money from mobile apps or games. You may heard, or just google the internet.
 
-在2010年左右，我在一家开发保险软件的公司工作。 公司发展得相当好，2000年创立，经过10年发展到1000人的规模，管理层试图上市。 然而并不顺利，又过了许多年，它还没有能够IPO。我个人以为，是商业模式的问题，围绕着大保险公司客户的需求，有太多的定制开发。这与外包模式太接近了，而不是产品模式或平台模式，难以规模化扩张。
+In this book, what we want to explore, is to make full use of limited time and resource, focus on a very narrow area of requirement, to develop a very unique mobile app or small game, publish to global app store, acquire users, and make money.
 
-我在这家公司工作的时候，有两位同事阳陆育与朱骏。他们在2014年离开了这家公司，成立了一家初创公司，开发一个手机上的短视频APP，成为一个短视频社区平台。团队仅仅6个人，他们开发出的一个小小的产品，却带来了爆炸式的增长。在经过3年的创新和努力之后，也就是2017年，他们被今日头条以10亿美元的估值收购了。
+Perhaps, you are a technical guru, who masetered dozens of programming languages, design patterns, front-end to back-end full stack development capabilies. However, not every technology can be used to make quick money. The hardest or most intersting technology, may not be the easiest technology to make money. Sometimes, we need most flexible and scalabe architecture. Sometimes, we have to choose the most rapid development methods.
 
-最初APP的名字叫Musical.ly，也许你不一定熟悉它，但是你一定知道后来它的鼎鼎大名，Tiktok。对，就是那个超越了 Facebook、经常排在应用商店第一名的APP。它在全世界的影响力，甚至大到曾经被特朗普威胁要制裁。
+Maybe, you are a newbie, just getting started, and only know how to write a webpage. It does not matter. The programming skills required to make money, can also be very simple. Just one thing, if any knowledge is required, we have to learn it quickly. We are in a era of fast changing world, programmers must be good at learning new things.
 
-你可以找到其他类似的成功故事，从移动应用程序或游戏中成功的赚到钱。 稍微留意一下，你很可能从朋友圈听说过一些，或者可以从互联网搜索一下，这样的故事不胜枚举。
+## Getting Started
 
-在这本书里，我们要探讨的是，集中非常有限的时间、精力，聚焦到非常狭窄的需求领域，开发移动应用 APP、小游戏，发布到全球应用商店、获取用户、并实现盈利。
+### Language and Tools
 
-也许你是技术的大牛，掌握了数十种编程语言、设计模式、前端到后端的全栈开发能力。然而，并不是每项技术，都能够实现快速赚钱的。最艰深、最有趣的技术，未必是最容易赚到钱的技术。有时候，我们要做最容易扩展的架构。有时候，我们要选择最快速开发的技术手段。
+The language and tools for developing apps are often tied to the platform.
+* If it is iOS, it is usually Objective C, and the development tools are [Xcode](https://developer.apple.com/xcode/) from Apple (development tools only run on Mac) toolset.
+* If it's Android, it's usually Java, and development tools are Google's [Android Studio](http://developer.android.com/tools/studio/index.html) (a cross-platform development tool) toolset.
+* If it is Windows Phone, that is C #, the development tool is Microsoft's [Visual Studio](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx) toolset (only run On Windows)。
 
-也许你是刚入门的菜鸟，只会做做网页什么的。那也没有关系，赚钱真正需要的编程技术，其实也可以非常简单。只是有一点，需要什么知识，我们就恶补什么知识。由于技术日新月异，程序员必须是最善于学习的群体。
+In addition, there are some cross-platform languages and tools, more friendly to developers. Develope once, package and release on multiple platforms:
+* HTML5, can be used to develop apps and games, javascript is the core language.
+* [Cocos2d-X](http://www.cocos2d-x.org/) for game development, C++ is the core language.
+* [Unity3D](http://unity3d.com/) IDE and integrated MonoDevelop, C# is the core language.
+* [Xamarin](https://www.xamarin.com/) acquired by Microsoft, and its sponsored open source project [Mono](http://www.mono-project.com/), used to develop APP, C# is the core language.
 
-### 基础篇
+In the following tutorials, we choose the simplest javascript as the main development language for the follow-up introduction.
 
-### 语言与工具选择
+Notice:
+Don't have a stereotype about javascript and think that it is just a simple script program for making web pages.
 
-开发 APP 的语言与工具，通常与平台密切相关。
-* 如果是 iOS，那通常是 Objective C，开发工具是苹果推出的 [Xcode](https://developer.apple.com/xcode/) （开发工具仅运行于 Mac）。
-* 如果是 Android，那通常是 Java，开发工具是 谷歌推出的 [Android Studio](http://developer.android.com/tools/studio/index.html)（开发工具有跨平台版本）。
-* 如果是 Windows Phone，那就是 C#，开发工具是 微软推出的 [Visual Studio](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)（开发工具仅运行于 Windows）。
+In fact, it is an extremely versatile language for programming and the most active language on github. It can be used to develop:
+* Web pages running in the browser;
+* Single-page WebApp running and embedded browser;
+* Command line tools based on [nodejs](https://nodejs.org/), such as Cordova CLI command line tools;
+* Network cloud services based on nodejs, such as Amazon's Bluestacks cloud service;
+* Based on [cordova](http://cordova.apache.org/) technology, hybrid APP.
+* Based on [react-native](http://www.reactnative.com/) to develop apps with native UI experience.
+* Even, you can use [Electron](https://www.electronjs.org/) to develop desktop applications, such as Atom, Visual Studio Code code editor.
 
-除此之外，还有一些跨平台语言与工具，对于开发者更加友善，可以开发一次，多平台打包发布：
-* 可以开发游戏与APP的 HTML5，以 javascript 作为主要的开发语言。
-* 用于开发游戏的 [Cocos2d-X](http://www.cocos2d-x.org/)，用的是 C++ 作为主要的开发语言。
-* 用于开发游戏的 [Unity3D](http://unity3d.com/) IDE 以及集成的 MonoDevelop，用的是 C# 作为主要的开发语言。
-* 微软收购的 [Xamarin](https://www.xamarin.com/) 以及赞助的开源项目 [Mono](http://www.mono-project.com/)，用来开发 APP，以 C# 作为主要的开发语言。
+Because javascript can be used to develop front-end and back-end at the same time, code logic can also be used for front-end and back-end reuse, thereby reducing skill thresholds and development costs. The development environment required for getting started is also very low, as long as there is a friendly code editor and a browser for running and debugging.
 
-在下文的教程中，我们选择最简单的 javascript 作为后续介绍的主要开发语言。
+The following are the environment and tools needed for development with javascript:
+* Chrome browser, comes with developer tools and javascript console for running and debugging.
+* [Adobe Brackets](http://brackets.io/) text editor (if you are used to [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io /) Or [Visual Studio Code](http://code.visualstudio.com/), no problem)
+* iMac desktop, huge 27-inch screen, unrestricted view; Mac OS X command line is very powerful and convenient, through [MacPorts](https://www.macports.org/) or [Homebrew](http:// brew.sh/), command line tools or libraries on Linux basically support it.
+* Xcode (Mac version only), to debug the iOS APP, an iMac computer or MacBook laptop is also necessary.
+* Android Studio, used to debug Android APP.
 
-注意：
-千万不要对 javascript 有刻板印象，而认为它仅仅是做网页的简单脚本程序。
-
-实际上，它是编程用途极为广泛的语言，也是 github 上最为活跃的语言。它可以用来开发：
-* 运行于浏览器内的 Web网页；
-* 运行与内嵌浏览器的 单页WebApp；
-* 基于 [nodejs](https://nodejs.org/) 的命令行工具，例如 Cordova CLI 命令行工具；
-* 基于 nodejs 的网络云服务，例如 亚马逊 的 Bluestacks 云服务；
-* 基于 [cordova](http://cordova.apache.org/) 技术的，混合(hybrid) APP。
-* 基于 [react-native](http://www.reactnative.com/) 开发 native UI体验的 APP。
-* 甚至，也能够使用[Electron](https://www.electronjs.org/)开发出桌面应用，例如 Atom，Visual Studio Code 代码编辑器。
-
-因为使用 javascript 可以同时用来开发前端和后台，代码逻辑也可以用来前后端复用，从而降低技能门槛和开发成本。入门所需要的开发环境也要求非常低，只要有个友好的代码编辑器，有个浏览器可以用来运行和调试，就可以了。
-
-以下是用 javascript 来做开发的所需要的环境和工具：
-* Chrome浏览器，自带开发者工具 和 javascript 控制台，用来运行和调试。
-* [Adobe Brackets](http://brackets.io/) 文本编辑器（如果你习惯 [Sublime Text](http://www.sublimetext.com/) 或者 [Atom](https://atom.io/) 或者 [Visual Studio Code](http://code.visualstudio.com/)，也没问题）
-* iMac台式机，巨大的27寸屏幕，视野不受限制；Mac OS X命令行非常强大方便，通过 [MacPorts](https://www.macports.org/) 或者 [Homebrew](http://brew.sh/)，Linux 上有的命令行工具或者 library 都基本支持。
-* Xcode（只有 Mac 版本），要调试 iOS APP，有台 iMac电脑或者 MacBook笔记本电脑，这也是必备的。
-* Android Studio，用来调试 Android APP。
-
-如果你习惯了 Windows 也没有一台 Mac，那就会稍微麻烦一点。虽然也是有方法的，有一些专门提供编译、打包的云服务，但是这些服务往往出于商业利益的关系，会调整策略终止服务。
-例如:
+If you are used to Windows and don't have a Mac, it will be a little troublesome. Although there are also methods, there are some cloud services that provide compilation and packaging, but these services are often due to commercial interests and will adjust their strategies to terminate the services.
+For example:
 * Adobe PhoneGap Build
-已失效。从 2020.10.1 之后，Adobe 已经停止服务 该云服务。
+Out-dated. Since 2020.10.1, Adobe has stopped serving the cloud build service.
 * Intel XDK
-已失效。XDK 已被英特尔重新用于物联网开发，核心移动开发功能已被英特尔弃用且不再受支持。 随附的跨平台 Cordova 云构建服务已下线。 不建议将 XDK 用于新的手机/平板应用程序开发项目。
+Out-dated. XDK has been re-used by Intel for IoT development, and core mobile development functions have been deprecated by Intel and are no longer supported. The accompanying cross-platform Cordova cloud construction service has been offline. It is not recommended to use XDK for new mobile/tablet application development projects.
 * [Ionic AppLow](https://ionic.io/appflow)
-Appflow 是 Ionic 开发团队的持续集成 (CI) 和持续部署 (CD) 平台。它声称 Ionic Appflow 可以将构建部署到目的地，例如 Apple App Store 和 Google Play Store，完全在云中。
+Appflow is the continuous integration (CI) and continuous deployment (CD) platform of the Ionic development team. It claims that Ionic Appflow can deploy builds to destinations, such as the Apple App Store and Google Play Store, completely in the cloud.
+
+But, a Mac is still recommended, for both Android and iOS development.
 
 ### Hello, World!
 
-用 javascript 开发前端，其实需要的是 3 项相关的语言：HTML / javascript / CSS。
-* HTML 负责内容
-* javascript 负责逻辑
-* CSS 负责渲染表现
+To development frond-end app with javascript, in fact, there are three closely related languages: HTML / javascript / CSS.
+* HTML is responsible for the content.
+* javascript is responsible for logic.
+* CSS is responsible for rendering.
 
-以下是一个简单的例子：
+Here is a simple example:
 ```html
 <!-- index.html -->
 <!DOCTYPE html>
@@ -189,62 +185,67 @@ h1 {
 }
 ```
 
-用 Chrome 浏览器打开它，于是我们看到如下的展示：
-* 上面的浏览器主窗口，显示了 HTML 的内容，并且用 CSS 指定的格式和效果进行了渲染。
-* 下面打开 Chrome 的 console 窗口，则显示了 javascript 调用 console.log() 输出的调试信息。
+Open it with Chrome and we see the following display:
+* The main browser window above shows the contents of the HTML and is rendered in the format and effect specified by the CSS.
+* Open the Chrome console window, it shows the javascript call console.log () output debugging information.
 
 ![HelloWorld](demo/helloworld.png)
 
-用 HTML5 / javascript 做开发，入门就是这么简单。
+Using HTML5 / javascript to do development, getting started is as simple as that.
 
-如果需要开发出高质量的 APP，需要熟练掌握 HTML/CSS 和 javascript，尤其是 HTML5 / CSS3，掌握 HTML DOM 以及 javascript 的一些常见库，例如 [jQuery](https://jquery.com/)，等等。这里有一些免费的入门教程：
-* [HTML 系列教程](http://www.w3school.com.cn/h.asp)
-* [JavaScript 入门教程](http://www.w3school.com.cn/js/index.asp)
-* [JavaScript 高级教程](http://www.w3school.com.cn/js/index_pro.asp)
+If you need to develop high-quality apps, you need to master HTML / CSS and javascript, especially HTML5 / CSS3, master HTML DOM and some javascript libraries, such as [jQuery](https://jquery.com/), etc. Here are some free tutorials for getting started:
+* [HTML series tutorial](http://www.w3school.com.cn/h.asp)
+* [JavaScript Tutorial](http://www.w3school.com.cn/js/index.asp)
+* [JavaScript Advanced Tutorial](http://www.w3school.com.cn/js/index_pro.asp)
 
-通过这些教程的学习，你能够做到：
-* 一个简单的 index.html 页面；
-* 一个统一的 main.css 文件，能够对界面元素的表现加以控制和调整；
-* 一组 javascript 文件，能够通过对 HTML DOM 的访问，实现内容的动态展示和切换。
+Through these tutorials, you can learn:
+* A simple index.html page;
+* A unified main.css file that controls and adjusts the presentation of interface elements
+* A set of javascript files that enable dynamic presentation and switching of content through access to the HTML DOM.
 
-对于作为程序员的你，这根本不是什么难的事情。
+For you, as a programmer, this is not hard at all.
 
-### 单机版APP
+### Simple APP
 
-下一步，我们要把这样一个简单的网页程序 (web app)，变成一个手机上的 APP。准确的说，它应该是叫 Hybrid APP，即混合程序。因为它的外面是 native app 封装了一个 webview，里面运行的是 我们写的 web app。
+Next, we want to turn such a simple web app into a mobile app. To be exact, it should be called Hybrid APP, a hybrid program. Because it's native app, it wraps a webview, which runs the web app we wrote.
 
-我们需要用到 cordova 技术框架。它原本是 Adobe 公司收购的一个小团队开发的产品，被重新命名为 [PhoneGap](http://phonegap.com/)。后来 Adobe 将其开源，并捐赠给 Apache 基金会，然后被称为 [Apache Cordova](https://cordova.apache.org/)，现在已经成为一个非常流行的技术框架，也得到很多商业公司的追捧，除了 Adobe 之外，Intel、微软、IBM 等公司也都推出了支持 Cordova 的产品。
+We need to use a technical framework called Cordova.
 
-Cordova 技术框架提供了一个命令行的工具，是用 nodejs 开发的。
+Originally a product developed by a small team acquired by Adobe, it was renamed [PhoneGap](http://phonegap.com/). Adobe later turned it open source and donated it to the Apache Foundation, then called [Apache Cordova](https://cordova.apache.org/).
 
-我们首先要装 [nodejs](https://nodejs.org/en/)，安装之后，会提供 2 个基本的命令：
+Now Cordova has become a very popular technical framework, but also sought after by many commercial companies, in addition to Adobe, Intel, Microsoft, IBM and other companies have also introduced support Cordova products.
+
+The Cordova technology framework provides a command-line tool developed using nodejs, as well as a variety of plug-ins.
+
+We first have to install [nodejs](https://nodejs.org/en/), after installation, it will provide two basic commands:
 ```bash
 $ which node
 /usr/local/bin/node
 $ node -v
-v4.2.1
+v4.8.4
 $ npm -v
-2.14.7
+2.15.11
 ```
-* node --- 负责 javascript 程序的编译／解释／执行。它是基于谷歌开源的 Chrome V8 引擎的，基于事件驱动、不阻塞 IO模式运行，轻量而高效。
-* npm --- NodeJs Package Manager, 安装包管理器。所有的 nodejs 包都是用 npm 来下载和安装（你也可以用它来发布你自己的包到 npm 库）。
 
-接下来，用 npm 安装 [cordova](https://cordova.apache.org/)：
+* node --- the javascript engine, compile / interpret / execute. It is based on Google's open source Chrome V8 engine,  event-driven, non-blocking IO mode operation, lightweight and efficient.
+* npm --- NodeJs Package Manager, install package manager. All nodejs packages are downloaded and installed using npm (you can also use it to publish your own packages to the npm repository)
+
+Next, use npm to install [cordova](https://cordova.apache.org/)：
 ```bash
 $ npm install -g cordova
 $ which cordova
 /usr/local/bin/cordova
 $ cordova -v
-5.4.1
+7.1.0
 ```
 
-用 cordova 创建一个项目：
+Create a project with Cordova CLI:
 ```bash
-# 格式为：cordova create <目录名> <APP ID> <APP名字>
+# Syntax：cordova create <folder> <APP ID> <APP name>
 $ cordova create temp com.rjfun.demo Demo
 ```
 
-然后编译，并在 iOS 模拟器中运行这个项目：
+Compile and build, then run the app in iOS emulator:
 ```bash
 $ cd temp
 $ cordova platform add ios
@@ -252,20 +253,20 @@ $ cordova build ios
 $ cordova emulate ios
 ```
 
-于是可以看到 iOS 模拟器被启动，然后 APP 运行：
+Now we will see the iOS emulator is started, and APP launched:
 
 ![Cordova iOS](demo/cordovaios.png)
 
-或者你也可以把 iPhone 用 USB 线连接到 Mac，然后用这个命令安装、启动刚刚编译的 APP：
+Or, you can also connect your iPhone device to Mac, the use following command to install and launch the APP:
 ```bash
 $ cordova run ios --device
 ```
 
-现在运行的是 Cordova 自带的 Demo 工程。打开 Cordova 项目，可以看到这样的目录结构：
+Now the running one is Cordova's Demo project. Open Cordova project, you can see this directory structure:
 
 ![Cordova Proj](demo/cordovaproj.png)
 
-接下来，删去 www 目录下的内容，用我们前面写的 index.html, main.js, main.css 替换，并略作修改：
+Next, delete the contents of the www directory, replace with the index.html, main.js, main.css we wrote earlier and make a few changes:
 ```html
 <!-- index.html -->
 <!DOCTYPE html>
@@ -273,13 +274,13 @@ $ cordova run ios --device
 <head>
   <meta charset="utf-8" />
 
-  <!-- 下面的部分，是为了兼容移动设备的屏幕 -->
+  <!-- The section below is to fit mobile devices -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-  <!-- cordova 在 APP 编译打包时自动生成，用来初始化 cordova 框架代码 -->
+  <!-- auto generated by cordova, to initialize the cordova framework -->
   <script type="text/javascript" src="cordova.js"></script>
 
   <title>Hello</title>
@@ -296,11 +297,11 @@ $ cordova run ios --device
 // main.js
 console.log('hello, world!');
 
-// 当 APP 初始化完成，会触发 'deviceready' 事件，我们可以调用 cordova 框架以及插件提供的 API 和功能
+// When the app is initialized, the 'deviceready' event is fired and we can call the cordova framework and the APIs and functionality provided by the plug-in
 document.addEventListener('deviceready', function(){
   console.log('deviceready');
   
-  // TODO: 开始我们 web app 的业务逻辑
+  // TODO: Start the business logic of our web app
 });
 ```
 
@@ -323,116 +324,118 @@ h1 {
 }
 ```
 
-重新运行 cordova 项目（会自动编译、安装、运行）：
+Rerun the cordova project (it will compile, install, run automatically):
 ```bash
 $ cordova emulate ios
 ```
 
-于是，可以看到 Web App 在 iOS 模拟器中运行了：
+So, you can see that Web App is running in the iOS simulator:
 
 ![Hello World Cordova](demo/helloworldcordova.png)
 
-做个最简单的APP，其实也很简单，是不是？！
+To write an easiest APP, in fact, is really  simple, isn't it?
 
-### 加个广告条
+### Add Ad Banner
 
-作为程序员，我们毫不怀疑，你可以通过掌握的 HTML/CSS 以及 javascript 编程能力，提供一些有趣、有用的功能。
+As a programmer, we have no doubt that you have mastered the HTML / CSS and javascript programming capabilities to provide some interesting and useful features.
 
-接下来，我们要给这个 APP 加上变现（monetization）的功能，即实现赚到真金白银。
+Next, we want to add monetization to the app, which is to make real money.
 
-变现最简单的方法，就是加上广告条，例如谷歌的AdMob。
-* 通过展示广告，用户对有兴趣的广告点击，浏览产品、或者安装其他的 APP。
-* 投放广告的个人／公司（简称广告主，Advertizer）会支付广告费给谷歌。
-* 而谷歌则会将其中的一部分，支付给发布广告的个人／公司（简称发布商, Publisher）。
-* 谷歌在其中扮演的角色，则称之为广告平台（Ad Platform）、或者广告中介（Ad Network）。
+The easiest way to realize is to add an ad banner, such as Google's AdMob.
+* By showing ads, users click on interesting ads, browse the product, or install other apps.
+* Advertisers / advertisers (advertisers, Advertizer) pay advertising costs to Google.
+* Google will pay a portion of it to the person / company (publisher, publisher) who posted the ad.
+* Google's role in it is called the Ad Platform, or Ad Network.
 
-Cordova 框架的技术架构，是 Web APP 加上一些通用的插件，提供手机特定功能的访问、与第三方系统的集成。
+The technical architecture of the Cordova framework is a web app with some common plug-ins that provide access to specific functions of the handset and integration with third-party systems.
 
-我们通过插件 cordova-plugin-admobpro 来实现与谷歌 AdMob 的集成。这是基于谷歌 AdMob SDK 开发的一个插件，也是目前变现插件中最流行、最容易使用的。通过它，只需一行 javascript 代码就可以完成对 SDK API 的调用。
+We implemented integration with Google AdMob via the plug-in cordova-plugin-admobpro. This is a plug-in based on the Google AdMob SDK, and is the most popular and easiest to use plug-in for the moment. Through it, just a line of javascript code to complete the SDK API call.
 
-现在让我们往 cordova 项目工程中加入插件。
+Now let's add plugins to the cordova project.
 
 ```bash
 $ cordova plugin add cordova-plugin-admobpro
 ```
 
-然后修改 main.js，在 APP 初始化完毕时，我们加几行代码。
+Modify main.js, let's add a few lines into the initialization:
 
 ```javascript
 // main.js
 console.log('hello, world!');
 
-// 当 APP 初始化完成，会触发 'deviceready' 事件，我们可以调用 cordova 框架以及插件提供的 API 和功能
+// When the app is initialized, the 'deviceready' event is fired and we can call the cordova framework and the APIs and functionality provided by the plug-in
 document.addEventListener('deviceready', function(){
   console.log('deviceready');
   
-  // 在 APP 初始化完毕时，在屏幕下方创建一个广告条
+  // When the app is initialized, create an ad banner below the screen
   if(AdMob) AdMob.createBanner({
-    adId: 'ca-app-pub-6869992474017983/4806197152', // 需要到 AdMob 官方网站注册用户，并创建广告单元 Ad Unit Id
-    position: AdMob.AD_POSITION.BOTTOM_CENTER, // 展示在屏幕下方中央
-    overlap: false, // 不要覆盖 Web APP 的内容
-    isTesting: true, // 展示测试广告，在正式发布时，去掉这行
-    autoShow: true // 广告资源就绪时，自动开始展示
+    adId: 'ca-app-pub-6869992474017983/4806197152', // need to register as a user on the AdMob website and create an Ad Unit Id
+    position: AdMob.AD_POSITION.BOTTOM_CENTER, // show at bottom / center
+    overlap: false, // no overlap the web app content
+    isTesting: true, // show testing ad, please remove this line when formal release
+    autoShow: true // auto show it when ad resource downloaded and ready
   });
 });
 ```
 
-重新运行 cordova 项目（会自动编译、安装、运行）：
+Rerun the cordova project (it will compile, install, run automatically):
 ```bash
 $ cordova emulate ios
 ```
 
-于是，可以看到 Web App 在 iOS 模拟器中运行了：
+So, you can see that Web App is running in the iOS simulator:
 
 ![AdMob Banner](demo/admobbanner.png)
 
-看，屏幕下方的广告条展示出来了。
+Look, at the bottom of the screen, the banner is displayed.
 
-这里只是仅供调试用的测试广告。我们需要到 [AdMob官方网站](https://apps.admob.com/)注册用户，并创建广告单元（Ad Unit Id），并用来替换掉 代码中 adId 后面的这串数字。并在发布的正式版本中，去掉 `isTesting:true` 这行代码。
+This is just a test advertisement for debugging purposes only.
 
-### 注册广告账号
+We need to register the user on [AdMob official website] (https://apps.admob.com/) and create an Ad Unit Id that replaces the string of digits following adId in the code. And in the official version of the release, remove the `isTesting: true` line of code.
 
-下面我们就介绍，如何注册账号，如何创建广告单元，如何设置银行收款信息。
+### Register Ad Account
 
-由于价值观方面的原因，谷歌的网站基本上都是被隔离在中国大陆局域网之外，通常是无法访问的。需要通过 VPN 等科学上网的方式才能够访问。如果你不知道如何科学上网，可以写邮件给我，单独讨论这个问题，这里暂不展开。
+Here we introduce, how to register account, how to create ad unit, how to set bank receipt information.
 
-访问谷歌AdMob官网（ https://www.google.com/admob/ ），注册新账号。
+Visit Google's AdMob website (https://www.google.com/admob/) to sign up for a new account.
 
 ![AdMob Site](demo/admobsite.png)
 
-注册完成之后，登陆 AdMob 网站（ https://apps.admob.com/ ），点击菜单“获利”，点击左上角的红色按钮“＋通过新应用获利” 添加新APP：
+After registering, visit the AdMob website (https://apps.admob.com/), click on the menu "monetization", click on the red button in the upper left corner "+ monetize new application" to add a new APP:
 
 ![AdMob New App](demo/admobnewapp.png)
 
-然后创建横幅广告：
+Then create banner ads:
 
 ![AdMob New Banner](demo/admobnewbanner.png)
 
-即可获得广告单元 ID，将其 copy 到源代码中：
+You can get the ad unit ID, copy it to the source code:
 
 ![AdMob Ad Unit ID](demo/admobadunitid.png)
 
-### 验证地址和设置收款信息
+### Set Payment Info
 
-注册账号之后，广告单元进入APP投放实际使用，即可积累广告收益。
+After registering your account, you can accumulate ad revenue by putting the ad unit into the APP for user actual usage.
 
-要收到谷歌支付的广告分成，还有 2 个步骤要完成：
-* 验证地址。谷歌会生成一个 PIN 码，打印在卡片上，邮寄到你的通信地址。
-* 设置收款信息。可以是 西联汇款 或者 银行账号。
+There are two more steps to complete the Google advertising payment you receive:
+* Verify address. Google will generate a PIN code printed on the card, send to your mailing address.
+* Set up payment information. Can be Western Union or bank account.
 
-不过，刚注册的账号还不允许设置这个信息。只有你的累计广告收入达到基本的门槛（目前是 10美金），谷歌才会允许进入设置支付信息的环节。谷歌通过这个方法，可以过滤掉大量的无效账号。
+However, newly registered account has no access to set bank information. Only your cumulative advertising revenue reached the basic threshold (currently 10 US dollars), Google will allow you to set up payment information. Through this method, Google can filter out a large number of non-active accounts.
 
-#### 验证 PIN 码：
+#### Verify PIN Code
 
 ![Verify PIN](demo/verifypin.png)
 
-点击“立即改正此问题”，进入 PIN 码输入界面。
+Click "Fix It", enter PIN input UI.
 
 ![Verify PIN](demo/verifypin2.png)
 
-验证 PIN 码这个过程比较缓慢，通常需要 2-4 周的时间。所以如果显示了最近生成 PIN 码的日期，就耐心等待吧。收到 PIN 码之后，就将其输入上面这个框，提交验证。
+This process of verifying your PIN is slow and typically takes 2-4 weeks.
 
-#### 设置收款信息：
+So, if the date of the most recent PIN was displayed, wait patiently. After receiving the PIN code, it will be entered in the box above, submitted for verification.
+
+#### Set Payment Info
 
 ![AdMob Payment](demo/admobpay1.png)
 
@@ -440,168 +443,172 @@ $ cordova emulate ios
 
 ![AdMob Payment](demo/admobpay3.png)
 
-等这 2 个步骤设置完成，当产生广告收益的时候，谷歌就会在每个月的月末，计算当月的广告收益，然后在下个月的 20日左右支付给你。
+After the two steps are set up, when the advertising revenue, Google will calculate the advertising revenue of the month at the end of each month, and pay you around the 20th of next month.
 
-### 发布APP
+### Publish APP
 
-我们完成的 APP，要被用户安装使用并产生收益，还缺少一个重要的环节：发布 到应用商店。
-* 如果是 Android APP，通常是 Google Play Store。中国大陆用户通常访问不到，则可以选择发布到大陆的一些应用商店，例如 360、豌豆荚 等等。
-* 如果是 iOS APP，则是发布到苹果 AppStore。
+The APP we developed, to be installed by user and generate revenue, needs an important part: released to the app store.
+* If Android APP, usually Google Play Store.
+* If iOS APP, released to Apple AppStore.
 
-这里我们以苹果 AppStore 为例，来说明如何注册开发者账号，并发布 APP。
+Here we use the Apple AppStore as an example, to illustrate how to register a developer account and publish an app.
 
-访问苹果开发者网站（ https://developer.apple.com/ ），并注册登录。要在 苹果AppStore发布应用，需要支付每年 99 美金的年费，对于个人开发者、公司开发者，这个费用都是一样的。
+Visit the Apple Developers Web site (https://developer.apple.com/) and sign up for login. To release an app on the Apple AppStore, you pay an annual fee of $ 99 a year, which is the same for individual developers and corporate developers.
 
 ![Apple Developer](demo/appledev.png)
 
-注册成功的开发者，需要下面几个步骤，才能将 APP 发布到 AppStore：
-* 生成开发者数字证书，用于安装包的签名。
-* 为你的 APP 创建 APP ID，如果不涉及内购，也可以用 “*” 或者 “com.rjfun.*” 作为一个通用的 APP ID，在多个 APP 中使用。
-* 为你的 APP 生成 Provisioning Profiles，并下载到 本地用 Xcode 打开、管理。
+The following steps are needed to publish APP to the AppStore:
+* Generate developer digital certificate for installation package signature.
+* Create an APP ID for your APP, or use "*" or "com.rjfun. *" As a generic APP ID for more than one app, if no in-app purchase.
+* Generate Provisioning Profiles for your APP, download it locally, open it in Xcode, and manage it.
 
-然后用 Xcode 打开 Cordova 项目里的 XXX.xcodeproj 工程文件，编译并存档（Archive）。成功存档的 APP 包，才能提交到 AppStore 进行审核。
+Then use Xcode to open the XXX.xcodeproj project file in the Cordova project, compile and archive (Archive). Successfully archived APP packages can be submitted to AppStore for review.
 
-APP 提交前，需要到 iTunesConnect （ https://itunesconnect.apple.com/ )，准备、发布和管理你的 APP。
+You need to log into iTunesConnect (https://itunesconnect.apple.com/), to prepare, publish and manage your APP.
 
 ![iTunes Connect](demo/itunesconnect.png)
 
-创建新的 APP，加上名字、介绍、图标、定价等信息，并将其设置为准备提交的状态，然后就可以通过 Xcode 中的 Organizer 将成功存档（Archive）的安装包提交到 AppStore 进行审核了。
+Create a new APP, add the name, introduction, icon, pricing and other information, and set it as ready to submit the status, and then you can Organizer Xcode in the successful archive (Archive) installation package submitted to the AppStore for review .
 
 ![Xcode Organizer](demo/xcodeorganizer.png)
 
-苹果审核 APP 的流程大约 1 周左右的时间。如果审核通过，就可以在 AppStore 里面看到你发布的 APP 了。
+Usually it will take Apple 2 or 3 days to review your app. If the review passes, you can see your app in the AppStore.
 
-### 广告收益的计算
+### Calculate Ad Revenue
 
-当用户在设备中下载、安装APP并运行的时候，就会从谷歌的广告服务器请求正式的广告内容，并用于展示了。
+When a user downloads, installs and runs an app on his device, he or she requests the official ad content from Google's ad server for display.
 
-你可以登陆谷歌 AdMob 网站，查看每天的广告展示量、点击率、以及产生的收益。这个网站也提供了非常强大的报表功能，可以根据国家、广告单元、时间段，显示非常详细的报告。谷歌在 AppStore 上发布有一个 AdSense 的 APP，你可以安装这个 APP，每天查看你的 AdMob 收益。
+You can visit the Google AdMob website to see daily ad impressions, clickthrough rates, and revenue. This site also offers very powerful reporting capabilities that show very detailed reports based on country, ad unit, time period. Google has an AdSense app on the AppStore, and you can install this app on your phone to see your AdMob earnings daily.
 
-每次用户对感兴趣的广告进行点击，就会产生广告收益。大部分的广告投放，是按照点击次数计算费用的，即所谓的 CPC 广告。
+Each time a user clicks on an ad of interest, it generates advertising revenue. Most of your ad serving is calculated based on the number of clicks, the so-called CPC ads.
 
-在计算广告收益的时候，有几个常见的基本术语：
-* CPC（Cost Per Click，每次点击费用），大约是 US$ 0.06 ~ 1.0;
-* CTR（Click Through Rate，展示点击率），大量统计的结果大约是 1%;
-* CPM (Cost Per Mile, 每千次展示费用），通过 CPC 和 CPR 也能够推算出 CPM，大致范围是 US$ 0.5 ~ 5。
+In calculating advertising revenue, there are several common basic terms:
+* CPC (Cost Per Click, cost-per-click) is about US $ 0.06 ~ 1.0;
+* CTR (Click Through Rate, show CTR), the result of a large number of statistics is about 1%;
+* CPM (Cost Per Mile, CPM), CPM can also be calculated by CPC and CPR, the approximate range is US $ 0.5 ~ 20.
 
-每次点击的价格，根据广告投放的价格不同而不同。全球不同国家由于经济水平不同，也存在很大的差异。例如，
-* 在美国，一次广告点击可能产生 0.2 美元的收益;
-* 在巴西，也许只有 2 美分，相差 10 倍。
-* 而日本，广告点击的收益是相当高的。
+The price per click varies based on the type of ad, the price that is served, and so on. Since different countries in the world have different economic levels, there are also big differences.
 
-下面是一组数据的对比：
+E.g,
+* In the United States, an ad click may yield a gain of $0.2;
+* In Brazil, maybe only 2 cents, a difference of 10 times.
+* In Japan, clicks on advertising revenue is quite high.
 
-美国 | 巴西
+The following is a comparison of a set of data:
+
+USA | Brazil
 ---|---
 ![USA](demo/datausa.jpg) | ![Brazil](demo/databrazil.jpg)
-日本 | 德国
+Japan | Germany
 ![Japan](demo/datajapan.jpg) | ![Germany](demo/datagermany.jpg)
 
-如果我们按照 CPM （每千次展示费用）1美元 来估算，每天 10万次广告展示，大约可以产生 $100美元现金收益。按照 6.45 的汇率计算，一个月30天（包括周末和节假日！），大约可以产生的收益是 ¥19,350。
+If we conservatively estimate $1 CPM (cost per thousand impressions), 100,000 ads per day will generate about $100 in cash. Then it will generate $3,000 in a month (including weekends and holidays!).
 
-而在上海，5年经验的、技术能力还不错的程序员，薪资大约也就 15,000 左右。如果你做的 APP，每天能够有 1万个用户使用，基本上产生的广告收益和现金流，就可以达到一个程序员的工资水平。
+Let's compare it with the average programmer's salary. In Shanghai, an experienced programmer with 5 year experience, the salary is about $2,300 or so. If you make such the APP, with 10,000 DAU (daily active user), the revenue generated from advertising can exceed the salaries of a programmer. Or even more, if optimized very well.
 
-我认识一个巴西人，他用 HTML5 技术实现的小游戏，简单，但是非常有趣。每天的活跃用户大约是 10万，广告收益已经超过每个月 15万，从而实现了财务自由。
+I know a Brazilian, develop his game with HTML5 technology, simple, but very interesting. Daily active users is about 100,000, advertising revenue has more than $25,000 per month, so as to achieve the financial freedom.
 
-### 进阶篇
+### Advanced
 
-### 需求是根本
+### Demand is fundamental
 
-前面我们介绍了如何为 APP 增加了变现（monetization）的能力。但要真正获得可观的收益，还必须得有足够多的用户。也就是说，你必须开发出足够好的 APP，能够真正解决用户的问题，才会有更多的用户使用、更高频度的使用。
+Earlier we described how to add monetization to APP. But to really get a decent return, you still have to get enough users. In other words, you have to develop enough good APP, can really solve the user's problem, will have more users, more frequent use.
 
-如何能够开发出更受用户欢迎的 APP 呢？其实这不是一个编程问题。
+How to develop a more popular APP? In fact, this is not a programming problem.
 
-也许你是一个技术的大牛，但是最艰深、最牛X的技术，开发出来的软件产品未必是受到用户欢迎的产品。有时候，你用了一种其实比较简单的技术，但是真正关注了用户的痛点，解决了用户关心的问题，很可能你的产品就会受到用户的欢迎，创造出口口相传的良好口碑，在社交网络得到自然传播。
+Perhaps you are a technical expert, using the most difficult, coolest technology, but the software products developed, may not be welcomed by users of the product. Sometimes, you use a technology that is actually relatively simple, but really pay attention to the user's pain points, to solve the user's concerns, it is possible your product will be welcomed by users, because of good reputation in the social network to get the natural spread.
 
-我推荐一本书，《需求-缔造伟大商业传奇的根本力量》，作者是亚德里安•斯莱沃斯基。
+I recommend a book, "Demand - the Fundamentals of Creating Great Business Legends," by Adrian Silesivski.
 
-以下是某些创业成功者的推荐：
+Here are some tips from entrepreneurs:
 
-> 这是一本好书，每个创业者和每个公司管理者都值得一看，甚至公司中的每个人都应该了解和体会其中的概念。书中给出了一些创造需求的模式，这对读者是非常有价值的，我们需要好的理念，但我们更需要可以践行理念的方法。这两点本书都做到了，非常值得一读，特荐之。
-——孙陶然 ，拉卡拉支付有限公司创始人、董事长兼总裁，《创业36条军规》作者
+> This is a good book worth every entrepreneur and every manager of the company to read, and even everyone in the organization should understand the concepts. The book gives some models for creating needs, which are very valuable to readers, we need good ideas, but we need more ways to practice ideas. These two books are done, very worth reading, especially recommended.
+- Sun Taoran, founder, chairman and president of La Cara Pay Ltd., author of "Entrepreneurship 36 Military Regulations".
 
-> 每一个抱怨的背后都隐藏着一个未被满足的需求，而每一个需求的背后必然隐藏着一个不可忽视的市场。其实任何产品，在一开始满足了用户的功能性需求以后，就应该着手升级到精神层面，用户拒绝麻烦，用户需要安慰，这看起来跟利润无关，但是对不起，它跟你的市场有关。你不去满足，创业者就会自己去进行开拓性满足。那么等待你的，或将是个生死存亡的巨大危机。因此，请一定重视麻烦所带来的希望，而不是去抵触他们的抱怨。这正是《需求》给我们带来的最有价值的东西。
-——杜子建，华艺传媒创始人，社会化媒体营销研究者，畅销书《微力无边》作者
+> Behind every complaint is hidden an unmet need, and behind every need inevitably hides a market that can not be ignored. In fact, any product that meets the functional needs of the user from the outset should be upgraded to the spirit level, the user refuses to trouble, the user needs comfort, it does not seem to have anything to do with the profit, but I'm sorry, it is related to your market. You do not meet, entrepreneurs will go to their own ground-breaking satisfaction. Then waiting for you, or will be a huge crisis of life and death. Therefore, please pay attention to the hope of trouble, rather than to their complaint. This is exactly the most valuable thing that "demand" brings to us.
+- Du Zijian, founder of Huayi Media, social media marketing researcher, bestseller "Boundless" author.
 
-### 用户体验
+### User Experience
 
-为什么苹果手机卖得贵，依然热卖？无疑它是以优秀的用户体验取胜的。如果你看过《乔布斯传》，你可以知道，苹果手机的诞生，其实是解决了传统手机难于使用的痛点。
+Although the sale of Apple mobile phone is very expensive, but still very popular, why? It is undoubtedly the best user experience to win. If you read "Steve Jobs Biography", you can know that the birth of Apple's mobile phone, in fact, is to solve the pain of traditional phones difficult to use.
 
-自然我们在手机上开发的 APP 或者 游戏，也必须要高度关注用户体验，并且把它放到战略重点的位置上来。手机 APP，不追求功能的强大、齐全，可以只做一个小小的功能，但是要切实关注用户的需求点、并提供优秀的用户体验。
+Naturally, the app or game we develop on our mobile phone must also be highly user-focused and put it in a strategic position. Mobile APP, not the pursuit of powerful features, complete, you can only do a small feature, but to effectively focus on the needs of users, and provide excellent user experience.
 
-一个相当典型的例子是这款《手电筒》APP，就是打开手机的 LED灯泡，用来临时照亮黑暗。
+A rather typical example is this "Flashlight" APP, which is to turn on the phone's LED bulb to temporarily light up the darkness.
 
 ![Torch APP](demo/torchapp.png)
 
-这款 APP 的用户已经超过好几亿，自然收益也是极其可观。
+This APP has more than hundreds of millions of users, of course, its economic return is also extremely impressive.
 
-评价的数量超过600万人次，它的用户是这样写的：
-* Jennifer Baylis: 易于使用。#1 最棒的手电筒APP！非常容易使用，打开很快！
-* Kitty Davis: 我正是需要这样一个手电筒 APP。
-* Dennis Castello: 它正是做到了需要它做的事，而且做的真的很好。
-* Joseph Low: 易于使用。轻松地让它干活！强烈推荐！
+The number of user comments exceeded 6 million and the users wrote:
+* Jennifer Baylis: easy to use. # 1 The best Flashlight APP! Very easy to use, open very fast!
+* Kitty Davis: I just need such a flashlight APP.
+Dennis Castello: It's exactly what it takes and it's done really well.
+* Joseph Low: easy to use. Let it work easily! highly recommended!
 
-### 哪种广告最适合
+### What Ad is Best
 
-在移动广告领域，存在多种形式的广告，并且也在不断的发展。
-* banner Ad，横幅广告
-* interstitial Ad，插屏广告
-* native Ad，原生广告
-* reward video Ad，奖励视频广告
-* IAP (in-app purchase) Ad，内购广告
+In the mobile advertising arena, there are many forms of advertising, and are also constantly evolving.
+* banner Ad
+* interstitial Ad
+* native Ad
+* reward video Ad
+* IAP (in-app purchase) Ad
 
-哪种广告适合你的 APP，需要很好的权衡用户体验和收益之间的关系。如果广告展示不当，或者展示过于频繁，影响了用户体验甚至招致用户反感，就本末倒置了。
+Which ad is best for your app, depending on the situation. This requires a good balance of user experience and revenue. If the ad is displayed improperly, or show too often, affecting the user experience or even cause the user offensive, it is the cart before the horse.
 
-横幅广告 | 插屏广告
+banner Ad | interstitial Ad
 ---|---
 ![iPhone Banner](demo/iphonebanner.jpg) | ![iPhone Interstitial](demo/iphoneinterstitial.jpg)
 
-这两种广告是最为基本和经典的，各有千秋。相对来说，横幅广告只占用屏幕下方的一小片空间，可以一直滚动展示，默认的是每 60 秒更换一次广告内容。优点是不太会影响用户界面和体验，缺点则是因为不太起眼，不容易引起用户的注意和点击。
+These two kinds of advertisements are the most basic and classic, each has its pros an cons. Banner ads occupy only a small space at the bottom of the screen, changing the ad content every 60 seconds. The advantage is not too affect the user interface and experience, the disadvantage is because less obtrusive, not easy to arouse the user's attention and clicks.
 
-插屏广告则是全屏的，在特定的时间弹出，更能够吸引用户的眼球和点击。也正是因为这个原因，插屏广告的点击收益比横幅广告要高 5 倍以上，比较推荐使用。
+Interstitial ad is full-screen, pop-up at a specific time, more able to attract the user's attention and click. Because of this, the interstitial ad has better effects and click revenue is higher than the banner ads more than 5 times, so more recommended.
 
-使用插屏广告的时候，要特别注意弹出的时间，千万不要打断用户的连续操作和游戏体验，否则不仅不会引起用户的点击，还会引起用户的反感。最佳做法是将其放在 2个阶段之间的过渡时机，例如游戏的一关刚刚结束，弹出插屏广告，然后再继续下一关。
+When using interstitial ad, please pay special attention to the pop-up time, do not interrupt the user's continuous operation and gaming experience, otherwise it will cause the user's strong aversion. Best practice is to put it in transition between the two stages, such as the game is just over, pop-up screen ads, and then continue to the next level.
 
-通过插件 cordova-plugin-admobpro，要展示插屏广告也是非常简单的，只需要 2 行 javascript 代码就可以完成了。其中一行代码负责准备广告资源，另一行代码负责展示。示范代码如下：
+Using cordova-plugin-admobpro to display interstitial ads is also straightforward, requiring just two lines of javascript to complete. One line of code prepares inventory and the other line of code shows ads. 
+
+Here is the example:
 ```javascript
-// 在游戏启动时或者进行中，开始准备插屏广告，通过后台线程下载广告资源
+// When the game starts, it starts to prepare for interstitial ads, and the background thread downloads the inventory
 if(AdMob) AdMob.prepareInterstitial({
   adId: "__ad_unit_id_here__", 
   autoShow: false
 });
 
-// 在游戏关卡结束时，调用 API 进行插屏广告的展示
+// At the end of the game level, call API to display the interstitial ad
 if(AdMob) AdMob.showInterstitial();
 ```
 
-以上这 2 种广告，是最容易使用的广告形式，集成到 APP 中的工作也最为容易。
+The above two kinds of advertisements are the easiest to use forms of advertisement, and the work integrated into the APP is also the easiest.
 
-原生广告（native Ad），就是将广告内容以较为和谐的方式，展示在APP自身的内容之间，不会显得过于突兀和突然，这是对用户体验影响最小的一种广告形式。 Facebook AudienceNetwork 和 Flurry 比较早就推出了原生广告，不过谷歌 AdMob 对此持谨慎态度，仅仅在部分开发者中进行 beta 试用。
+Native Ad is a new way to show your ads in a more harmonious way between their own content. It does not seem obtrusive or abrupt. It's the type of advertising that has the least impact on user experience. Facebook AudienceNetwork and Flurry launched native ads long before, and later Google AdMob also introduced it to developers.
 
-奖励视频广告(reward video Ad)，是谷歌新推出的一种广告。就是鼓励用户看完广告视频，然后开发者在游戏中或者 APP 中给予某种虚拟物品的奖励。在以前的广告推广中，谷歌并不支持在用户接受广告方面给予鼓励的行为，甚至将对点击广告给予奖励的做法定为违规的行为。因为这很可能违背用户本身的兴趣、造成虚假无效点击。新的奖励视频广告方面，谷歌采取了相对灵活和务实的态度。不过这方面的广告视频来源，基本上都是通过广告中介的方式来自于其他的广告网络。
+Reward video Ad, a new ad in the mobile advertising industry. It encourages users to watch ad videos and reward them with some kind of virtual item in the game or app. In previous advertising campaigns, Google did not support giving users encouragement, and even made it illegal to give rewards. Because this is likely to violate the user's own interest, resulting in false invalid clicks. For the new rewarded video ad, other advertisers first introduced and succeeded in the market, Google adopted a relatively flexible and pragmatic attitude. However, advertising video sources are not very rich, many are mediation way from other ad networks.
 
-内购广告（IAP House Ad）是一种新颖、创新的广告形式，应用内购买广告可让用户直接在应用内购物。因为需要和支付系统、或者谷歌Play Store结合起来，所以仅在 Android 系统支持。通过内购广告，应用开发商可在以下方面获益：
-* 通过在同一款应用中实施广告投放和应用内购，可以最大程度地增加您的收入和用户的生命周期价值。
-* Google 会自动帮助您确定哪些用户有可能购买应用内购商品，并向其余用户展示普通的付费广告。
-* 不需要开发自己的应用内购支持系统，也不需要在应用中加入应用内购支持代码。
-* 利用不同的自家内购广告，可以轻松定位用户群体中的各种细分受众群。通过将应用内购广告与 AdMob 受众群体构建工具结合使用，可以向高消费群体投放价格高的应用内购商品，而向其他用户展示价格低的商品。
+IAP Ad is an innovative form of advertising. IAP Ad allows users to shop directly in-app. Because it needs to be integrated with the payment system or the Google Play Store, it's only supported on the Android system. With in-app advertising, app developers can benefit from:
+* Maximize your revenue and user lifecycle value by implementing ad serving and in-app purchases in the same app.
+* Google automatically helps you determine which users are likely to purchase in-app purchases and show ordinary paid ads to the remaining users.
+* No need to develop your own in-app support system or add in-app support code to your app.
+* Easily target various segments of the user community with different in-app purchases. By using In-App Ads with the AdMob Audience Builder, you can serve high-priced, in-app products to high-spending groups while showing them to you at lower prices.
 
-如果要尝试原生广告、奖励视频广告、内购广告，请移步 Google [AdMob 官方文档网站](https://developers.google.com/mobile-ads-sdk/)，进行深入研究，学习如何使用。
+If you want to learn more about native ads, rewarded video ad, buy ads, go to Google [AdMob official documentation website](https://developers.google.com/mobile-ads-sdk/) for in-depth research and study how to use.
 
-### 哪家广告商最靠谱
+### Which Ad Most Reliable
 
-因为移动广告领域的利润可观，移动广告平台的发展也是非常快的。过去的这些年，也发生了不少并购案。例如 Google先后收购了 DoubleClick 和 AdMob，Flurry 被 Yahoo! 收购，MobFox 被 Matomy 收购，Millennial Media 被 AOL 收购。
+Because of the profitable mobile advertising sector, the mobile advertising industry is also growing very fast. Over the past few years, there have been many mergers and acquisitions. For example, Google has successively acquired DoubleClick and AdMob, Flurry acquired by Yahoo!, MobFox acquired by Matomy, and Millennial Media acquired by AOL.
 
 ![Top Ad Networks](demo/topadnetworks.jpg)
 
-通常广告平台会提供：
-* 接入广告系统的 SDK；
-* 注册、登录和管理广告的系统；
-* 接入指南、例程、FAQ；
+Usually the ad platform will provide:
+* SDK, providing API for accessing advertising system;
+* Register, login and manage advertising system;
+* Integration Guide, examples, FAQ;
 
-各种移动广告平台的相关介绍，可以通过搜索活着其他不同的渠道去了解（例如 StackOverflow.com），并可以有选择性的进行尝试。
+Information about the various mobile ad platforms can be found through search or through a number of different sources (eg, StackOverflow.com) and try selectively.
 
-以下是我试用过的一些广告平台：
+Here are some of the advertising platforms I've tried:
 * Google AdMob
 * Facebook AudienceNetwork
 * Yahoo! Flurry
@@ -614,76 +621,78 @@ if(AdMob) AdMob.showInterstitial();
 * Smart AdServer
 * ... ...
 
-使用下来比较满意的有 AdMob, Facebook AudienceNetwork, Yahoo! Flurry, MobFox。尤其是 AdMob，非常值得推荐。
+By trying to use, I am more satisfied with AdMob, Facebook AudienceNetwork, Yahoo! Flurry, MobFox. Especially AdMob, is highly recommended.
 
-AdMob之所以最值得强烈推荐，主要有这样一些突出的优点：
-* 广告填充率高（基本上在 98% 以上，有个别国家略低于90%），因此可以充分利用用户流量。毕竟广告是谷歌公司的主要业务和利润来源，其广告客户遍及全球，这也不足为怪了；
-* 付款及时，每个月的月底结算，次月 20日支付；
-* SDK 非常稳定，接入文档以及参考代码易于使用，并且有不同语言的文档和系统界面；
-* 报表系统功能强大、易于使用，可以通过不同的维度进行数据分析；
-* 有专门的 APP 可以用来跟踪收益；
-* 有专门的技术支持人员，有官方支持的技术论坛，专门解答 SDK 接入方面的技术问题；
-* 定期会组织一些宣讲、培训活动，也定期有线上视频讲座；
-* 客户服务非常到位，非常的耐心和友善，我和他们也基本上一直保持联系。
+The reason why AdMob is the most highly recommended, there are some prominent advantages:
+* Ad fill rate is high. Basically more than 98%, some countries slightly less than 90%, so you can take full advantage of user traffic. After all, it is no surprise that advertising is a major source of revenue and revenue for Google, with advertisers around the world.
+* Payment promptly. The monthly earnings are settled at the end of the month and paid on the 20th of the following month;
+* SDK is very stable. Integrated documentation and reference code Easy to use, with documentation and system interfaces in different languages;
+* Reporting system powerful and easy to use. Data can be analyzed in different dimensions;
+* Easy to use. A dedicated APP can be used to track earnings;
+* Support in place. A dedicated technical support staff, technical forums with official support, dedicated to answer the technical aspects of SDK access;
+* Regularly organize some preaching and training activities, as well as regular online video lectures;
+* Customer service is in place. Very patient and friendly, I keep in touch with them.
 
-由于谷歌在各个领域的卓越创新、一贯的优质服务，在开发者中有良好的口碑。
+Because of Google's excellence in innovation and consistent quality service, it has very high reputation among develoeprs.
 
-而基于 AdMob SDK 开发的 cordova-plugin-admobpro 这款插件，不仅把 Objective-C / Java / C# 的原生 API 封装为统一的 javascript API，而且更加简单易用，只需 1－2 行代码即可完成广告展示。这款插件在 Cordova 全球社区也广受欢迎，是使用率最高的变现插件。以下是插件的下载趋势曲线图：
+The cordova-plugin-admobpro plug-in, built on the AdMob SDK, not only encapsulates Objective-C / Java / C # native APIs into a unified javascript API but is also much easier to use. Just 1-2 lines of code to complete the ad display. Popular in Cordova's global community, this plug-in is the most-used monetization plug-in. The following is a plug-in download trend curve:
 
 ![AdMob Download Trend](demo/admobprodltrend.png)
 
-Facebook 的 AudienceNetwork 也挺不错。Facebook 不仅仅是最大、最活跃的社交媒体，也提供各种相关 SDK，包括广告用的 AudienceNetwork。其开发者网站为：https://developers.facebook.com/docs/audience-network 。
-* Facebook 的 广告填充率(Fill Rate)没有 AdMOb 那么高，大约在45～75% 之间。
-* Facebook 付款也很及时，也是在每个月的 21日左右支付上个月的广告收益；
-* Facebook 的 SDK 更新非常频繁，大约 2 周左右就会发布一个新的版本，因此如果有什么 bug 修复也很快。不过更新的频度实在有点高，有时候有点跟不上的感觉。相对来说，谷歌 AdMob 的 SDK 更加稳定一些；
-* 管理界面和报表系统也比较清楚易用，一目了然。报表系统没有 AdMob 的那么强大和灵活，貌似仅有英文界面，看上去是下面这样的。
+Facebook AudienceNetwork is not bad.
+
+Facebook is not only the largest and most active social media, but also offers a variety of related SDKs, including AudienceNetwork for Advertising. Its developer website is https://developers.facebook.com/docs/audience-network.
+* Facebook's Fill Rate is not as high as AdMob, about 45-75%.
+* Facebook payment is also timely, but also in the 21st of each month to pay last month's advertising revenue;
+Facebook's SDK updates are very frequent. A new version will be released in about two weeks, so if there are any bugs, the fix is fast. However, the update frequency is a bit high, sometimes feeling a little behind. Relatively speaking, Google AdMob SDK more stable;
+* Management interface and reporting system is also relatively clear and easy to use. The reporting system is not as strong and flexible as Google Admob, seemingly only English interface, it looks like the following.
 
 ![Facebook AudienceNetwork](demo/fbaudnet.png)
 
-Flurry 是一家被 Yahoo！收购的移动广告公司，其官方网站是 http://www.flurry.com/ 。其主要的产品有 2 个，一个是数据分析(Flurry Anlytics)，一个是广告系统（Flurry Ads）。
-* Flurry SDK 接入也还算比较容易，报表系统中规中矩。就是网站访问稍微有点慢，比较花时间。
-* 付款略慢，在广告收益产生的 60天之后才付款。
-* 值得一提的是，Flurry 是比较早支持原生广告的（Native Ad）的。
+Flurry is a mobile advertising company that has been acquired by Yahoo, the official site is http://www.flurry.com/. There are 2 main products, one is Flurry Anlytics and one is Flurry Ads.
+* Flurry SDK integration is still relatively easy, the reporting system quite satisfactory. Site visit is a bit slow, more time-consuming.
+* Payments are slightly slower and are not paid until 60 days after the advertising revenue.
+* It is worth mentioning that, Flurry is a relatively early support Native ads (Native Ad).
 
-MobFox 是一家欧洲的移动广告公司，总部位于奥地利。曾经它的 CEO 联系过我，希望能够就某项产品达成合作。后来因为收购事宜暂停，再后来，再后来就知道 MobFox 被 Matomy 收购，项目合作的事情就没有下文了。这家公司还是不错，付款也比较及时。虽然号称是欧洲最大的移动广告公司，并且全球位于 Top 10，但和 Google、Facebook 这样的巨头比起来，在全球范围内的影响力实在有点弱。
+MobFox is a European mobile advertising company headquartered in Austria. I used to contact its CEO, he wants me to develop plug-ins for them. Later, because of the acquisition, then later, we knew that MobFox was acquired by Matomy. This company is still good, payment is more timely. Although known as Europe's largest mobile advertising company, and the world is located in the Top 10, but compared with giants such as Google, Facebook, the global influence is really a bit weak.
 
-Apple 的 iAd，只是在 iOS 系统上进行投放。由于 iPhone 的市场定位和定价明显要高于 Android 系统，也就决定了 iOS 用户有较强的购买力，所以 iAd 广告的点击回报比较高，也就不言而喻了。不过如果你开发的 APP 需要同时投放 iOS 和 Android 系统，用 AdMob 管理起来相对容易一点。也可以通过 AdMob 的广告中介（mediation）功能，把部分流量通过 iAd 进行展示，从而使得广告收益的利益最大化。
+Apple's iAd just launches on iOS. As the iPhone's market positioning and pricing significantly higher than the Android system, it also determines the iOS users have a strong purchasing power, so iAd ad click returns relatively high, it goes without saying. However, if you develop an app that needs to run on iOS and Android at the same time, managing it with AdMob is a bit easier. You can also use AdMob's mediation feature to show some of your traffic through iAd, maximizing the benefits of advertising. Later, Apple adjusted the advertising business and stopped iAd service.
 
-像 OpenX 和 Smart AdServer 仅对欧美的签约客户开放，并不针对全球用户和开发者。只是曾经有美国和欧洲的客户在 GitHub 上看到我的开源项目，特意找到我要求我定制产品，通过项目合作的方式，我才得以了解和熟悉。不过因为不对全球开发者，所以也无法推荐使用。
+Like OpenX and Smart AdServer, open only to European and American business customers, not for global users and individual developers. Formerly, customers in the United States and Europe saw my open source project on GitHub, specifically looking for me to customize the adware plug-in. Through project cooperation, I was able to understand and become familiar with it. However, because it is not for global developers, it is not recommended.
 
-至于 MoPub，它的 SDK 的是在 GitHub 上开源的，这是它与众不同的地方。不过也正是因为这一点，其文档和 SDK 接入就要稍微麻烦一些。必须要把这些 SDK 从源代码编译成 jar 和 framework，然后才能在自己的项目中使用。
+As for MoPub, its SDK is open source on GitHub, and it's something different. Its documentation and SDK was not very mature. For some time, you have to compile these SDKs from source code into a jar and framework before using them in your projects, which is really inconvenient. Recently, they have supported their SDK to be loaded into your project with gradle and cocoapods, a lot easier than before.
 
-Millennial Media（简写为 mMeida)，其 SDK Demo 的美观度做得不错，不过客服和技术支持的响应实在不敢恭维。曾经碰到过技术问题，通过 Web Form 提交了问题，一直没有得到过答复，所以我后来也就懒得用它了。
+Millennial Media (abbreviated mMeida), its SDK Demo aesthetics done well, but customer service and technical support response is really flattered. Have encountered technical problems, submit a question through the Web Form, has not been answered, so I am not happy to use it. I heard later they were acquired by AOL.
 
-另外像 Charboost、TapJoy 等等广告平台，也或多或少的接触过。不过精力有限，没有逐一进行具体的试用。Charboost 是 2011 年才创业的广告公司，只专注在移动游戏领域，2014年被 VentureBeat 指数报告定为 Top 10 的移动广告公司。通过 Chartboost 发布的广告，点击收益比较不错，不过反过来说，也就是广告投放、获取用户的成本是比较高的。我所认识的专门做重度游戏、专门投放海外市场的朋友，通过 Facebook 和 Chartboost 投放广告用得比较多。
+In addition, such as Charboost, TapJoy advertising platform, also more or less seen. However, each person's energy is limited, so did not try them one by one. Charboost, an advertising startup that started up in 2011, focuses exclusively on mobile games and was named Top 10 mobile advertising company by the VentureBeat Index in 2014. Advertised by Chartboost, click revenue is relatively good, but conversely, that is, advertising, access to the user's cost is relatively high. Some of my friends I know are specialized in heavy games, devoted to overseas markets and used more ads on Facebook and Chartboost.
 
-上面介绍了不少移动广告平台，完全是个人经验和主观体会，有兴趣的可以自行尝试。
+These mobile advertising platform described above is entirely personal experience and subjective experience. If you are interested, ou can try more by your own.
 
-### 营销你的产品
+### Promote Your App
 
-（待续）
+(To be continued)
 
-### 联网版APP
+### Online APP
 
-### 云服务
+### Cloud Seervice
 
-### 高级篇
+### Expert Topics
 
-### 用户数据分析
+### User Data Analysis
 
-### 广告优化
+### Ad Optimization
 
-### 支付与内购
+### In-App Purchase
 
-### 社交营销
+### Social Marketing
 
-### 广告投放
+### Cast Advertising
 
-### 附录
+### Appendix
 
-#### 互联网营销常用术语
+#### Popular Mobile Marketing Terms
 
-Part1 最基本的名词
+Part1 Basic Terms
 
 ROI：Return On Investment的简称。一般而言on这个词是应该小写的，所以ROI似乎应该是RoI，不过大家都约定俗成了，不必较真。ROI是典型的追求效果类的营销的关键指标。在中国的互联网营销，这个值一般指的是，我花了多少钱推广费，直接产生了多少的销售。比如花了1万元做SEM推广，直接卖了3万元的货。ROI会被认为做到了3（即3:1）。这一点与财务计算上的ROI是不同的，后者是利润和投入的比值，但在互联网营销上，大家没有把利润作为R，而是用GMV。关于GMV是什么，本文的下篇有。:)
 
